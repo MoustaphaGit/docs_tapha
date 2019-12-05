@@ -10,7 +10,5 @@ class biensController extends Controller
         return view('acceuil');
     }
     
-    public function show(){
-        return view('annonce');
-    } 
+   
 }

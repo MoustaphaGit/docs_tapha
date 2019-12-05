@@ -31,7 +31,7 @@
           <a class="nav-link js-scroll-trigger" href="#services"> <button class="btn btn-success">Déposer une Annonce</button></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Qul-annonces">Voir les Annonces</a>
+          <a class="nav-link js-scroll-trigger" href="">Voir les Annonces</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#contact">Consulter un expert</a>

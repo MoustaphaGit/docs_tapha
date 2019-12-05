@@ -7,8 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    @section('content')
-    <h1>je suis le contenue d'une annonce</h1>
+@extends('layouts.app')
+    @section('/content')
+    <h1>je suis la liste des annonces </h1>
 
     @endsection 
 </body>

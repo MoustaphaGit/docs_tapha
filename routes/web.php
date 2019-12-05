@@ -16,6 +16,6 @@
 }); */
 //Route::get("/", "biensController@index");
 Route::get("/","biensController@index");
-// Route::get("/", "biensController@show");
+Route::get("/backoffice/annonces", "AnnoncesController@show");
 
 ?>
