@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class AnnoncesController extends Controller
 {
     public function show(){
-        return view('backoffice.annonces');
+        return view('annonces.index');
     } 
 }
