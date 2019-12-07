@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class biensController extends Controller
+class PagesController extends Controller
 {
     public function index(){
         return view('acceuil');

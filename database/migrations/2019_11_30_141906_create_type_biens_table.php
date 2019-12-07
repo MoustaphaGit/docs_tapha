@@ -15,7 +15,7 @@ class CreateTypeBiensTable extends Migration
     {
         Schema::create('type_biens', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nom_type');
+            $table->string('nom');
             $table->timestamps();
         });
     }

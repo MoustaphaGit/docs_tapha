@@ -15,12 +15,13 @@ class CreateAnnonceBiensTable extends Migration
     {
         Schema::create('annonce_biens', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('titre_annonce');
-            $table->string('type_annonce');
-            $table->string('localisation');
+            $table->unsignedBigInteger('type_bien_id');
+            $table->string('title');
+            $table->string('ville');
+            $table->string('quartier');
+            $table->integer('prix');
+            $table->integer('mettre_2');
             $table->longtext('description');
-            $table->decimal('prix');
-            $table->double('nbr_mettre_2');
             
             $table->timestamps();
         });
