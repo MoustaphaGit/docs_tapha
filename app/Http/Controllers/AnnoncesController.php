@@ -6,11 +6,7 @@ use Illuminate\Http\Request;
 
 class AnnoncesController extends Controller
 {
-    public function show(){
-<<<<<<< HEAD
-        return view('annonces.index');
-    } 
-=======
+    public function show(){ 
         $type=\App\Type_bien::pluck('nom','id');
         return view('annonces.create',compact('type'));
     }
@@ -30,6 +26,5 @@ class AnnoncesController extends Controller
     }
 
      
->>>>>>> afficher_donnees
 }
 

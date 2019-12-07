@@ -15,14 +15,9 @@
     return view('acceuil');
 }); */
 //Route::get("/", "biensController@index");
-<<<<<<< HEAD
-Route::get("/","biensController@index");
-Route::get("/annonces/acceuil", "AnnoncesController@show");
-=======
 Route::get("/","PagesController@index");
 Route::get("/annonces/create", "AnnoncesController@show");
 Route::post("/annonces/create", "AnnoncesController@depot")->name("ajout_annonce");
 
->>>>>>> afficher_donnees
 
 ?>
