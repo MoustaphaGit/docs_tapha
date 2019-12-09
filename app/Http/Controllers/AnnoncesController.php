@@ -21,7 +21,7 @@ class AnnoncesController extends Controller
         $annonce->type_bien_id = $request->input('type_bien');
 
         $annonce->save();
-        return redirect('/annonces');
+        return redirect('/annonces/index');
     
     }
 
