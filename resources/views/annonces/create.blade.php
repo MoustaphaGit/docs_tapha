@@ -23,7 +23,7 @@
                     <select class="form-control" name="type_bien" id="type_bien">
                     <option value="">type de biens</option>
                     @foreach($type as $key=>$value)
-                    <option value="{{$key}}">{{$value}}</option>
+                    <option value="{{$key}}" {{$key=$bien->type_bien_id ? 'selected="selected"' }}>{{$value}}</option>
                     @endforeach
                     </select>
                     <label for="">Ville : </label>
