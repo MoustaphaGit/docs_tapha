@@ -25,7 +25,12 @@
                                     <li class="list-group-item list-group-item-dark">Ville : {{$biens->ville}} </li>
                                     <li class="list-group-item list-group-item-dark"> Quartier : {{$biens->quartier}} </li>
                                     <li class="list-group-item list-group-item-dark"> Prix : {{$biens->prix}} </li>
-                    </ul>
+                    </ul><br><br>
+                    <div class="row">
+                        <div class ="col"><p><a href=""><button class="btn btn-secondary">Editer l'annonce</button></a></p></div>
+                        <div class ="col"><p><a href=""><button class="btn btn-danger">Supprimer l'annonce</button></a></p></div>
+                    </div>
+                   
                 </div>
             </li>
         @endforeach
