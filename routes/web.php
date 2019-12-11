@@ -19,7 +19,8 @@ Route::get("/","PagesController@index");
 Route::get("/annonces/create", "AnnoncesController@show");
 Route::post("/annonces/create", "AnnoncesController@depot")->name("ajout_annonce");
 Route::get("/annonces/index", "PagesController@display")->name("");
-Route::get("/annonces/{ann}/edit", "PagesController@edit")->name("");
+Route::get("/annonces/{ann}/edit", "PagesController@edit")->name("editer_annonce");
+Route::patch("/annonces/{ann}/edit", "PagesController@update")->name("update_annonce");
 
 
 ?>

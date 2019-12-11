@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>create</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
     <!-- Custom styles for this template -->
@@ -15,7 +15,7 @@
         <div class="container row ">
             <div class="col-12"><h1>informations sur votre annonces </h1></div>
             <div class="col-6">
-                <form action="{{route('ajout_annonce')}}" method ="post" class= "form-control">
+                <form action="{{route('ajout_annonce')}}" method="post" class="form-control">
                 @csrf
                     <label for="">Titre :</label>
                     <input type="text" name="title" class="form-control" placeholder="un titre a votre annonce">
@@ -23,7 +23,7 @@
                     <select class="form-control" name="type_bien" id="type_bien">
                     <option value="">type de biens</option>
                     @foreach($type as $key=>$value)
-                    <option value="{{$key}}" {{$key=$bien->type_bien_id ? 'selected="selected"' }}>{{$value}}</option>
+                    <option value="{{$key}}">{{$value}}</option>
                     @endforeach
                     </select>
                     <label for="">Ville : </label>

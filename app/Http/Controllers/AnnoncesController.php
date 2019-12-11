@@ -11,6 +11,10 @@ class AnnoncesController extends Controller
         return view('annonces.create',compact('type'));
     }
     public function depot(Request $request){
+        $data= $request->validate([
+            'title'=>'required|min:10|max:20',
+            'prix'=>'required|max:7|numeric',
+        ]);
         $annonce = new \App\Annonce_bien();
         $annonce->title = $request->input('title');
         $annonce->ville = $request->input('ville');
@@ -19,12 +23,10 @@ class AnnoncesController extends Controller
         $annonce->mettre_2 = $request->input('surface');
         $annonce->description = $request->input('description');
         $annonce->type_bien_id = $request->input('type_bien');
-
         $annonce->save();
-        return redirect('/annonces/index');
+        return redirect('/annonces/index')->with(['success'=>"annonce bien enregistrer"]);
     
     }
-
      
 }
 

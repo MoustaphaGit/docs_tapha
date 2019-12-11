@@ -23,17 +23,16 @@ class PagesController extends Controller
         $bien=\App\Annonce_bien::find($ann); 
         if($bien){
             $bien->update([
-                'title' => $request->input('title'),
-                'ville' => $request->input('ville'),
-                'quartier' => $request->input('quartier'),
-                'prix' => $request->input('price'),
-                'mettre_2' => $request->input('surface'),
-                'description' => $request->input('description'),
-                'type_bien_id' => $request->input('type_bien'),
-                    
+                'title'=>$request->input('title'),
+                'ville'=>$request->input('ville'),
+                'quartier'=>$request->input('quartier'),
+                'prix'=>$request->input('price'),
+                'mettre_2'=>$request->input('surface'),
+                'description'=>$request->input('description'),
+                'type_bien_id'=>$request->input('type_bien'),     
             ]);
         }
-        return redirect()->back();
+        return redirect('/annonces/index');
 
     }
 }
