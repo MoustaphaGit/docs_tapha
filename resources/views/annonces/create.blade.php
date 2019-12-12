@@ -14,6 +14,11 @@
     <main>
         <div class="container row ">
             <div class="col-12"><h1>informations sur votre annonces </h1></div>
+            @if($errors->any())
+            @foreach($errors->all() as $error)
+            <div class="alert alert-danger">{{$error}}</div>
+            @endforeach
+            @endif
             <div class="col-6">
                 <form action="{{route('ajout_annonce')}}" method="post" class="form-control">
                 @csrf

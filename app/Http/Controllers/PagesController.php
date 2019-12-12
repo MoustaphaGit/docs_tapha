@@ -32,7 +32,7 @@ class PagesController extends Controller
                 'type_bien_id'=>$request->input('type_bien'),     
             ]);
         }
-        return redirect('/annonces/index');
+        return redirect('/annonces/index')->with(['success'=>"Annonce bien mis à jour"]);;
 
     }
 }
