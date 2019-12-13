@@ -22,5 +22,4 @@ Route::get("/annonces/index", "PagesController@display")->name("");
 Route::get("/annonces/{ann}/edit", "PagesController@edit")->name("editer_annonce");
 Route::patch("/annonces/{ann}/edit", "PagesController@update")->name("update_annonce");
 
-
 ?>

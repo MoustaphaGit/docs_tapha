@@ -20,7 +20,7 @@
             @endforeach
             @endif
             <div class="col-6">
-                <form action="{{route('ajout_annonce')}}" method="post" class="form-control">
+                <form action="{{route('ajout_annonce')}}" method="post" class="form-control" enctype="multipart/form-data">
                 @csrf
                     <label for="">Titre :</label>
                     <input type="text" name="title" class="form-control" placeholder="un titre a votre annonce">
@@ -30,7 +30,9 @@
                     @foreach($type as $key=>$value)
                     <option value="{{$key}}">{{$value}}</option>
                     @endforeach
-                    </select>
+                    </select><br>
+                    <label for="">Ajouter des images : </label>
+                    <input type="file" name="annonce_image" class="form-control">
                     <label for="">Ville : </label>
                     <input type="text" name="ville" class="form-control" placeholder="Dans quel  ville ?">
                     <label for="">Quartier : </label>

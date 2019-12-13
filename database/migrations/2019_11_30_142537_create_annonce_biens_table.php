@@ -21,7 +21,7 @@ class CreateAnnonceBiensTable extends Migration
             $table->string('quartier');
             $table->integer('prix');
             $table->integer('mettre_2');
-            $table->longtext('description');
+            $table->longtext('description')->nullable();
             
             $table->timestamps();
         });
