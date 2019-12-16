@@ -10,6 +10,11 @@ class Annonce_bien extends Model
     public function type_bien(){
         return $this-> belongsTo('App\Type_bien');
     }
+    public function type_annonce(){
+        return $this-> belongsTo('App\Type_annonce');
+    }
+ public function localite(){
+        return $this-> belongsTo('App\Localite');
+    }
 
-    
 }

@@ -22,7 +22,8 @@
 
         @foreach($bien as $biens)
             <li class="list-group-item row">
-                <div class="col-12"><img src="" alt="une image"></div>
+                <div class="col-12"><img src="{{$biens->images ? asset($biens->images) : asset('uploads/images/default.png')}}" alt="{{$biens->title}}" width="50">
+                </div>
                 <div class="col-12">
                 <h2>{{$biens->title}} </h2>
                     <ul class="list-group list-goup-flush">
@@ -35,7 +36,7 @@
                         <div class ="col"><p><a href="{{route('editer_annonce',['ann'=>$biens->id])}}"><button class="btn btn-secondary">Editer l'annonce</button></a></p></div>
                         <div class ="col"><p><a href=""><button class="btn btn-danger">Supprimer l'annonce</button></a></p></div>
                     </div>
-                   
+
                 </div>
             </li>
         @endforeach
@@ -44,4 +45,4 @@
         </div>
     </main>
 </body>
-</html> 
+</html>

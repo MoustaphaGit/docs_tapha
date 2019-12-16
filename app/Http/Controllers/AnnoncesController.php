@@ -13,27 +13,28 @@ class AnnoncesController extends Controller
         $type=\App\Type_bien::pluck('nom','id');
         return view('annonces.create',compact('type'));
     }
-    public function uploadImage(UploadedFile $uploadedFile, $folder = null,
-     $disk = 'public', $filename = null){
-        $name = !is_null($filename) ? $filename : str_random('25');
+
+    public function uploadImage(UploadedFile $uploadedFile, $folder = null, $disk ='public', $filename = null){
+        $name = !is_null($filename) ? $filename : Str::random ('25');
         $file = $uploadedFile->storeAs($folder, $name.'.'.$uploadedFile->getClientOriginalExtension(), $disk);
+
         return $file;
-     }
+    }
+
     public function depot(Request $request){
         $data= $request->validate([
-            'title'=>'required|min:2|max:50',
-            'prix'=>'required|max:7|numeric',
-            'description'=>'nullable'|'min:3|max:100000',
-            'type_bien_id'=>'required',
-            'images'=>'nullable | image | mimes:jpeg,png,jpg,gif | max: 2048'
+            'title'=>'required|max:50',
+            'prix'=>'max:7|numeric',
+            'description'=>'nullable|min:3|max:100000',
+            'images'=>'nullable|image|mimes:jpeg,png,jpg,gif| max: 2048'
         ]);
         $annonce = new \App\Annonce_bien();
-        if($request->has('images')){
-            $img= $request->file('images');
+        if($request->has('annonce_image')){
+            $img= $request->file('annonce_image');
             $img_name=Str::slug($request->input('title')).'_'.time();
             $dossier='/uploads/images/';
             $annonce->images= $dossier.$img_name.','.$img->getClientOriginalExtension();
-            $this->uploadImage($img.$dossier,'public',$img_name);
+            $this->uploadImage($img,'public',$img_name);
         }
         $annonce->title = $request->input('title');
         $annonce->ville = $request->input('ville');
