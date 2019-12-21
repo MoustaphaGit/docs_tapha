@@ -22,13 +22,13 @@
 
         @foreach($bien as $biens)
             <li class="list-group-item row">
-                <div class="col-12"><img src="{{$biens->images ? asset($biens->images) : asset('uploads/images/default.png')}}" alt="{{$biens->title}}" width="50">
+                <div class="col-12"><img src="{{$biens->images ? asset($biens->images) : asset('uploads/images/default.png')}}" alt="{{$biens->title}}" width="200">
                 </div>
                 <div class="col-12">
-                <h2>{{$biens->title}} </h2>
+                <h2>{{$biens->type_annonce->name}} </h2>
                     <ul class="list-group list-goup-flush">
                                     <li class="list-group-item list-group-item-dark">type: {{$biens->type_bien->nom}} </li>
-                                    <li class="list-group-item list-group-item-dark">Ville : {{$biens->ville}} </li>
+                                    <li class="list-group-item list-group-item-dark">Ville : {{$biens->region->nom}} </li>
                                     <li class="list-group-item list-group-item-dark"> Quartier : {{$biens->quartier}} </li>
                                     <li class="list-group-item list-group-item-dark"> Prix : {{$biens->prix}} </li>
                     </ul><br><br>

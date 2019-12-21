@@ -66,7 +66,7 @@
               <div class="col-8 pr-0"><input class="form-control" type="text" placeholder="le lieu(x)"></div>
             </div>
             <div class="col-12 row largeur my-2">
-              <div class="col-6 p-0"> 
+              <div class="col-6 p-0">
                 <select class="custom-select">
                   <option selected>type de biens</option>
                   <option value="1">Maison</option>
@@ -75,7 +75,7 @@
                   <option value="4">terrains</option>
                   <option value="5">immeuble</option>
                   <option value="6">Hotels</option>
-                </select> 
+                </select>
               </div>
               <div class="col-2 p-0"> <input class="form-control" type="text" placeholder="Surface min"></div>
               <div class="col-2 p-0"> <input class="form-control" type="text" placeholder="Prix-max"></div>
@@ -93,21 +93,19 @@
           </div>
           <div class="col-4 row px-1">
               <div class="col-12 py-2 pl-0"><a href="#"><button type="button" class="btn btn-dark button">RECHERCHER</button></div></a>
-              <div class="col-12"></div> 
-          </div> 
+              <div class="col-12"></div>
+          </div>
         </div>
       </form>
     </div> <!-- fin filtre de recherche -->
-    
-  </div> <br> <br> 
+
+  </div> <br> <br>
 </header>
 
 <section id="Qul-annonces"><!-- la section des annonces  -->
   <div class=" row container  ">
       <div class="col-12"> <!-- le div du slide pour faire defiller quelques annonces -->
         <div class="container">
-          <h1>ici</h1>
-
         </div>
       </div>
       <div class=" container row justify-content-center col-12 mx-0 "> <!-- le div des 3 derniers annonce  -->
@@ -161,6 +159,6 @@
   <!-- /.container -->
 </footer>
 <script src="{{asset('js/app.js')}}"></script>
-<!-- <script src="{{asset('js/scrolling-nav.js')}}"></script> -->
+ <script src="{{asset('js/scrolling-nav.js')}}"></script>
 </body>
 </html>
