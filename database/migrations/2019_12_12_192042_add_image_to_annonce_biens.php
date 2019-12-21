@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTypeBiensTable extends Migration
+class AddImageToAnnonceBiens extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,8 @@ class CreateTypeBiensTable extends Migration
      */
     public function up()
     {
-        Schema::create('type_biens', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('nom');
-            $table->timestamps();
+        Schema::table('annonce_biens', function (Blueprint $table) {
+            $table->string('images')->nullable();
         });
     }
 
@@ -27,6 +25,8 @@ class CreateTypeBiensTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('type_biens');
+        Schema::table('annonce_biens', function (Blueprint $table) {
+            $table->dropColumn('images');
+        });
     }
 }
