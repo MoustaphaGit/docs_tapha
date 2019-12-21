@@ -7,9 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    @section('content')
-    <h1>je suis le contenue d'une annonce</h1>
 
-    @endsection 
+    <h1>je suis le contenue d'une annonce</h1>
+    
 </body>
 </html>

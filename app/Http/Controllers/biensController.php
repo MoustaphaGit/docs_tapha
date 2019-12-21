@@ -11,6 +11,6 @@ class biensController extends Controller
     }
     
     public function show(){
-        return view('annonce');
+        return view('layout.annonce');
     } 
 }
