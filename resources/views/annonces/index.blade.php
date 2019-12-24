@@ -34,7 +34,13 @@
                     </ul><br><br>
                     <div class="row">
                         <div class ="col"><p><a href="{{route('editer_annonce',['ann'=>$biens->id])}}"><button class="btn btn-secondary">Editer l'annonce</button></a></p></div>
-                        <div class ="col"><p><a href=""><button class="btn btn-danger">Supprimer l'annonce</button></a></p></div>
+                        <div class ="col">
+                            <form action="biens/{{$biens->id}}" method="post">
+                                @csrf
+                                @method('delete')
+                               <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+                            </form>
+                        </div>
                     </div>
 
                 </div>
