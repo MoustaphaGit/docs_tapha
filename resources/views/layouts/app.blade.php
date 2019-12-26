@@ -21,7 +21,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto  py-3">
+            <ul class="navbar-nav nav-tabs ml-auto  py-3">
                 <li class="nav-item">
                     <a class="nav-link  " href="">ACCUEIL</a>
                 </li>
@@ -44,7 +44,7 @@
         </div>
     </div>
 </nav>
-
+@yield("content")
 
 
     <section id="contact">

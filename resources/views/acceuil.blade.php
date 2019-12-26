@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{asset('css/docs.css')}}"/>
 </head>
 
-<body id="page-top">
+<body class="container-fluid" id="page-top">
 
 <!-- Navigation  contenant des boutons -->
 
@@ -22,7 +22,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto  py-3">
+      <ul class="navbar-nav nav-tabs ml-auto  py-3">
         <li class="nav-item">
           <a class="nav-link  " href="">ACCUEIL</a>
         </li>
@@ -52,7 +52,7 @@
         <h1> <span>GROUPE KEURGUI_IMMOBILIER</span> </h1>
         <p class="lead"> Désormais Se loger devient plus facile</p>
     </div>
-    <div class="container-fluid bg-color-transparent text-sm-center" >
+    <div class="container-fluid bg-color-transparent  text-sm-center" >
         <!-- le filtre de recherche -->
       <form action="#" method="" name="filtre">
         <div class="row my-5 mx-1 ">
@@ -104,17 +104,55 @@
       </form>
     </div>
       <!-- fin filtre de recherche -->
-
-  </div> <br> <br>
+  </div>
 </header>
 
-<section class="container-fluid"><!-- la section des annonces  -->
-  <div class=" row container  ">
-      <div class="col-12"> <!-- le div du slide pour faire defiller quelques annonces -->
-        <div class="container">
-        </div>
+<section class="container py-1"><!-- la section des annonces  -->
+  <div class="row">
+      <div class="col-12 py-0">
+          <!-- le div du slide pour faire defiller quelques annonces -->
+          <div class="hk-sec-wrapper">
+              <h4    class="hk-sec-title"> Quelques offres en exclusivite</h4>
+              <div class="row px-5 py-3">
+                  <div class="row-sm">
+                      <div id='carouselExampleIndicators' class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img class="d-block w-100" src="./photos/img1.jpg" alt="first slide ">
+                                  <div class="carousel-caption d-none d-md-block">
+                                      <h5 class="text-white">first Slide label</h5>
+                                      <p>this content paragraph enough to say</p>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <img class="d-block w-100" src="./photos/img4.jpg" alt="">
+                                  <div class="carousel-caption d-none d-md-block">
+                                      <h5 class="text-white">second Slide label</h5>
+                                      <p>this content paragraph enough to say</p>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <img class="d-block w-100" src="./photos/img3.jpg" alt="">
+                                  <div class="carousel-caption d-none d-md-block">
+                                      <h5 class="text-white bg">third Slide label</h5>
+                                      <p>this content paragraph enough to say</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class=" container row justify-content-center col-12 mx-0 "> <!-- le div des 3 derniers annonce  -->
+      <div class=" container row justify-content-center col-12  mx-1 "> <!-- le div des 3 derniers annonce  -->
         <div class="col">
             <div class="img-annonce"> <a href="#"><img class="img-fluid" src="./photos/img1.jpg" alt="annonce 1"></a></div>
             <div class="text-description "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iure.</div>
