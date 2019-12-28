@@ -1837,7 +1837,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
-  * Bootstrap v4.4.0 (https://getbootstrap.com/)
+  * Bootstrap v4.4.1 (https://getbootstrap.com/)
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
@@ -1922,7 +1922,7 @@ module.exports = {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.4.0): util.js
+   * Bootstrap (v4.4.1): util.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -2099,7 +2099,7 @@ module.exports = {
    */
 
   var NAME = 'alert';
-  var VERSION = '4.4.0';
+  var VERSION = '4.4.1';
   var DATA_KEY = 'bs.alert';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -2263,7 +2263,7 @@ module.exports = {
    */
 
   var NAME$1 = 'button';
-  var VERSION$1 = '4.4.0';
+  var VERSION$1 = '4.4.1';
   var DATA_KEY$1 = 'bs.button';
   var EVENT_KEY$1 = "." + DATA_KEY$1;
   var DATA_API_KEY$1 = '.data-api';
@@ -2464,7 +2464,7 @@ module.exports = {
    */
 
   var NAME$2 = 'carousel';
-  var VERSION$2 = '4.4.0';
+  var VERSION$2 = '4.4.1';
   var DATA_KEY$2 = 'bs.carousel';
   var EVENT_KEY$2 = "." + DATA_KEY$2;
   var DATA_API_KEY$2 = '.data-api';
@@ -3062,7 +3062,7 @@ module.exports = {
    */
 
   var NAME$3 = 'collapse';
-  var VERSION$3 = '4.4.0';
+  var VERSION$3 = '4.4.1';
   var DATA_KEY$3 = 'bs.collapse';
   var EVENT_KEY$3 = "." + DATA_KEY$3;
   var DATA_API_KEY$3 = '.data-api';
@@ -3421,7 +3421,7 @@ module.exports = {
    */
 
   var NAME$4 = 'dropdown';
-  var VERSION$4 = '4.4.0';
+  var VERSION$4 = '4.4.1';
   var DATA_KEY$4 = 'bs.dropdown';
   var EVENT_KEY$4 = "." + DATA_KEY$4;
   var DATA_API_KEY$4 = '.data-api';
@@ -3953,7 +3953,7 @@ module.exports = {
    */
 
   var NAME$5 = 'modal';
-  var VERSION$5 = '4.4.0';
+  var VERSION$5 = '4.4.1';
   var DATA_KEY$5 = 'bs.modal';
   var EVENT_KEY$5 = "." + DATA_KEY$5;
   var DATA_API_KEY$5 = '.data-api';
@@ -4550,7 +4550,7 @@ module.exports = {
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v4.4.0): tools/sanitizer.js
+   * Bootstrap (v4.4.1): tools/sanitizer.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4676,7 +4676,7 @@ module.exports = {
    */
 
   var NAME$6 = 'tooltip';
-  var VERSION$6 = '4.4.0';
+  var VERSION$6 = '4.4.1';
   var DATA_KEY$6 = 'bs.tooltip';
   var EVENT_KEY$6 = "." + DATA_KEY$6;
   var JQUERY_NO_CONFLICT$6 = $.fn[NAME$6];
@@ -5400,7 +5400,7 @@ module.exports = {
    */
 
   var NAME$7 = 'popover';
-  var VERSION$7 = '4.4.0';
+  var VERSION$7 = '4.4.1';
   var DATA_KEY$7 = 'bs.popover';
   var EVENT_KEY$7 = "." + DATA_KEY$7;
   var JQUERY_NO_CONFLICT$7 = $.fn[NAME$7];
@@ -5586,7 +5586,7 @@ module.exports = {
    */
 
   var NAME$8 = 'scrollspy';
-  var VERSION$8 = '4.4.0';
+  var VERSION$8 = '4.4.1';
   var DATA_KEY$8 = 'bs.scrollspy';
   var EVENT_KEY$8 = "." + DATA_KEY$8;
   var DATA_API_KEY$6 = '.data-api';
@@ -5892,7 +5892,7 @@ module.exports = {
    */
 
   var NAME$9 = 'tab';
-  var VERSION$9 = '4.4.0';
+  var VERSION$9 = '4.4.1';
   var DATA_KEY$9 = 'bs.tab';
   var EVENT_KEY$9 = "." + DATA_KEY$9;
   var DATA_API_KEY$7 = '.data-api';
@@ -6126,7 +6126,7 @@ module.exports = {
    */
 
   var NAME$a = 'toast';
-  var VERSION$a = '4.4.0';
+  var VERSION$a = '4.4.1';
   var DATA_KEY$a = 'bs.toast';
   var EVENT_KEY$a = "." + DATA_KEY$a;
   var JQUERY_NO_CONFLICT$a = $.fn[NAME$a];
@@ -37053,6 +37053,6957 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/dataTables-data.js":
+/*!*****************************************!*\
+  !*** ./resources/js/dataTables-data.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*DataTable Init*/
+
+
+$(document).ready(function () {
+  $('#datable_1').DataTable({
+    responsive: true,
+    autoWidth: false,
+    language: {
+      search: "",
+      searchPlaceholder: "Search",
+      sLengthMenu: "_MENU_items"
+    }
+  });
+  $('#datable_2').DataTable({
+    autoWidth: false,
+    lengthChange: false,
+    "bPaginate": false,
+    language: {
+      search: "",
+      searchPlaceholder: "Search"
+    }
+  });
+  /*Export DataTable*/
+
+  $('#datable_3').DataTable({
+    dom: 'Bfrtip',
+    responsive: true,
+    language: {
+      search: "",
+      searchPlaceholder: "Search"
+    },
+    "bPaginate": false,
+    "info": false,
+    "bFilter": false,
+    buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+    "drawCallback": function drawCallback() {
+      $('.dt-buttons > .btn').addClass('btn-outline-light btn-sm');
+    }
+  });
+  var table = $('#datable_5').DataTable({
+    responsive: true,
+    language: {
+      search: "",
+      sLengthMenu: "_MENU_Items"
+    },
+    "bPaginate": false,
+    "info": false,
+    "bFilter": false
+  });
+  $('#datable_5 tbody').on('click', 'tr', function () {
+    if ($(this).hasClass('selected')) {
+      $(this).removeClass('selected');
+    } else {
+      table.$('tr.selected').removeClass('selected');
+      $(this).addClass('selected');
+    }
+  });
+  $('#button').click(function () {
+    table.row('.selected').remove().draw(false);
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/db.js":
+/*!****************************!*\
+  !*** ./resources/js/db.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function () {
+  var db = {
+    loadData: function loadData(filter) {
+      return $.grep(this.clients, function (client) {
+        return (!filter.Name || client.Name.indexOf(filter.Name) > -1) && (!filter.Age || client.Age === filter.Age) && (!filter.Address || client.Address.indexOf(filter.Address) > -1) && (!filter.Country || client.Country === filter.Country) && (filter.Married === undefined || client.Married === filter.Married);
+      });
+    },
+    insertItem: function insertItem(insertingClient) {
+      this.clients.push(insertingClient);
+    },
+    updateItem: function updateItem(updatingClient) {},
+    deleteItem: function deleteItem(deletingClient) {
+      var clientIndex = $.inArray(deletingClient, this.clients);
+      this.clients.splice(clientIndex, 1);
+    }
+  };
+  window.db = db;
+  db.countries = [{
+    Name: "",
+    Id: 0
+  }, {
+    Name: "United States",
+    Id: 1
+  }, {
+    Name: "Canada",
+    Id: 2
+  }, {
+    Name: "United Kingdom",
+    Id: 3
+  }, {
+    Name: "France",
+    Id: 4
+  }, {
+    Name: "Brazil",
+    Id: 5
+  }, {
+    Name: "China",
+    Id: 6
+  }, {
+    Name: "Russia",
+    Id: 7
+  }];
+  db.clients = [{
+    "Name": "Otto Clay",
+    "Age": 61,
+    "Country": 6,
+    "Address": "Ap #897-1459 Quam Avenue",
+    "Married": false
+  }, {
+    "Name": "Connor Johnston",
+    "Age": 73,
+    "Country": 7,
+    "Address": "Ap #370-4647 Dis Av.",
+    "Married": false
+  }, {
+    "Name": "Lacey Hess",
+    "Age": 29,
+    "Country": 7,
+    "Address": "Ap #365-8835 Integer St.",
+    "Married": false
+  }, {
+    "Name": "Timothy Henson",
+    "Age": 78,
+    "Country": 1,
+    "Address": "911-5143 Luctus Ave",
+    "Married": false
+  }, {
+    "Name": "Ramona Benton",
+    "Age": 43,
+    "Country": 5,
+    "Address": "Ap #614-689 Vehicula Street",
+    "Married": true
+  }, {
+    "Name": "Ezra Tillman",
+    "Age": 51,
+    "Country": 1,
+    "Address": "P.O. Box 738, 7583 Quisque St.",
+    "Married": true
+  }, {
+    "Name": "Dante Carter",
+    "Age": 59,
+    "Country": 1,
+    "Address": "P.O. Box 976, 6316 Lorem, St.",
+    "Married": false
+  }, {
+    "Name": "Christopher Mcclure",
+    "Age": 58,
+    "Country": 1,
+    "Address": "847-4303 Dictum Av.",
+    "Married": true
+  }, {
+    "Name": "Ruby Rocha",
+    "Age": 62,
+    "Country": 2,
+    "Address": "5212 Sagittis Ave",
+    "Married": false
+  }, {
+    "Name": "Imelda Hardin",
+    "Age": 39,
+    "Country": 5,
+    "Address": "719-7009 Auctor Av.",
+    "Married": false
+  }, {
+    "Name": "Jonah Johns",
+    "Age": 28,
+    "Country": 5,
+    "Address": "P.O. Box 939, 9310 A Ave",
+    "Married": false
+  }, {
+    "Name": "Herman Rosa",
+    "Age": 49,
+    "Country": 7,
+    "Address": "718-7162 Molestie Av.",
+    "Married": true
+  }, {
+    "Name": "Arthur Gay",
+    "Age": 20,
+    "Country": 7,
+    "Address": "5497 Neque Street",
+    "Married": false
+  }, {
+    "Name": "Xena Wilkerson",
+    "Age": 63,
+    "Country": 1,
+    "Address": "Ap #303-6974 Proin Street",
+    "Married": true
+  }, {
+    "Name": "Lilah Atkins",
+    "Age": 33,
+    "Country": 5,
+    "Address": "622-8602 Gravida Ave",
+    "Married": true
+  }, {
+    "Name": "Malik Shepard",
+    "Age": 59,
+    "Country": 1,
+    "Address": "967-5176 Tincidunt Av.",
+    "Married": false
+  }, {
+    "Name": "Keely Silva",
+    "Age": 24,
+    "Country": 1,
+    "Address": "P.O. Box 153, 8995 Praesent Ave",
+    "Married": false
+  }, {
+    "Name": "Hunter Pate",
+    "Age": 73,
+    "Country": 7,
+    "Address": "P.O. Box 771, 7599 Ante, Road",
+    "Married": false
+  }, {
+    "Name": "Mikayla Roach",
+    "Age": 55,
+    "Country": 5,
+    "Address": "Ap #438-9886 Donec Rd.",
+    "Married": true
+  }, {
+    "Name": "Upton Joseph",
+    "Age": 48,
+    "Country": 4,
+    "Address": "Ap #896-7592 Habitant St.",
+    "Married": true
+  }, {
+    "Name": "Jeanette Pate",
+    "Age": 59,
+    "Country": 2,
+    "Address": "P.O. Box 177, 7584 Amet, St.",
+    "Married": false
+  }, {
+    "Name": "Kaden Hernandez",
+    "Age": 79,
+    "Country": 3,
+    "Address": "366 Ut St.",
+    "Married": true
+  }, {
+    "Name": "Kenyon Stevens",
+    "Age": 20,
+    "Country": 3,
+    "Address": "P.O. Box 704, 4580 Gravida Rd.",
+    "Married": false
+  }, {
+    "Name": "Jerome Harper",
+    "Age": 31,
+    "Country": 5,
+    "Address": "2464 Porttitor Road",
+    "Married": false
+  }, {
+    "Name": "Jelani Patel",
+    "Age": 36,
+    "Country": 2,
+    "Address": "P.O. Box 541, 5805 Nec Av.",
+    "Married": true
+  }, {
+    "Name": "Keaton Oconnor",
+    "Age": 21,
+    "Country": 1,
+    "Address": "Ap #657-1093 Nec, Street",
+    "Married": false
+  }, {
+    "Name": "Bree Johnston",
+    "Age": 31,
+    "Country": 2,
+    "Address": "372-5942 Vulputate Avenue",
+    "Married": false
+  }, {
+    "Name": "Maisie Hodges",
+    "Age": 70,
+    "Country": 7,
+    "Address": "P.O. Box 445, 3880 Odio, Rd.",
+    "Married": false
+  }, {
+    "Name": "Kuame Calhoun",
+    "Age": 39,
+    "Country": 2,
+    "Address": "P.O. Box 609, 4105 Rutrum St.",
+    "Married": true
+  }, {
+    "Name": "Carlos Cameron",
+    "Age": 38,
+    "Country": 5,
+    "Address": "Ap #215-5386 A, Avenue",
+    "Married": false
+  }, {
+    "Name": "Fulton Parsons",
+    "Age": 25,
+    "Country": 7,
+    "Address": "P.O. Box 523, 3705 Sed Rd.",
+    "Married": false
+  }, {
+    "Name": "Wallace Christian",
+    "Age": 43,
+    "Country": 3,
+    "Address": "416-8816 Mauris Avenue",
+    "Married": true
+  }, {
+    "Name": "Caryn Maldonado",
+    "Age": 40,
+    "Country": 1,
+    "Address": "108-282 Nonummy Ave",
+    "Married": false
+  }, {
+    "Name": "Whilemina Frank",
+    "Age": 20,
+    "Country": 7,
+    "Address": "P.O. Box 681, 3938 Egestas. Av.",
+    "Married": true
+  }, {
+    "Name": "Emery Moon",
+    "Age": 41,
+    "Country": 4,
+    "Address": "Ap #717-8556 Non Road",
+    "Married": true
+  }, {
+    "Name": "Price Watkins",
+    "Age": 35,
+    "Country": 4,
+    "Address": "832-7810 Nunc Rd.",
+    "Married": false
+  }, {
+    "Name": "Lydia Castillo",
+    "Age": 59,
+    "Country": 7,
+    "Address": "5280 Placerat, Ave",
+    "Married": true
+  }, {
+    "Name": "Lawrence Conway",
+    "Age": 53,
+    "Country": 1,
+    "Address": "Ap #452-2808 Imperdiet St.",
+    "Married": false
+  }, {
+    "Name": "Kalia Nicholson",
+    "Age": 67,
+    "Country": 5,
+    "Address": "P.O. Box 871, 3023 Tellus Road",
+    "Married": true
+  }, {
+    "Name": "Brielle Baxter",
+    "Age": 45,
+    "Country": 3,
+    "Address": "Ap #822-9526 Ut, Road",
+    "Married": true
+  }, {
+    "Name": "Valentine Brady",
+    "Age": 72,
+    "Country": 7,
+    "Address": "8014 Enim. Road",
+    "Married": true
+  }, {
+    "Name": "Rebecca Gardner",
+    "Age": 57,
+    "Country": 4,
+    "Address": "8655 Arcu. Road",
+    "Married": true
+  }, {
+    "Name": "Vladimir Tate",
+    "Age": 26,
+    "Country": 1,
+    "Address": "130-1291 Non, Rd.",
+    "Married": true
+  }, {
+    "Name": "Vernon Hays",
+    "Age": 56,
+    "Country": 4,
+    "Address": "964-5552 In Rd.",
+    "Married": true
+  }, {
+    "Name": "Allegra Hull",
+    "Age": 22,
+    "Country": 4,
+    "Address": "245-8891 Donec St.",
+    "Married": true
+  }, {
+    "Name": "Hu Hendrix",
+    "Age": 65,
+    "Country": 7,
+    "Address": "428-5404 Tempus Ave",
+    "Married": true
+  }, {
+    "Name": "Kenyon Battle",
+    "Age": 32,
+    "Country": 2,
+    "Address": "921-6804 Lectus St.",
+    "Married": false
+  }, {
+    "Name": "Gloria Nielsen",
+    "Age": 24,
+    "Country": 4,
+    "Address": "Ap #275-4345 Lorem, Street",
+    "Married": true
+  }, {
+    "Name": "Illiana Kidd",
+    "Age": 59,
+    "Country": 2,
+    "Address": "7618 Lacus. Av.",
+    "Married": false
+  }, {
+    "Name": "Adria Todd",
+    "Age": 68,
+    "Country": 6,
+    "Address": "1889 Tincidunt Road",
+    "Married": false
+  }, {
+    "Name": "Kirsten Mayo",
+    "Age": 71,
+    "Country": 1,
+    "Address": "100-8640 Orci, Avenue",
+    "Married": false
+  }, {
+    "Name": "Willa Hobbs",
+    "Age": 60,
+    "Country": 6,
+    "Address": "P.O. Box 323, 158 Tristique St.",
+    "Married": false
+  }, {
+    "Name": "Alexis Clements",
+    "Age": 69,
+    "Country": 5,
+    "Address": "P.O. Box 176, 5107 Proin Rd.",
+    "Married": false
+  }, {
+    "Name": "Akeem Conrad",
+    "Age": 60,
+    "Country": 2,
+    "Address": "282-495 Sed Ave",
+    "Married": true
+  }, {
+    "Name": "Montana Silva",
+    "Age": 79,
+    "Country": 6,
+    "Address": "P.O. Box 120, 9766 Consectetuer St.",
+    "Married": false
+  }, {
+    "Name": "Kaseem Hensley",
+    "Age": 77,
+    "Country": 6,
+    "Address": "Ap #510-8903 Mauris. Av.",
+    "Married": true
+  }, {
+    "Name": "Christopher Morton",
+    "Age": 35,
+    "Country": 5,
+    "Address": "P.O. Box 234, 3651 Sodales Avenue",
+    "Married": false
+  }, {
+    "Name": "Wade Fernandez",
+    "Age": 49,
+    "Country": 6,
+    "Address": "740-5059 Dolor. Road",
+    "Married": true
+  }, {
+    "Name": "Illiana Kirby",
+    "Age": 31,
+    "Country": 2,
+    "Address": "527-3553 Mi Ave",
+    "Married": false
+  }, {
+    "Name": "Kimberley Hurley",
+    "Age": 65,
+    "Country": 5,
+    "Address": "P.O. Box 637, 9915 Dictum St.",
+    "Married": false
+  }, {
+    "Name": "Arthur Olsen",
+    "Age": 74,
+    "Country": 5,
+    "Address": "887-5080 Eget St.",
+    "Married": false
+  }, {
+    "Name": "Brody Potts",
+    "Age": 59,
+    "Country": 2,
+    "Address": "Ap #577-7690 Sem Road",
+    "Married": false
+  }, {
+    "Name": "Dillon Ford",
+    "Age": 60,
+    "Country": 1,
+    "Address": "Ap #885-9289 A, Av.",
+    "Married": true
+  }, {
+    "Name": "Hannah Juarez",
+    "Age": 61,
+    "Country": 2,
+    "Address": "4744 Sapien, Rd.",
+    "Married": true
+  }, {
+    "Name": "Vincent Shaffer",
+    "Age": 25,
+    "Country": 2,
+    "Address": "9203 Nunc St.",
+    "Married": true
+  }, {
+    "Name": "George Holt",
+    "Age": 27,
+    "Country": 6,
+    "Address": "4162 Cras Rd.",
+    "Married": false
+  }, {
+    "Name": "Tobias Bartlett",
+    "Age": 74,
+    "Country": 4,
+    "Address": "792-6145 Mauris St.",
+    "Married": true
+  }, {
+    "Name": "Xavier Hooper",
+    "Age": 35,
+    "Country": 1,
+    "Address": "879-5026 Interdum. Rd.",
+    "Married": false
+  }, {
+    "Name": "Declan Dorsey",
+    "Age": 31,
+    "Country": 2,
+    "Address": "Ap #926-4171 Aenean Road",
+    "Married": true
+  }, {
+    "Name": "Clementine Tran",
+    "Age": 43,
+    "Country": 4,
+    "Address": "P.O. Box 176, 9865 Eu Rd.",
+    "Married": true
+  }, {
+    "Name": "Pamela Moody",
+    "Age": 55,
+    "Country": 6,
+    "Address": "622-6233 Luctus Rd.",
+    "Married": true
+  }, {
+    "Name": "Julie Leon",
+    "Age": 43,
+    "Country": 6,
+    "Address": "Ap #915-6782 Sem Av.",
+    "Married": true
+  }, {
+    "Name": "Shana Nolan",
+    "Age": 79,
+    "Country": 5,
+    "Address": "P.O. Box 603, 899 Eu St.",
+    "Married": false
+  }, {
+    "Name": "Vaughan Moody",
+    "Age": 37,
+    "Country": 5,
+    "Address": "880 Erat Rd.",
+    "Married": false
+  }, {
+    "Name": "Randall Reeves",
+    "Age": 44,
+    "Country": 3,
+    "Address": "1819 Non Street",
+    "Married": false
+  }, {
+    "Name": "Dominic Raymond",
+    "Age": 68,
+    "Country": 1,
+    "Address": "Ap #689-4874 Nisi Rd.",
+    "Married": true
+  }, {
+    "Name": "Lev Pugh",
+    "Age": 69,
+    "Country": 5,
+    "Address": "Ap #433-6844 Auctor Avenue",
+    "Married": true
+  }, {
+    "Name": "Desiree Hughes",
+    "Age": 80,
+    "Country": 4,
+    "Address": "605-6645 Fermentum Avenue",
+    "Married": true
+  }, {
+    "Name": "Idona Oneill",
+    "Age": 23,
+    "Country": 7,
+    "Address": "751-8148 Aliquam Avenue",
+    "Married": true
+  }, {
+    "Name": "Lani Mayo",
+    "Age": 76,
+    "Country": 1,
+    "Address": "635-2704 Tristique St.",
+    "Married": true
+  }, {
+    "Name": "Cathleen Bonner",
+    "Age": 40,
+    "Country": 1,
+    "Address": "916-2910 Dolor Av.",
+    "Married": false
+  }, {
+    "Name": "Sydney Murray",
+    "Age": 44,
+    "Country": 5,
+    "Address": "835-2330 Fringilla St.",
+    "Married": false
+  }, {
+    "Name": "Brenna Rodriguez",
+    "Age": 77,
+    "Country": 6,
+    "Address": "3687 Imperdiet Av.",
+    "Married": true
+  }, {
+    "Name": "Alfreda Mcdaniel",
+    "Age": 38,
+    "Country": 7,
+    "Address": "745-8221 Aliquet Rd.",
+    "Married": true
+  }, {
+    "Name": "Zachery Atkins",
+    "Age": 30,
+    "Country": 1,
+    "Address": "549-2208 Auctor. Road",
+    "Married": true
+  }, {
+    "Name": "Amelia Rich",
+    "Age": 56,
+    "Country": 4,
+    "Address": "P.O. Box 734, 4717 Nunc Rd.",
+    "Married": false
+  }, {
+    "Name": "Kiayada Witt",
+    "Age": 62,
+    "Country": 3,
+    "Address": "Ap #735-3421 Malesuada Avenue",
+    "Married": false
+  }, {
+    "Name": "Lysandra Pierce",
+    "Age": 36,
+    "Country": 1,
+    "Address": "Ap #146-2835 Curabitur St.",
+    "Married": true
+  }, {
+    "Name": "Cara Rios",
+    "Age": 58,
+    "Country": 4,
+    "Address": "Ap #562-7811 Quam. Ave",
+    "Married": true
+  }, {
+    "Name": "Austin Andrews",
+    "Age": 55,
+    "Country": 7,
+    "Address": "P.O. Box 274, 5505 Sociis Rd.",
+    "Married": false
+  }, {
+    "Name": "Lillian Peterson",
+    "Age": 39,
+    "Country": 2,
+    "Address": "6212 A Avenue",
+    "Married": false
+  }, {
+    "Name": "Adria Beach",
+    "Age": 29,
+    "Country": 2,
+    "Address": "P.O. Box 183, 2717 Nunc Avenue",
+    "Married": true
+  }, {
+    "Name": "Oleg Durham",
+    "Age": 80,
+    "Country": 4,
+    "Address": "931-3208 Nunc Rd.",
+    "Married": false
+  }, {
+    "Name": "Casey Reese",
+    "Age": 60,
+    "Country": 4,
+    "Address": "383-3675 Ultrices, St.",
+    "Married": false
+  }, {
+    "Name": "Kane Burnett",
+    "Age": 80,
+    "Country": 1,
+    "Address": "759-8212 Dolor. Ave",
+    "Married": false
+  }, {
+    "Name": "Stewart Wilson",
+    "Age": 46,
+    "Country": 7,
+    "Address": "718-7845 Sagittis. Av.",
+    "Married": false
+  }, {
+    "Name": "Charity Holcomb",
+    "Age": 31,
+    "Country": 6,
+    "Address": "641-7892 Enim. Ave",
+    "Married": false
+  }, {
+    "Name": "Kyra Cummings",
+    "Age": 43,
+    "Country": 4,
+    "Address": "P.O. Box 702, 6621 Mus. Av.",
+    "Married": false
+  }, {
+    "Name": "Stuart Wallace",
+    "Age": 25,
+    "Country": 7,
+    "Address": "648-4990 Sed Rd.",
+    "Married": true
+  }, {
+    "Name": "Carter Clarke",
+    "Age": 59,
+    "Country": 6,
+    "Address": "Ap #547-2921 A Street",
+    "Married": false
+  }];
+  db.users = [{
+    "ID": "x",
+    "Account": "A758A693-0302-03D1-AE53-EEFE22855556",
+    "Name": "Carson Kelley",
+    "RegisterDate": "2002-04-20T22:55:52-07:00"
+  }, {
+    "Account": "D89FF524-1233-0CE7-C9E1-56EFF017A321",
+    "Name": "Prescott Griffin",
+    "RegisterDate": "2011-02-22T05:59:55-08:00"
+  }, {
+    "Account": "06FAAD9A-5114-08F6-D60C-961B2528B4F0",
+    "Name": "Amir Saunders",
+    "RegisterDate": "2014-08-13T09:17:49-07:00"
+  }, {
+    "Account": "EED7653D-7DD9-A722-64A8-36A55ECDBE77",
+    "Name": "Derek Thornton",
+    "RegisterDate": "2012-02-27T01:31:07-08:00"
+  }, {
+    "Account": "2A2E6D40-FEBD-C643-A751-9AB4CAF1E2F6",
+    "Name": "Fletcher Romero",
+    "RegisterDate": "2010-06-25T15:49:54-07:00"
+  }, {
+    "Account": "3978F8FA-DFF0-DA0E-0A5D-EB9D281A3286",
+    "Name": "Thaddeus Stein",
+    "RegisterDate": "2013-11-10T07:29:41-08:00"
+  }, {
+    "Account": "658DBF5A-176E-569A-9273-74FB5F69FA42",
+    "Name": "Nash Knapp",
+    "RegisterDate": "2005-06-24T09:11:19-07:00"
+  }, {
+    "Account": "76D2EE4B-7A73-1212-F6F2-957EF8C1F907",
+    "Name": "Quamar Vega",
+    "RegisterDate": "2011-04-13T20:06:29-07:00"
+  }, {
+    "Account": "00E46809-A595-CE82-C5B4-D1CAEB7E3E58",
+    "Name": "Philip Galloway",
+    "RegisterDate": "2008-08-21T18:59:38-07:00"
+  }, {
+    "Account": "C196781C-DDCC-AF83-DDC2-CA3E851A47A0",
+    "Name": "Mason French",
+    "RegisterDate": "2000-11-15T00:38:37-08:00"
+  }, {
+    "Account": "5911F201-818A-B393-5888-13157CE0D63F",
+    "Name": "Ross Cortez",
+    "RegisterDate": "2010-05-27T17:35:32-07:00"
+  }, {
+    "Account": "B8BB78F9-E1A1-A956-086F-E12B6FE168B6",
+    "Name": "Logan King",
+    "RegisterDate": "2003-07-08T16:58:06-07:00"
+  }, {
+    "Account": "06F636C3-9599-1A2D-5FD5-86B24ADDE626",
+    "Name": "Cedric Leblanc",
+    "RegisterDate": "2011-06-30T14:30:10-07:00"
+  }, {
+    "Account": "FE880CDD-F6E7-75CB-743C-64C6DE192412",
+    "Name": "Simon Sullivan",
+    "RegisterDate": "2013-06-11T16:35:07-07:00"
+  }, {
+    "Account": "BBEDD673-E2C1-4872-A5D3-C4EBD4BE0A12",
+    "Name": "Jamal West",
+    "RegisterDate": "2001-03-16T20:18:29-08:00"
+  }, {
+    "Account": "19BC22FA-C52E-0CC6-9552-10365C755FAC",
+    "Name": "Hector Morales",
+    "RegisterDate": "2012-11-01T01:56:34-07:00"
+  }, {
+    "Account": "A8292214-2C13-5989-3419-6B83DD637D6C",
+    "Name": "Herrod Hart",
+    "RegisterDate": "2008-03-13T19:21:04-07:00"
+  }, {
+    "Account": "0285564B-F447-0E7F-EAA1-7FB8F9C453C8",
+    "Name": "Clark Maxwell",
+    "RegisterDate": "2004-08-05T08:22:24-07:00"
+  }, {
+    "Account": "EA78F076-4F6E-4228-268C-1F51272498AE",
+    "Name": "Reuben Walter",
+    "RegisterDate": "2011-01-23T01:55:59-08:00"
+  }, {
+    "Account": "6A88C194-EA21-426F-4FE2-F2AE33F51793",
+    "Name": "Ira Ingram",
+    "RegisterDate": "2008-08-15T05:57:46-07:00"
+  }, {
+    "Account": "4275E873-439C-AD26-56B3-8715E336508E",
+    "Name": "Damian Morrow",
+    "RegisterDate": "2015-09-13T01:50:55-07:00"
+  }, {
+    "Account": "A0D733C4-9070-B8D6-4387-D44F0BA515BE",
+    "Name": "Macon Farrell",
+    "RegisterDate": "2011-03-14T05:41:40-07:00"
+  }, {
+    "Account": "B3683DE8-C2FA-7CA0-A8A6-8FA7E954F90A",
+    "Name": "Joel Galloway",
+    "RegisterDate": "2003-02-03T04:19:01-08:00"
+  }, {
+    "Account": "01D95A8E-91BC-2050-F5D0-4437AAFFD11F",
+    "Name": "Rigel Horton",
+    "RegisterDate": "2015-06-20T11:53:11-07:00"
+  }, {
+    "Account": "F0D12CC0-31AC-A82E-FD73-EEEFDBD21A36",
+    "Name": "Sylvester Gaines",
+    "RegisterDate": "2004-03-12T09:57:13-08:00"
+  }, {
+    "Account": "874FCC49-9A61-71BC-2F4E-2CE88348AD7B",
+    "Name": "Abbot Mckay",
+    "RegisterDate": "2008-12-26T20:42:57-08:00"
+  }, {
+    "Account": "B8DA1912-20A0-FB6E-0031-5F88FD63EF90",
+    "Name": "Solomon Green",
+    "RegisterDate": "2013-09-04T01:44:47-07:00"
+  }];
+})();
+
+/***/ }),
+
+/***/ "./resources/js/dropdown-bootstrap-extended.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/dropdown-bootstrap-extended.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* ========================================================================
+ * Tutorial specific Javascript
+ * 
+ * ========================================================================
+ * Copyright 2015 Bootbites.com (unless otherwise stated)
+ * For license information see: http://bootbites.com/license
+ * ======================================================================== */
+
+
+var dropdownSelectors = $('.dropdown, .dropup'); // Custom function to read dropdown data
+// =========================
+
+function dropdownEffectData(target) {
+  // @todo - page level global?
+  var effectInDefault = null,
+      effectOutDefault = null;
+  var dropdown = $(target),
+      dropdownMenu = $('.dropdown-menu', target);
+  var parentUl = dropdown.parents('ul.nav'); // If parent is ul.nav allow global effect settings
+
+  if (parentUl.length > 0) {
+    effectInDefault = parentUl.data('dropdown-in') || null;
+    effectOutDefault = parentUl.data('dropdown-out') || null;
+  }
+
+  return {
+    target: target,
+    dropdown: dropdown,
+    dropdownMenu: dropdownMenu,
+    effectIn: dropdownMenu.data('dropdown-in') || effectInDefault,
+    effectOut: dropdownMenu.data('dropdown-out') || effectOutDefault
+  };
+} // Custom function to start effect (in or out)
+// =========================
+
+
+function dropdownEffectStart(data, effectToStart) {
+  if (effectToStart) {
+    data.dropdown.addClass('dropdown-animating');
+    data.dropdownMenu.addClass('animated');
+    data.dropdownMenu.addClass(effectToStart);
+  }
+} // Custom function to read when animation is over
+// =========================
+
+
+function dropdownEffectEnd(data, callbackFunc) {
+  var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+  data.dropdown.one(animationEnd, function () {
+    data.dropdown.removeClass('dropdown-animating');
+    data.dropdownMenu.removeClass('animated');
+    data.dropdownMenu.removeClass(data.effectIn);
+    data.dropdownMenu.removeClass(data.effectOut); // Custom callback option, used to remove open class in out effect
+
+    if (typeof callbackFunc == 'function') {
+      callbackFunc();
+    }
+  });
+} // Bootstrap API hooks
+// =========================
+
+
+dropdownSelectors.on({
+  "show.bs.dropdown": function showBsDropdown() {
+    // On show, start in effect
+    var dropdown = dropdownEffectData(this);
+    dropdownEffectStart(dropdown, dropdown.effectIn);
+  },
+  "shown.bs.dropdown": function shownBsDropdown() {
+    // On shown, remove in effect once complete
+    var dropdown = dropdownEffectData(this);
+
+    if (dropdown.effectIn && dropdown.effectOut) {
+      dropdownEffectEnd(dropdown, function () {});
+    }
+  },
+  "hide.bs.dropdown": function hideBsDropdown(e) {
+    // On hide, start out effect
+    var dropdown = dropdownEffectData(this);
+
+    if (dropdown.effectOut) {
+      e.preventDefault();
+      dropdownEffectStart(dropdown, dropdown.effectOut);
+      dropdownEffectEnd(dropdown, function () {
+        dropdown.dropdown.removeClass('show');
+        dropdown.dropdownMenu.removeClass('show');
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/editable-table-data.js":
+/*!*********************************************!*\
+  !*** ./resources/js/editable-table-data.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*Editabletable Init*/
+
+
+$('#edit_datable_1').editableTableWidget().numericInputExample().find('td:first').focus();
+$('#edit_datable_2').editableTableWidget().numericInputExample().find('td:first').focus();
+$(document).ready(function () {
+  $('#edit_datable_2').DataTable();
+});
+
+/***/ }),
+
+/***/ "./resources/js/feather.min.js":
+/*!*************************************!*\
+  !*** ./resources/js/feather.min.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+!function (e, n) {
+  "object" == ( false ? undefined : _typeof(exports)) && "object" == ( false ? undefined : _typeof(module)) ? module.exports = n() :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (n),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : undefined;
+}("undefined" != typeof self ? self : this, function () {
+  return function (e) {
+    var n = {};
+
+    function i(l) {
+      if (n[l]) return n[l].exports;
+      var t = n[l] = {
+        i: l,
+        l: !1,
+        exports: {}
+      };
+      return e[l].call(t.exports, t, t.exports, i), t.l = !0, t.exports;
+    }
+
+    return i.m = e, i.c = n, i.d = function (e, n, l) {
+      i.o(e, n) || Object.defineProperty(e, n, {
+        configurable: !1,
+        enumerable: !0,
+        get: l
+      });
+    }, i.r = function (e) {
+      Object.defineProperty(e, "__esModule", {
+        value: !0
+      });
+    }, i.n = function (e) {
+      var n = e && e.__esModule ? function () {
+        return e["default"];
+      } : function () {
+        return e;
+      };
+      return i.d(n, "a", n), n;
+    }, i.o = function (e, n) {
+      return Object.prototype.hasOwnProperty.call(e, n);
+    }, i.p = "", i(i.s = 61);
+  }([function (e, n, i) {
+    var l = i(20)("wks"),
+        t = i(11),
+        r = i(1).Symbol,
+        o = "function" == typeof r;
+    (e.exports = function (e) {
+      return l[e] || (l[e] = o && r[e] || (o ? r : t)("Symbol." + e));
+    }).store = l;
+  }, function (e, n) {
+    var i = e.exports = "undefined" != typeof window && window.Math == Math ? window : "undefined" != typeof self && self.Math == Math ? self : Function("return this")();
+    "number" == typeof __g && (__g = i);
+  }, function (e, n) {
+    var i = {}.hasOwnProperty;
+
+    e.exports = function (e, n) {
+      return i.call(e, n);
+    };
+  }, function (e, n, i) {
+    e.exports = !i(27)(function () {
+      return 7 != Object.defineProperty({}, "a", {
+        get: function get() {
+          return 7;
+        }
+      }).a;
+    });
+  }, function (e, n, i) {
+    var l = i(13);
+
+    e.exports = function (e) {
+      if (!l(e)) throw TypeError(e + " is not an object!");
+      return e;
+    };
+  }, function (e, n, i) {
+    var l = i(4),
+        t = i(55),
+        r = i(54),
+        o = Object.defineProperty;
+    n.f = i(3) ? Object.defineProperty : function (e, n, i) {
+      if (l(e), n = r(n, !0), l(i), t) try {
+        return o(e, n, i);
+      } catch (e) {}
+      if ("get" in i || "set" in i) throw TypeError("Accessors not supported!");
+      return "value" in i && (e[n] = i.value), e;
+    };
+  }, function (e, n, i) {
+    var l = i(5),
+        t = i(12);
+    e.exports = i(3) ? function (e, n, i) {
+      return l.f(e, n, t(1, i));
+    } : function (e, n, i) {
+      return e[n] = i, e;
+    };
+  }, function (e, n) {
+    var i = e.exports = {
+      version: "2.5.3"
+    };
+    "number" == typeof __e && (__e = i);
+  }, function (e, n, i) {
+    "use strict";
+
+    Object.defineProperty(n, "__esModule", {
+      value: !0
+    });
+    var l = o(i(34)),
+        t = o(i(32)),
+        r = o(i(31));
+
+    function o(e) {
+      return e && e.__esModule ? e : {
+        "default": e
+      };
+    }
+
+    n["default"] = Object.keys(t["default"]).map(function (e) {
+      return new l["default"](e, t["default"][e], r["default"][e]);
+    }).reduce(function (e, n) {
+      return e[n.name] = n, e;
+    }, {});
+  }, function (e, n, i) {
+    var l = i(20)("keys"),
+        t = i(11);
+
+    e.exports = function (e) {
+      return l[e] || (l[e] = t(e));
+    };
+  }, function (e, n) {
+    e.exports = {};
+  }, function (e, n) {
+    var i = 0,
+        l = Math.random();
+
+    e.exports = function (e) {
+      return "Symbol(".concat(void 0 === e ? "" : e, ")_", (++i + l).toString(36));
+    };
+  }, function (e, n) {
+    e.exports = function (e, n) {
+      return {
+        enumerable: !(1 & e),
+        configurable: !(2 & e),
+        writable: !(4 & e),
+        value: n
+      };
+    };
+  }, function (e, n) {
+    e.exports = function (e) {
+      return "object" == _typeof(e) ? null !== e : "function" == typeof e;
+    };
+  }, function (e, n) {
+    e.exports = function (e) {
+      if (void 0 == e) throw TypeError("Can't call method on  " + e);
+      return e;
+    };
+  }, function (e, n) {
+    var i = Math.ceil,
+        l = Math.floor;
+
+    e.exports = function (e) {
+      return isNaN(e = +e) ? 0 : (e > 0 ? l : i)(e);
+    };
+  }, function (e, n, i) {
+    var l;
+    /*!
+      Copyright (c) 2016 Jed Watson.
+      Licensed under the MIT License (MIT), see
+      http://jedwatson.github.io/classnames
+    */
+
+    /*!
+      Copyright (c) 2016 Jed Watson.
+      Licensed under the MIT License (MIT), see
+      http://jedwatson.github.io/classnames
+    */
+
+    !function () {
+      "use strict";
+
+      var i = function () {
+        function e() {}
+
+        function n(e, n) {
+          for (var i = n.length, l = 0; l < i; ++l) {
+            t(e, n[l]);
+          }
+        }
+
+        e.prototype = Object.create(null);
+        var i = {}.hasOwnProperty;
+        var l = /\s+/;
+
+        function t(e, t) {
+          if (t) {
+            var r = _typeof(t);
+
+            "string" === r ? function (e, n) {
+              for (var i = n.split(l), t = i.length, r = 0; r < t; ++r) {
+                e[i[r]] = !0;
+              }
+            }(e, t) : Array.isArray(t) ? n(e, t) : "object" === r ? function (e, n) {
+              for (var l in n) {
+                i.call(n, l) && (e[l] = !!n[l]);
+              }
+            }(e, t) : "number" === r && function (e, n) {
+              e[n] = !0;
+            }(e, t);
+          }
+        }
+
+        return function () {
+          for (var i = arguments.length, l = Array(i), t = 0; t < i; t++) {
+            l[t] = arguments[t];
+          }
+
+          var r = new e();
+          n(r, l);
+          var o = [];
+
+          for (var a in r) {
+            r[a] && o.push(a);
+          }
+
+          return o.join(" ");
+        };
+      }();
+
+      void 0 !== e && e.exports ? e.exports = i : void 0 === (l = function () {
+        return i;
+      }.apply(n, [])) || (e.exports = l);
+    }();
+  }, function (e, n, i) {
+    var l = i(14);
+
+    e.exports = function (e) {
+      return Object(l(e));
+    };
+  }, function (e, n, i) {
+    var l = i(5).f,
+        t = i(2),
+        r = i(0)("toStringTag");
+
+    e.exports = function (e, n, i) {
+      e && !t(e = i ? e : e.prototype, r) && l(e, r, {
+        configurable: !0,
+        value: n
+      });
+    };
+  }, function (e, n) {
+    e.exports = "constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",");
+  }, function (e, n, i) {
+    var l = i(1),
+        t = l["__core-js_shared__"] || (l["__core-js_shared__"] = {});
+
+    e.exports = function (e) {
+      return t[e] || (t[e] = {});
+    };
+  }, function (e, n, i) {
+    var l = i(15),
+        t = Math.min;
+
+    e.exports = function (e) {
+      return e > 0 ? t(l(e), 9007199254740991) : 0;
+    };
+  }, function (e, n) {
+    var i = {}.toString;
+
+    e.exports = function (e) {
+      return i.call(e).slice(8, -1);
+    };
+  }, function (e, n, i) {
+    var l = i(47),
+        t = i(14);
+
+    e.exports = function (e) {
+      return l(t(e));
+    };
+  }, function (e, n, i) {
+    var l = i(53);
+
+    e.exports = function (e, n, i) {
+      if (l(e), void 0 === n) return e;
+
+      switch (i) {
+        case 1:
+          return function (i) {
+            return e.call(n, i);
+          };
+
+        case 2:
+          return function (i, l) {
+            return e.call(n, i, l);
+          };
+
+        case 3:
+          return function (i, l, t) {
+            return e.call(n, i, l, t);
+          };
+      }
+
+      return function () {
+        return e.apply(n, arguments);
+      };
+    };
+  }, function (e, n, i) {
+    var l = i(1),
+        t = i(6),
+        r = i(2),
+        o = i(11)("src"),
+        a = Function.toString,
+        c = ("" + a).split("toString");
+    i(7).inspectSource = function (e) {
+      return a.call(e);
+    }, (e.exports = function (e, n, i, a) {
+      var y = "function" == typeof i;
+      y && (r(i, "name") || t(i, "name", n)), e[n] !== i && (y && (r(i, o) || t(i, o, e[n] ? "" + e[n] : c.join(String(n)))), e === l ? e[n] = i : a ? e[n] ? e[n] = i : t(e, n, i) : (delete e[n], t(e, n, i)));
+    })(Function.prototype, "toString", function () {
+      return "function" == typeof this && this[o] || a.call(this);
+    });
+  }, function (e, n, i) {
+    var l = i(13),
+        t = i(1).document,
+        r = l(t) && l(t.createElement);
+
+    e.exports = function (e) {
+      return r ? t.createElement(e) : {};
+    };
+  }, function (e, n) {
+    e.exports = function (e) {
+      try {
+        return !!e();
+      } catch (e) {
+        return !0;
+      }
+    };
+  }, function (e, n, i) {
+    var l = i(1),
+        t = i(7),
+        r = i(6),
+        o = i(25),
+        a = i(24),
+        c = function c(e, n, i) {
+      var y,
+          p,
+          h,
+          x,
+          s = e & c.F,
+          u = e & c.G,
+          d = e & c.S,
+          f = e & c.P,
+          v = e & c.B,
+          g = u ? l : d ? l[n] || (l[n] = {}) : (l[n] || {}).prototype,
+          m = u ? t : t[n] || (t[n] = {}),
+          M = m.prototype || (m.prototype = {});
+
+      for (y in u && (i = n), i) {
+        h = ((p = !s && g && void 0 !== g[y]) ? g : i)[y], x = v && p ? a(h, l) : f && "function" == typeof h ? a(Function.call, h) : h, g && o(g, y, h, e & c.U), m[y] != h && r(m, y, x), f && M[y] != h && (M[y] = h);
+      }
+    };
+
+    l.core = t, c.F = 1, c.G = 2, c.S = 4, c.P = 8, c.B = 16, c.W = 32, c.U = 64, c.R = 128, e.exports = c;
+  }, function (e, n, i) {
+    "use strict";
+
+    Object.defineProperty(n, "__esModule", {
+      value: !0
+    });
+
+    var l = Object.assign || function (e) {
+      for (var n = 1; n < arguments.length; n++) {
+        var i = arguments[n];
+
+        for (var l in i) {
+          Object.prototype.hasOwnProperty.call(i, l) && (e[l] = i[l]);
+        }
+      }
+
+      return e;
+    },
+        t = o(i(16)),
+        r = o(i(8));
+
+    function o(e) {
+      return e && e.__esModule ? e : {
+        "default": e
+      };
+    }
+
+    n["default"] = function () {
+      var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+      if ("undefined" == typeof document) throw new Error("`feather.replace()` only works in a browser environment.");
+      var n = document.querySelectorAll("[data-feather]");
+      Array.from(n).forEach(function (n) {
+        return function (e) {
+          var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+              i = function (e) {
+            return Array.from(e.attributes).reduce(function (e, n) {
+              return e[n.name] = n.value, e;
+            }, {});
+          }(e),
+              o = i["data-feather"];
+
+          delete i["data-feather"];
+          var a = r["default"][o].toSvg(l({}, n, i, {
+            "class": (0, t["default"])(n["class"], i["class"])
+          })),
+              c = new DOMParser().parseFromString(a, "image/svg+xml").querySelector("svg");
+          e.parentNode.replaceChild(c, e);
+        }(n, e);
+      });
+    };
+  }, function (e, n, i) {
+    "use strict";
+
+    Object.defineProperty(n, "__esModule", {
+      value: !0
+    });
+    var l,
+        t = i(8),
+        r = (l = t) && l.__esModule ? l : {
+      "default": l
+    };
+
+    n["default"] = function (e) {
+      var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+      if (console.warn("feather.toSvg() is deprecated. Please use feather.icons[name].toSvg() instead."), !e) throw new Error("The required `key` (icon name) parameter is missing.");
+      if (!r["default"][e]) throw new Error("No icon matching '" + e + "'. See the complete list of icons at https://feathericons.com");
+      return r["default"][e].toSvg(n);
+    };
+  }, function (e) {
+    e.exports = {
+      activity: ["pulse", "health", "action", "motion"],
+      airplay: ["stream", "cast", "mirroring"],
+      "alert-circle": ["warning"],
+      "alert-octagon": ["warning"],
+      "alert-triangle": ["warning"],
+      "at-sign": ["mention"],
+      award: ["achievement", "badge"],
+      aperture: ["camera", "photo"],
+      bell: ["alarm", "notification"],
+      "bell-off": ["alarm", "notification", "silent"],
+      bluetooth: ["wireless"],
+      "book-open": ["read"],
+      book: ["read", "dictionary", "booklet", "magazine"],
+      bookmark: ["read", "clip", "marker", "tag"],
+      briefcase: ["work", "bag", "baggage", "folder"],
+      clipboard: ["copy"],
+      clock: ["time", "watch", "alarm"],
+      "cloud-drizzle": ["weather", "shower"],
+      "cloud-lightning": ["weather", "bolt"],
+      "cloud-rain": ["weather"],
+      "cloud-snow": ["weather", "blizzard"],
+      cloud: ["weather"],
+      codepen: ["logo"],
+      command: ["keyboard", "cmd"],
+      compass: ["navigation", "safari", "travel"],
+      copy: ["clone", "duplicate"],
+      "corner-down-left": ["arrow"],
+      "corner-down-right": ["arrow"],
+      "corner-left-down": ["arrow"],
+      "corner-left-up": ["arrow"],
+      "corner-right-down": ["arrow"],
+      "corner-right-up": ["arrow"],
+      "corner-up-left": ["arrow"],
+      "corner-up-right": ["arrow"],
+      "credit-card": ["purchase", "payment", "cc"],
+      crop: ["photo", "image"],
+      crosshair: ["aim", "target"],
+      database: ["storage"],
+      "delete": ["remove"],
+      disc: ["album", "cd", "dvd", "music"],
+      "dollar-sign": ["currency", "money", "payment"],
+      droplet: ["water"],
+      edit: ["pencil", "change"],
+      "edit-2": ["pencil", "change"],
+      "edit-3": ["pencil", "change"],
+      eye: ["view", "watch"],
+      "eye-off": ["view", "watch"],
+      "external-link": ["outbound"],
+      facebook: ["logo"],
+      "fast-forward": ["music"],
+      film: ["movie", "video"],
+      "folder-minus": ["directory"],
+      "folder-plus": ["directory"],
+      folder: ["directory"],
+      gift: ["present", "box", "birthday", "party"],
+      "git-branch": ["code", "version control"],
+      "git-commit": ["code", "version control"],
+      "git-merge": ["code", "version control"],
+      "git-pull-request": ["code", "version control"],
+      github: ["logo", "version control"],
+      gitlab: ["logo", "version control"],
+      global: ["world", "browser", "language", "translate"],
+      "hard-drive": ["computer", "server"],
+      hash: ["hashtag", "number", "pound"],
+      headphones: ["music", "audio"],
+      heart: ["like", "love"],
+      "help-circle": ["question mark"],
+      home: ["house"],
+      image: ["picture"],
+      inbox: ["email"],
+      instagram: ["logo", "camera"],
+      "life-bouy": ["help", "life ring", "support"],
+      linkedin: ["logo"],
+      lock: ["security", "password"],
+      "log-in": ["sign in", "arrow"],
+      "log-out": ["sign out", "arrow"],
+      mail: ["email"],
+      "map-pin": ["location", "navigation", "travel", "marker"],
+      map: ["location", "navigation", "travel"],
+      maximize: ["fullscreen"],
+      "maximize-2": ["fullscreen", "arrows"],
+      menu: ["bars", "navigation", "hamburger"],
+      "message-circle": ["comment", "chat"],
+      "message-square": ["comment", "chat"],
+      "mic-off": ["record"],
+      mic: ["record"],
+      minimize: ["exit fullscreen"],
+      "minimize-2": ["exit fullscreen", "arrows"],
+      monitor: ["tv"],
+      moon: ["dark", "night"],
+      "more-horizontal": ["ellipsis"],
+      "more-vertical": ["ellipsis"],
+      move: ["arrows"],
+      navigation: ["location", "travel"],
+      "navigation-2": ["location", "travel"],
+      octagon: ["stop"],
+      "package": ["box"],
+      paperclip: ["attachment"],
+      pause: ["music", "stop"],
+      "pause-circle": ["music", "stop"],
+      play: ["music", "start"],
+      "play-circle": ["music", "start"],
+      plus: ["add", "new"],
+      "plus-circle": ["add", "new"],
+      "plus-square": ["add", "new"],
+      pocket: ["logo", "save"],
+      power: ["on", "off"],
+      radio: ["signal"],
+      rewind: ["music"],
+      rss: ["feed", "subscribe"],
+      save: ["floppy disk"],
+      send: ["message", "mail", "paper airplane"],
+      settings: ["cog", "edit", "gear", "preferences"],
+      shield: ["security"],
+      "shield-off": ["security"],
+      "shopping-bag": ["ecommerce", "cart", "purchase", "store"],
+      "shopping-cart": ["ecommerce", "cart", "purchase", "store"],
+      shuffle: ["music"],
+      "skip-back": ["music"],
+      "skip-forward": ["music"],
+      slash: ["ban", "no"],
+      sliders: ["settings", "controls"],
+      speaker: ["music"],
+      star: ["bookmark", "favorite", "like"],
+      sun: ["brightness", "weather", "light"],
+      sunrise: ["weather"],
+      sunset: ["weather"],
+      tag: ["label"],
+      target: ["bullseye"],
+      terminal: ["code", "command line"],
+      "thumbs-down": ["dislike", "bad"],
+      "thumbs-up": ["like", "good"],
+      "toggle-left": ["on", "off", "switch"],
+      "toggle-right": ["on", "off", "switch"],
+      trash: ["garbage", "delete", "remove"],
+      "trash-2": ["garbage", "delete", "remove"],
+      triangle: ["delta"],
+      truck: ["delivery", "van", "shipping"],
+      twitter: ["logo"],
+      umbrella: ["rain", "weather"],
+      "video-off": ["camera", "movie", "film"],
+      video: ["camera", "movie", "film"],
+      voicemail: ["phone"],
+      volume: ["music", "sound", "mute"],
+      "volume-1": ["music", "sound"],
+      "volume-2": ["music", "sound"],
+      "volume-x": ["music", "sound", "mute"],
+      watch: ["clock", "time"],
+      wind: ["weather", "air"],
+      "x-circle": ["cancel", "close", "delete", "remove", "times"],
+      "x-square": ["cancel", "close", "delete", "remove", "times"],
+      x: ["cancel", "close", "delete", "remove", "times"],
+      youtube: ["logo", "video", "play"],
+      "zap-off": ["flash", "camera", "lightning"],
+      zap: ["flash", "camera", "lightning"]
+    };
+  }, function (e) {
+    e.exports = {
+      activity: '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>',
+      airplay: '<path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon>',
+      "alert-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line>',
+      "alert-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line>',
+      "alert-triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12" y2="17"></line>',
+      "align-center": '<line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line>',
+      "align-justify": '<line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>',
+      "align-left": '<line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line>',
+      "align-right": '<line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line>',
+      anchor: '<circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>',
+      aperture: '<circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>',
+      archive: '<polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line>',
+      "arrow-down-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line>',
+      "arrow-down-left": '<line x1="17" y1="7" x2="7" y2="17"></line><polyline points="17 17 7 17 7 7"></polyline>',
+      "arrow-down-right": '<line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline>',
+      "arrow-down": '<line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline>',
+      "arrow-left-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line>',
+      "arrow-left": '<line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>',
+      "arrow-right-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line>',
+      "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>',
+      "arrow-up-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line>',
+      "arrow-up-left": '<line x1="17" y1="17" x2="7" y2="7"></line><polyline points="7 17 7 7 17 7"></polyline>',
+      "arrow-up-right": '<line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>',
+      "arrow-up": '<line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline>',
+      "at-sign": '<circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>',
+      award: '<circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>',
+      "bar-chart-2": '<line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>',
+      "bar-chart": '<line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line>',
+      "battery-charging": '<path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline>',
+      battery: '<rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect><line x1="23" y1="13" x2="23" y2="11"></line>',
+      "bell-off": '<path d="M8.56 2.9A7 7 0 0 1 19 9v4m-2 4H2a3 3 0 0 0 3-3V9a7 7 0 0 1 .78-3.22M13.73 21a2 2 0 0 1-3.46 0"></path><line x1="1" y1="1" x2="23" y2="23"></line>',
+      bell: '<path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"></path>',
+      bluetooth: '<polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline>',
+      bold: '<path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path>',
+      "book-open": '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>',
+      book: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>',
+      bookmark: '<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>',
+      box: '<path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path><polyline points="2.32 6.16 12 11 21.68 6.16"></polyline><line x1="12" y1="22.76" x2="12" y2="11"></line>',
+      briefcase: '<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>',
+      calendar: '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>',
+      "camera-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56"></path>',
+      camera: '<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle>',
+      cast: '<path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2" y2="20"></line>',
+      "check-circle": '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>',
+      "check-square": '<polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>',
+      check: '<polyline points="20 6 9 17 4 12"></polyline>',
+      "chevron-down": '<polyline points="6 9 12 15 18 9"></polyline>',
+      "chevron-left": '<polyline points="15 18 9 12 15 6"></polyline>',
+      "chevron-right": '<polyline points="9 18 15 12 9 6"></polyline>',
+      "chevron-up": '<polyline points="18 15 12 9 6 15"></polyline>',
+      "chevrons-down": '<polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline>',
+      "chevrons-left": '<polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline>',
+      "chevrons-right": '<polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline>',
+      "chevrons-up": '<polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline>',
+      chrome: '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>',
+      circle: '<circle cx="12" cy="12" r="10"></circle>',
+      clipboard: '<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>',
+      clock: '<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>',
+      "cloud-drizzle": '<line x1="8" y1="19" x2="8" y2="21"></line><line x1="8" y1="13" x2="8" y2="15"></line><line x1="16" y1="19" x2="16" y2="21"></line><line x1="16" y1="13" x2="16" y2="15"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="12" y1="15" x2="12" y2="17"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>',
+      "cloud-lightning": '<path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"></path><polyline points="13 11 9 17 15 17 11 23"></polyline>',
+      "cloud-off": '<path d="M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3"></path><line x1="1" y1="1" x2="23" y2="23"></line>',
+      "cloud-rain": '<line x1="16" y1="13" x2="16" y2="21"></line><line x1="8" y1="13" x2="8" y2="21"></line><line x1="12" y1="15" x2="12" y2="23"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>',
+      "cloud-snow": '<path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="8" y1="20" x2="8" y2="20"></line><line x1="12" y1="18" x2="12" y2="18"></line><line x1="12" y1="22" x2="12" y2="22"></line><line x1="16" y1="16" x2="16" y2="16"></line><line x1="16" y1="20" x2="16" y2="20"></line>',
+      cloud: '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>',
+      code: '<polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>',
+      codepen: '<polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line>',
+      command: '<path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>',
+      compass: '<circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>',
+      copy: '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>',
+      "corner-down-left": '<polyline points="9 10 4 15 9 20"></polyline><path d="M20 4v7a4 4 0 0 1-4 4H4"></path>',
+      "corner-down-right": '<polyline points="15 10 20 15 15 20"></polyline><path d="M4 4v7a4 4 0 0 0 4 4h12"></path>',
+      "corner-left-down": '<polyline points="14 15 9 20 4 15"></polyline><path d="M20 4h-7a4 4 0 0 0-4 4v12"></path>',
+      "corner-left-up": '<polyline points="14 9 9 4 4 9"></polyline><path d="M20 20h-7a4 4 0 0 1-4-4V4"></path>',
+      "corner-right-down": '<polyline points="10 15 15 20 20 15"></polyline><path d="M4 4h7a4 4 0 0 1 4 4v12"></path>',
+      "corner-right-up": '<polyline points="10 9 15 4 20 9"></polyline><path d="M4 20h7a4 4 0 0 0 4-4V4"></path>',
+      "corner-up-left": '<polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>',
+      "corner-up-right": '<polyline points="15 14 20 9 15 4"></polyline><path d="M4 20v-7a4 4 0 0 1 4-4h12"></path>',
+      cpu: '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line>',
+      "credit-card": '<rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line>',
+      crop: '<path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"></path><path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></path>',
+      crosshair: '<circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line>',
+      database: '<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>',
+      "delete": '<path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line>',
+      disc: '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle>',
+      "dollar-sign": '<line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>',
+      "download-cloud": '<polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path>',
+      download: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>',
+      droplet: '<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>',
+      "edit-2": '<polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>',
+      "edit-3": '<polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon><line x1="3" y1="22" x2="21" y2="22"></line>',
+      edit: '<path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon>',
+      "external-link": '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>',
+      "eye-off": '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>',
+      eye: '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>',
+      facebook: '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>',
+      "fast-forward": '<polygon points="13 19 22 12 13 5 13 19"></polygon><polygon points="2 19 11 12 2 5 2 19"></polygon>',
+      feather: '<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17" y1="15" x2="9" y2="15"></line>',
+      "file-minus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line>',
+      "file-plus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line>',
+      "file-text": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>',
+      file: '<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>',
+      film: '<rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line>',
+      filter: '<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>',
+      flag: '<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line>',
+      "folder-minus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line>',
+      "folder-plus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line>',
+      folder: '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>',
+      gift: '<polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>',
+      "git-branch": '<line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path>',
+      "git-commit": '<circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line>',
+      "git-merge": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M6 21V9a9 9 0 0 0 9 9"></path>',
+      "git-pull-request": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line>',
+      github: '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>',
+      gitlab: '<path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>',
+      globe: '<circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>',
+      grid: '<rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>',
+      "hard-drive": '<line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6" y2="16"></line><line x1="10" y1="16" x2="10" y2="16"></line>',
+      hash: '<line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>',
+      headphones: '<path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>',
+      heart: '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>',
+      "help-circle": '<circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12" y2="17"></line>',
+      home: '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>',
+      image: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline>',
+      inbox: '<polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>',
+      info: '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line>',
+      instagram: '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>',
+      italic: '<line x1="19" y1="4" x2="10" y2="4"></line><line x1="14" y1="20" x2="5" y2="20"></line><line x1="15" y1="4" x2="9" y2="20"></line>',
+      layers: '<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>',
+      layout: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line>',
+      "life-buoy": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>',
+      "link-2": '<path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line>',
+      link: '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>',
+      linkedin: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>',
+      list: '<line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line>',
+      loader: '<line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>',
+      lock: '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>',
+      "log-in": '<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line>',
+      "log-out": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line>',
+      mail: '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>',
+      "map-pin": '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>',
+      map: '<polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line>',
+      "maximize-2": '<polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>',
+      maximize: '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>',
+      menu: '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>',
+      "message-circle": '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>',
+      "message-square": '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>',
+      "mic-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"></path><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>',
+      mic: '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>',
+      "minimize-2": '<polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line>',
+      minimize: '<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>',
+      "minus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line>',
+      "minus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line>',
+      minus: '<line x1="5" y1="12" x2="19" y2="12"></line>',
+      monitor: '<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>',
+      moon: '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>',
+      "more-horizontal": '<circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>',
+      "more-vertical": '<circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>',
+      move: '<polyline points="5 9 2 12 5 15"></polyline><polyline points="9 5 12 2 15 5"></polyline><polyline points="15 19 12 22 9 19"></polyline><polyline points="19 9 22 12 19 15"></polyline><line x1="2" y1="12" x2="22" y2="12"></line><line x1="12" y1="2" x2="12" y2="22"></line>',
+      music: '<path d="M9 17H5a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm12-2h-4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z"></path><polyline points="9 17 9 5 21 3 21 15"></polyline>',
+      "navigation-2": '<polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>',
+      navigation: '<polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>',
+      octagon: '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>',
+      "package": '<path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path><polyline points="2.32 6.16 12 11 21.68 6.16"></polyline><line x1="12" y1="22.76" x2="12" y2="11"></line><line x1="7" y1="3.5" x2="17" y2="8.5"></line>',
+      paperclip: '<path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>',
+      "pause-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line>',
+      pause: '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>',
+      percent: '<line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle>',
+      "phone-call": '<path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>',
+      "phone-forwarded": '<polyline points="19 1 23 5 19 9"></polyline><line x1="15" y1="5" x2="23" y2="5"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>',
+      "phone-incoming": '<polyline points="16 2 16 8 22 8"></polyline><line x1="23" y1="1" x2="16" y2="8"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>',
+      "phone-missed": '<line x1="23" y1="1" x2="17" y2="7"></line><line x1="17" y1="1" x2="23" y2="7"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>',
+      "phone-off": '<path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91"></path><line x1="23" y1="1" x2="1" y2="23"></line>',
+      "phone-outgoing": '<polyline points="23 7 23 1 17 1"></polyline><line x1="16" y1="8" x2="23" y2="1"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>',
+      phone: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>',
+      "pie-chart": '<path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path>',
+      "play-circle": '<circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>',
+      play: '<polygon points="5 3 19 12 5 21 5 3"></polygon>',
+      "plus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>',
+      "plus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>',
+      plus: '<line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>',
+      pocket: '<path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path><polyline points="8 10 12 14 16 10"></polyline>',
+      power: '<path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line>',
+      printer: '<polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect>',
+      radio: '<circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>',
+      "refresh-ccw": '<polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>',
+      "refresh-cw": '<polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>',
+      repeat: '<polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path>',
+      rewind: '<polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon>',
+      "rotate-ccw": '<polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>',
+      "rotate-cw": '<polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>',
+      rss: '<path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle>',
+      save: '<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>',
+      scissors: '<circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line>',
+      search: '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>',
+      send: '<line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>',
+      server: '<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6" y2="6"></line><line x1="6" y1="18" x2="6" y2="18"></line>',
+      settings: '<circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>',
+      "share-2": '<circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>',
+      share: '<path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line>',
+      "shield-off": '<path d="M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18"></path><path d="M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38"></path><line x1="1" y1="1" x2="23" y2="23"></line>',
+      shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>',
+      "shopping-bag": '<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>',
+      "shopping-cart": '<circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>',
+      shuffle: '<polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line>',
+      sidebar: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line>',
+      "skip-back": '<polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line>',
+      "skip-forward": '<polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line>',
+      slack: '<path d="M22.08 9C19.81 1.41 16.54-.35 9 1.92S-.35 7.46 1.92 15 7.46 24.35 15 22.08 24.35 16.54 22.08 9z"></path><line x1="12.57" y1="5.99" x2="16.15" y2="16.39"></line><line x1="7.85" y1="7.61" x2="11.43" y2="18.01"></line><line x1="16.39" y1="7.85" x2="5.99" y2="11.43"></line><line x1="18.01" y1="12.57" x2="7.61" y2="16.15"></line>',
+      slash: '<circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>',
+      sliders: '<line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line>',
+      smartphone: '<rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12" y2="18"></line>',
+      speaker: '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12" y2="6"></line>',
+      square: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>',
+      star: '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>',
+      "stop-circle": '<circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect>',
+      sun: '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
+      sunrise: '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline>',
+      sunset: '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="9" x2="12" y2="2"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="16 5 12 9 8 5"></polyline>',
+      tablet: '<rect x="4" y="2" width="16" height="20" rx="2" ry="2" transform="rotate(180 12 12)"></rect><line x1="12" y1="18" x2="12" y2="18"></line>',
+      tag: '<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>',
+      target: '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>',
+      terminal: '<polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line>',
+      thermometer: '<path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>',
+      "thumbs-down": '<path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>',
+      "thumbs-up": '<path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>',
+      "toggle-left": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="8" cy="12" r="3"></circle>',
+      "toggle-right": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="16" cy="12" r="3"></circle>',
+      "trash-2": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line>',
+      trash: '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>',
+      "trending-down": '<polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline>',
+      "trending-up": '<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline>',
+      triangle: '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>',
+      truck: '<rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle>',
+      tv: '<rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline>',
+      twitter: '<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>',
+      type: '<polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line>',
+      umbrella: '<path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"></path>',
+      underline: '<path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"></path><line x1="4" y1="21" x2="20" y2="21"></line>',
+      unlock: '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path>',
+      "upload-cloud": '<polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline>',
+      upload: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line>',
+      "user-check": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline>',
+      "user-minus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line>',
+      "user-plus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line>',
+      "user-x": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line>',
+      user: '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>',
+      users: '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>',
+      "video-off": '<path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"></path><line x1="1" y1="1" x2="23" y2="23"></line>',
+      video: '<polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>',
+      voicemail: '<circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line>',
+      "volume-1": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>',
+      "volume-2": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>',
+      "volume-x": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>',
+      volume: '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>',
+      watch: '<circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>',
+      "wifi-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12" y2="20"></line>',
+      wifi: '<path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12" y2="20"></line>',
+      wind: '<path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>',
+      "x-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>',
+      "x-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line>',
+      x: '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>',
+      youtube: '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>',
+      "zap-off": '<polyline points="12.41 6.75 13 2 10.57 4.92"></polyline><polyline points="18.57 12.91 21 10 15.66 10"></polyline><polyline points="8 8 3 14 12 14 11 22 16 16"></polyline><line x1="1" y1="1" x2="23" y2="23"></line>',
+      zap: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>',
+      "zoom-in": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line>',
+      "zoom-out": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line>'
+    };
+  }, function (e) {
+    e.exports = {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: 24,
+      height: 24,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      "stroke-width": 2,
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    };
+  }, function (e, n, i) {
+    "use strict";
+
+    Object.defineProperty(n, "__esModule", {
+      value: !0
+    });
+
+    var l = Object.assign || function (e) {
+      for (var n = 1; n < arguments.length; n++) {
+        var i = arguments[n];
+
+        for (var l in i) {
+          Object.prototype.hasOwnProperty.call(i, l) && (e[l] = i[l]);
+        }
+      }
+
+      return e;
+    },
+        t = function () {
+      function e(e, n) {
+        for (var i = 0; i < n.length; i++) {
+          var l = n[i];
+          l.enumerable = l.enumerable || !1, l.configurable = !0, "value" in l && (l.writable = !0), Object.defineProperty(e, l.key, l);
+        }
+      }
+
+      return function (n, i, l) {
+        return i && e(n.prototype, i), l && e(n, l), n;
+      };
+    }(),
+        r = a(i(16)),
+        o = a(i(33));
+
+    function a(e) {
+      return e && e.__esModule ? e : {
+        "default": e
+      };
+    }
+
+    var c = function () {
+      function e(n, i) {
+        var t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
+        !function (e, n) {
+          if (!(e instanceof n)) throw new TypeError("Cannot call a class as a function");
+        }(this, e), this.name = n, this.contents = i, this.tags = t, this.attrs = l({}, o["default"], {
+          "class": "feather feather-" + n
+        });
+      }
+
+      return t(e, [{
+        key: "toSvg",
+        value: function value() {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+          return "<svg " + function (e) {
+            return Object.keys(e).map(function (n) {
+              return n + '="' + e[n] + '"';
+            }).join(" ");
+          }(l({}, this.attrs, e, {
+            "class": (0, r["default"])(this.attrs["class"], e["class"])
+          })) + ">" + this.contents + "</svg>";
+        }
+      }, {
+        key: "toString",
+        value: function value() {
+          return this.contents;
+        }
+      }]), e;
+    }();
+
+    n["default"] = c;
+  }, function (e, n, i) {
+    "use strict";
+
+    var l = o(i(8)),
+        t = o(i(30)),
+        r = o(i(29));
+
+    function o(e) {
+      return e && e.__esModule ? e : {
+        "default": e
+      };
+    }
+
+    e.exports = {
+      icons: l["default"],
+      toSvg: t["default"],
+      replace: r["default"]
+    };
+  }, function (e, n, i) {
+    var l = i(0)("iterator"),
+        t = !1;
+
+    try {
+      var r = [7][l]();
+      r["return"] = function () {
+        t = !0;
+      }, Array.from(r, function () {
+        throw 2;
+      });
+    } catch (e) {}
+
+    e.exports = function (e, n) {
+      if (!n && !t) return !1;
+      var i = !1;
+
+      try {
+        var r = [7],
+            o = r[l]();
+        o.next = function () {
+          return {
+            done: i = !0
+          };
+        }, r[l] = function () {
+          return o;
+        }, e(r);
+      } catch (e) {}
+
+      return i;
+    };
+  }, function (e, n, i) {
+    var l = i(22),
+        t = i(0)("toStringTag"),
+        r = "Arguments" == l(function () {
+      return arguments;
+    }());
+
+    e.exports = function (e) {
+      var n, i, o;
+      return void 0 === e ? "Undefined" : null === e ? "Null" : "string" == typeof (i = function (e, n) {
+        try {
+          return e[n];
+        } catch (e) {}
+      }(n = Object(e), t)) ? i : r ? l(n) : "Object" == (o = l(n)) && "function" == typeof n.callee ? "Arguments" : o;
+    };
+  }, function (e, n, i) {
+    var l = i(37),
+        t = i(0)("iterator"),
+        r = i(10);
+
+    e.exports = i(7).getIteratorMethod = function (e) {
+      if (void 0 != e) return e[t] || e["@@iterator"] || r[l(e)];
+    };
+  }, function (e, n, i) {
+    "use strict";
+
+    var l = i(5),
+        t = i(12);
+
+    e.exports = function (e, n, i) {
+      n in e ? l.f(e, n, t(0, i)) : e[n] = i;
+    };
+  }, function (e, n, i) {
+    var l = i(10),
+        t = i(0)("iterator"),
+        r = Array.prototype;
+
+    e.exports = function (e) {
+      return void 0 !== e && (l.Array === e || r[t] === e);
+    };
+  }, function (e, n, i) {
+    var l = i(4);
+
+    e.exports = function (e, n, i, t) {
+      try {
+        return t ? n(l(i)[0], i[1]) : n(i);
+      } catch (n) {
+        var r = e["return"];
+        throw void 0 !== r && l(r.call(e)), n;
+      }
+    };
+  }, function (e, n, i) {
+    "use strict";
+
+    var l = i(24),
+        t = i(28),
+        r = i(17),
+        o = i(41),
+        a = i(40),
+        c = i(21),
+        y = i(39),
+        p = i(38);
+    t(t.S + t.F * !i(36)(function (e) {
+      Array.from(e);
+    }), "Array", {
+      from: function from(e) {
+        var n,
+            i,
+            t,
+            h,
+            x = r(e),
+            s = "function" == typeof this ? this : Array,
+            u = arguments.length,
+            d = u > 1 ? arguments[1] : void 0,
+            f = void 0 !== d,
+            v = 0,
+            g = p(x);
+        if (f && (d = l(d, u > 2 ? arguments[2] : void 0, 2)), void 0 == g || s == Array && a(g)) for (i = new s(n = c(x.length)); n > v; v++) {
+          y(i, v, f ? d(x[v], v) : x[v]);
+        } else for (h = g.call(x), i = new s(); !(t = h.next()).done; v++) {
+          y(i, v, f ? o(h, d, [t.value, v], !0) : t.value);
+        }
+        return i.length = v, i;
+      }
+    });
+  }, function (e, n, i) {
+    var l = i(2),
+        t = i(17),
+        r = i(9)("IE_PROTO"),
+        o = Object.prototype;
+
+    e.exports = Object.getPrototypeOf || function (e) {
+      return e = t(e), l(e, r) ? e[r] : "function" == typeof e.constructor && e instanceof e.constructor ? e.constructor.prototype : e instanceof Object ? o : null;
+    };
+  }, function (e, n, i) {
+    var l = i(1).document;
+    e.exports = l && l.documentElement;
+  }, function (e, n, i) {
+    var l = i(15),
+        t = Math.max,
+        r = Math.min;
+
+    e.exports = function (e, n) {
+      return (e = l(e)) < 0 ? t(e + n, 0) : r(e, n);
+    };
+  }, function (e, n, i) {
+    var l = i(23),
+        t = i(21),
+        r = i(45);
+
+    e.exports = function (e) {
+      return function (n, i, o) {
+        var a,
+            c = l(n),
+            y = t(c.length),
+            p = r(o, y);
+
+        if (e && i != i) {
+          for (; y > p;) {
+            if ((a = c[p++]) != a) return !0;
+          }
+        } else for (; y > p; p++) {
+          if ((e || p in c) && c[p] === i) return e || p || 0;
+        }
+
+        return !e && -1;
+      };
+    };
+  }, function (e, n, i) {
+    var l = i(22);
+    e.exports = Object("z").propertyIsEnumerable(0) ? Object : function (e) {
+      return "String" == l(e) ? e.split("") : Object(e);
+    };
+  }, function (e, n, i) {
+    var l = i(2),
+        t = i(23),
+        r = i(46)(!1),
+        o = i(9)("IE_PROTO");
+
+    e.exports = function (e, n) {
+      var i,
+          a = t(e),
+          c = 0,
+          y = [];
+
+      for (i in a) {
+        i != o && l(a, i) && y.push(i);
+      }
+
+      for (; n.length > c;) {
+        l(a, i = n[c++]) && (~r(y, i) || y.push(i));
+      }
+
+      return y;
+    };
+  }, function (e, n, i) {
+    var l = i(48),
+        t = i(19);
+
+    e.exports = Object.keys || function (e) {
+      return l(e, t);
+    };
+  }, function (e, n, i) {
+    var l = i(5),
+        t = i(4),
+        r = i(49);
+    e.exports = i(3) ? Object.defineProperties : function (e, n) {
+      t(e);
+
+      for (var i, o = r(n), a = o.length, c = 0; a > c;) {
+        l.f(e, i = o[c++], n[i]);
+      }
+
+      return e;
+    };
+  }, function (e, n, i) {
+    var l = i(4),
+        t = i(50),
+        r = i(19),
+        o = i(9)("IE_PROTO"),
+        a = function a() {},
+        _c = function c() {
+      var e,
+          n = i(26)("iframe"),
+          l = r.length;
+
+      for (n.style.display = "none", i(44).appendChild(n), n.src = "javascript:", (e = n.contentWindow.document).open(), e.write("<script>document.F=Object<\/script>"), e.close(), _c = e.F; l--;) {
+        delete _c.prototype[r[l]];
+      }
+
+      return _c();
+    };
+
+    e.exports = Object.create || function (e, n) {
+      var i;
+      return null !== e ? (a.prototype = l(e), i = new a(), a.prototype = null, i[o] = e) : i = _c(), void 0 === n ? i : t(i, n);
+    };
+  }, function (e, n, i) {
+    "use strict";
+
+    var l = i(51),
+        t = i(12),
+        r = i(18),
+        o = {};
+    i(6)(o, i(0)("iterator"), function () {
+      return this;
+    }), e.exports = function (e, n, i) {
+      e.prototype = l(o, {
+        next: t(1, i)
+      }), r(e, n + " Iterator");
+    };
+  }, function (e, n) {
+    e.exports = function (e) {
+      if ("function" != typeof e) throw TypeError(e + " is not a function!");
+      return e;
+    };
+  }, function (e, n, i) {
+    var l = i(13);
+
+    e.exports = function (e, n) {
+      if (!l(e)) return e;
+      var i, t;
+      if (n && "function" == typeof (i = e.toString) && !l(t = i.call(e))) return t;
+      if ("function" == typeof (i = e.valueOf) && !l(t = i.call(e))) return t;
+      if (!n && "function" == typeof (i = e.toString) && !l(t = i.call(e))) return t;
+      throw TypeError("Can't convert object to primitive value");
+    };
+  }, function (e, n, i) {
+    e.exports = !i(3) && !i(27)(function () {
+      return 7 != Object.defineProperty(i(26)("div"), "a", {
+        get: function get() {
+          return 7;
+        }
+      }).a;
+    });
+  }, function (e, n) {
+    e.exports = !1;
+  }, function (e, n, i) {
+    "use strict";
+
+    var l = i(56),
+        t = i(28),
+        r = i(25),
+        o = i(6),
+        a = i(2),
+        c = i(10),
+        y = i(52),
+        p = i(18),
+        h = i(43),
+        x = i(0)("iterator"),
+        s = !([].keys && "next" in [].keys()),
+        u = function u() {
+      return this;
+    };
+
+    e.exports = function (e, n, i, d, f, v, g) {
+      y(i, n, d);
+
+      var m,
+          M,
+          w,
+          b = function b(e) {
+        if (!s && e in H) return H[e];
+
+        switch (e) {
+          case "keys":
+          case "values":
+            return function () {
+              return new i(this, e);
+            };
+        }
+
+        return function () {
+          return new i(this, e);
+        };
+      },
+          z = n + " Iterator",
+          A = "values" == f,
+          k = !1,
+          H = e.prototype,
+          V = H[x] || H["@@iterator"] || f && H[f],
+          O = !s && V || b(f),
+          _ = f ? A ? b("entries") : O : void 0,
+          j = "Array" == n && H.entries || V;
+
+      if (j && (w = h(j.call(new e()))) !== Object.prototype && w.next && (p(w, z, !0), l || a(w, x) || o(w, x, u)), A && V && "values" !== V.name && (k = !0, O = function O() {
+        return V.call(this);
+      }), l && !g || !s && !k && H[x] || o(H, x, O), c[n] = O, c[z] = u, f) if (m = {
+        values: A ? O : b("values"),
+        keys: v ? O : b("keys"),
+        entries: _
+      }, g) for (M in m) {
+        M in H || r(H, M, m[M]);
+      } else t(t.P + t.F * (s || k), n, m);
+      return m;
+    };
+  }, function (e, n, i) {
+    var l = i(15),
+        t = i(14);
+
+    e.exports = function (e) {
+      return function (n, i) {
+        var r,
+            o,
+            a = String(t(n)),
+            c = l(i),
+            y = a.length;
+        return c < 0 || c >= y ? e ? "" : void 0 : (r = a.charCodeAt(c)) < 55296 || r > 56319 || c + 1 === y || (o = a.charCodeAt(c + 1)) < 56320 || o > 57343 ? e ? a.charAt(c) : r : e ? a.slice(c, c + 2) : o - 56320 + (r - 55296 << 10) + 65536;
+      };
+    };
+  }, function (e, n, i) {
+    "use strict";
+
+    var l = i(58)(!0);
+    i(57)(String, "String", function (e) {
+      this._t = String(e), this._i = 0;
+    }, function () {
+      var e,
+          n = this._t,
+          i = this._i;
+      return i >= n.length ? {
+        value: void 0,
+        done: !0
+      } : (e = l(n, i), this._i += e.length, {
+        value: e,
+        done: !1
+      });
+    });
+  }, function (e, n, i) {
+    i(59), i(42), e.exports = i(7).Array.from;
+  }, function (e, n, i) {
+    i(60), e.exports = i(35);
+  }]);
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
+
+/***/ }),
+
+/***/ "./resources/js/flot-data.js":
+/*!***********************************!*\
+  !*** ./resources/js/flot-data.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*Flot Init*/
+$(function () {
+  "use strict";
+
+  var data = [],
+      totalPoints = 300;
+  /*Getting Random Data*/
+
+  function getRandomData() {
+    if (data.length > 0) data = data.slice(1); // Do a random walk
+
+    while (data.length < totalPoints) {
+      var prev = data.length > 0 ? data[data.length - 1] : 50,
+          y = prev + Math.random() * 10 - 5;
+
+      if (y < 0) {
+        y = 0;
+      } else if (y > 100) {
+        y = 100;
+      }
+
+      data.push(y);
+    } // Zip the generated y values with the x values
+
+
+    var res = [];
+
+    for (var i = 0; i < data.length; ++i) {
+      res.push([i, data[i]]);
+    }
+
+    return res;
+  }
+  /***Real time Chart***/
+
+
+  if ($('#real_time_chart').length > 0) {
+    /*Defining Option*/
+    var realtime_chartop = {
+      series: {
+        shadowSize: 0,
+        lines: {
+          fill: false
+        }
+      },
+      grid: {
+        color: "#878787",
+        hoverable: true,
+        borderWidth: 0,
+        backgroundColor: 'transparent'
+      },
+      colors: ["#2879ff"],
+      tooltip: true,
+      tooltipOpts: {
+        content: "Y: %y",
+        defaultTheme: false
+      },
+      yaxis: {
+        min: 0,
+        max: 100,
+        font: {
+          color: '#878787'
+        }
+      },
+      xaxis: {
+        show: false,
+        font: {
+          color: '#878787'
+        }
+      }
+    };
+    /*Defining Data*/
+
+    var realtime_chartop_data = {
+      data: getRandomData()
+    };
+    /*Chart Plot*/
+
+    $.plot($("#real_time_chart"), [realtime_chartop_data], realtime_chartop);
+    /*Realtime Data*/
+
+    setInterval(function updateRandom() {
+      realtime_chartop_data = getRandomData();
+      $.plot($("#real_time_chart"), [realtime_chartop_data], realtime_chartop);
+    }, 40);
+  }
+  /***Line Chart***/
+
+
+  if ($('#flot_line_chart').length > 0) {
+    /*Defining Option*/
+    var line_chartop = {
+      series: {
+        shadowSize: 0,
+        lines: {
+          show: true
+        },
+        points: {
+          show: true
+        }
+      },
+      yaxis: {
+        min: -1.2,
+        max: 1.2,
+        font: {
+          color: '#878787'
+        }
+      },
+      xaxis: {
+        show: false
+      },
+      colors: ["#fec107", "#2879ff"],
+      grid: {
+        color: "#878787",
+        hoverable: true,
+        borderWidth: 0
+      },
+      legend: {
+        backgroundColor: 'transparent'
+      },
+      tooltip: true,
+      tooltipOpts: {
+        content: "'%s' of %x.1 is %y.4",
+        shifts: {
+          x: -60,
+          y: 25
+        }
+      }
+    };
+    var sin = [],
+        cos = [];
+    var offset = 0;
+
+    for (var i = 0; i < 12; i += 0.2) {
+      sin.push([i, Math.sin(i + offset)]);
+      cos.push([i, Math.cos(i + offset)]);
+    }
+    /*Defining Data*/
+
+
+    var line_chart_data = [{
+      label: "sin(x)",
+      data: sin
+    }, {
+      label: "cos(x)",
+      data: cos
+    }];
+    /*Plot*/
+
+    $.plot($("#flot_line_chart"), line_chart_data, line_chartop);
+  }
+  /***Pie Chart***/
+
+
+  if ($('#flot_pie_chart').length > 0) {
+    var pie_data = [{
+      label: "Series 0",
+      data: 10,
+      color: "#01c853"
+    }, {
+      label: "Series 1",
+      data: 1,
+      color: "#e91e63"
+    }, {
+      label: "Series 2",
+      data: 3,
+      color: "#2879ff"
+    }, {
+      label: "Series 3",
+      data: 1,
+      color: "#ff2a00"
+    }];
+    var pie_op = {
+      series: {
+        pie: {
+          innerRadius: 0.5,
+          show: true,
+          stroke: {
+            width: 0
+          }
+        }
+      },
+      legend: {
+        backgroundColor: 'transparent'
+      },
+      grid: {
+        hoverable: true
+      },
+      color: null,
+      tooltip: true,
+      tooltipOpts: {
+        content: "%p.0%, %s",
+        // show percentages, rounding to 2 decimal places
+        shifts: {
+          x: 20,
+          y: 0
+        },
+        defaultTheme: false
+      }
+    };
+    $.plot($("#flot_pie_chart"), pie_data, pie_op);
+  }
+  /***Filled Line Chart***/
+
+
+  if ($('#flot_line_chart_moving').length > 0) {
+    /*Defining Option*/
+    var fill_line_chartop = {
+      series: {
+        shadowSize: 0,
+        lines: {
+          fill: true
+        }
+      },
+      grid: {
+        color: "#878787",
+        hoverable: true,
+        borderWidth: 0,
+        backgroundColor: 'transparent'
+      },
+      colors: ["#ea65a2"],
+      tooltip: true,
+      tooltipOpts: {
+        content: "Y: %y",
+        defaultTheme: false
+      },
+      yaxis: {
+        min: 0,
+        max: 100,
+        font: {
+          color: '#878787'
+        }
+      },
+      xaxis: {
+        show: false
+      }
+    };
+    /*Defining Data*/
+
+    var fill_line_chart_data = {
+      data: getRandomData()
+    };
+    /*Chart Plot*/
+
+    $.plot($("#flot_line_chart_moving"), [fill_line_chart_data], fill_line_chartop);
+    /*Realtime Data*/
+
+    setInterval(function updateRandom() {
+      fill_line_chart_data = getRandomData();
+      $.plot($("#flot_line_chart_moving"), [fill_line_chart_data], fill_line_chartop);
+    }, 40);
+  }
+  /***Bar Chart***/
+
+
+  if ($('#flot_bar_chart').length > 0) {
+    /*Defining Option*/
+    var barOptions = {
+      series: {
+        bars: {
+          show: true,
+          barWidth: 43200000
+        }
+      },
+      yaxis: {
+        font: {
+          color: '#878787'
+        }
+      },
+      xaxis: {
+        mode: "time",
+        timeformat: "%m/%d",
+        minTickSize: [2, "day"],
+        font: {
+          color: '#878787'
+        }
+      },
+      legend: {
+        show: false
+      },
+      grid: {
+        color: "#878787",
+        hoverable: true,
+        borderWidth: 0,
+        backgroundColor: 'transparent'
+      },
+      tooltip: true,
+      tooltipOpts: {
+        content: "x: %x, y: %y"
+      }
+    };
+    /*Defining Data*/
+
+    var barData = {
+      label: "bar",
+      color: "#ff2a00",
+      data: [[1354521600000, 1000], [1355040000000, 2000], [1355223600000, 3000], [1355306400000, 4000], [1355487300000, 5000], [1355571900000, 6000]]
+    };
+    /*Plot*/
+
+    $.plot($("#flot_bar_chart"), [barData], barOptions);
+  }
+  /***Sales Chart***/
+
+
+  if ($('#sales_bars_chart').length > 0) {
+    /*Defining Data*/
+    var d1 = [];
+
+    for (var i = 0; i <= 10; i += 1) {
+      d1.push([i, parseInt(Math.random() * 60)]);
+    }
+
+    var d2 = [];
+
+    for (var i = 0; i <= 10; i += 1) {
+      d2.push([i, parseInt(Math.random() * 40)]);
+    }
+
+    var d3 = [];
+
+    for (var i = 0; i <= 10; i += 1) {
+      d3.push([i, parseInt(Math.random() * 25)]);
+    }
+
+    var ds = [{
+      label: "Data One",
+      data: d1,
+      bars: {
+        order: 1
+      }
+    }, {
+      label: "Data Two",
+      data: d2,
+      bars: {
+        order: 2
+      }
+    }, {
+      label: "Data Three",
+      data: d3,
+      bars: {
+        order: 3
+      }
+    }];
+    var stack = 0,
+        bars = true,
+        lines = true,
+        steps = true;
+    /*Defining Option*/
+
+    var sales_op = {
+      bars: {
+        show: true,
+        barWidth: 0.2,
+        fill: 1
+      },
+      grid: {
+        show: true,
+        aboveData: false,
+        labelMargin: 5,
+        axisMargin: 0,
+        borderWidth: 0,
+        minBorderMargin: 5,
+        clickable: true,
+        hoverable: true,
+        autoHighlight: false,
+        mouseActiveRadius: 20,
+        borderColor: '#878787',
+        color: '#878787'
+      },
+      series: {
+        stack: stack
+      },
+      legend: {
+        position: "ne",
+        margin: [10, 0],
+        backgroundColor: 'transparent',
+        noColumns: 0,
+        labelBoxBorderColor: null,
+        labelFormatter: function labelFormatter(label, series) {
+          // just add some space to labes
+          return '' + label + '&nbsp;&nbsp;';
+        },
+        width: 30,
+        height: 5
+      },
+      yaxis: {
+        font: {
+          color: '#878787'
+        }
+      },
+      xaxis: {
+        font: {
+          color: '#878787'
+        }
+      },
+      colors: ["#ff2a00", "#e91e63", "#fec107"],
+      tooltip: true,
+      //activate tooltip
+      tooltipOpts: {
+        content: "%s : %y.0",
+        shifts: {
+          x: -30,
+          y: -50
+        }
+      }
+    };
+    $.plot($("#sales_bars_chart"), ds, sales_op);
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/form-file-upload-data.js":
+/*!***********************************************!*\
+  !*** ./resources/js/form-file-upload-data.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*FileUpload Init*/
+
+/*Dropzone Init*/
+
+$("#remove_link").dropzone({
+  addRemoveLinks: true
+});
+$(document).ready(function () {
+  /* Basic Init*/
+  $('.dropify').dropify();
+});
+
+/***/ }),
+
+/***/ "./resources/js/form-picker-data.js":
+/*!******************************************!*\
+  !*** ./resources/js/form-picker-data.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*FormPicker Init*/
+$(document).ready(function () {
+  "use strict";
+  /* Bootstrap Colorpicker Init*/
+
+  $('.colorpicker-default').colorpicker();
+  $('.colorpicker-rgb').colorpicker({
+    color: '#AA3399',
+    format: 'rgba'
+  });
+  $('.colorpicker-inline').colorpicker({
+    color: '#ffaa00',
+    container: true,
+    inline: true
+  });
+  /* Datetimepicker Init*/
+
+  $('#datetimepicker1').datetimepicker();
+  $('#datetimepicker2').datetimepicker({
+    format: 'LT',
+    useCurrent: false,
+    icons: {
+      time: "fa fa-clock-o",
+      date: "fa fa-calendar",
+      up: "fa fa-arrow-up",
+      down: "fa fa-arrow-down"
+    }
+  }).data("DateTimePicker").date(moment());
+  ;
+  $('#datetimepicker3').datetimepicker({
+    format: 'DD-MM-YYYY',
+    inline: true,
+    sideBySide: true,
+    icons: {
+      time: "fa fa-clock-o",
+      date: "fa fa-calendar",
+      up: "fa fa-arrow-up",
+      down: "fa fa-arrow-down"
+    }
+  });
+  $('#datetimepicker4').datetimepicker({
+    inline: true,
+    sideBySide: true,
+    useCurrent: false,
+    icons: {
+      time: "fa fa-clock-o",
+      date: "fa fa-calendar",
+      up: "fa fa-arrow-up",
+      down: "fa fa-arrow-down"
+    }
+  }).data("DateTimePicker").date(moment());
+  /* Daterange picker Init*/
+
+  $('.input-daterange-datepicker').daterangepicker({
+    buttonClasses: ['btn', 'btn-sm'],
+    applyClass: 'btn-info',
+    cancelClass: 'btn-default'
+  });
+  $('.input-daterange-timepicker').daterangepicker({
+    timePicker: true,
+    format: 'MM/DD/YYYY h:mm A',
+    timePickerIncrement: 30,
+    timePicker12Hour: true,
+    timePickerSeconds: false,
+    buttonClasses: ['btn', 'btn-sm'],
+    applyClass: 'btn-info',
+    cancelClass: 'btn-default'
+  });
+  $('.input-limit-datepicker').daterangepicker({
+    format: 'MM/DD/YYYY',
+    minDate: '06/01/2018',
+    maxDate: '06/30/2018',
+    buttonClasses: ['btn', 'btn-sm'],
+    applyClass: 'btn-info',
+    cancelClass: 'btn-default',
+    dateLimit: {
+      days: 6
+    }
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/form-wizard-data.js":
+/*!******************************************!*\
+  !*** ./resources/js/form-wizard-data.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*FormWizard Init*/
+$(function () {
+  "use strict";
+  /* Basic Wizard Init*/
+
+  if ($('#example-basic').length > 0) $("#example-basic").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "fade",
+    autoFocus: true,
+    titleTemplate: "#title#"
+  });
+  /* Input spinner Init*/
+
+  setTimeout(function () {
+    $("input.normal").inputSpinner({
+      groupClass: "input-group-sm w-100p",
+      buttonsClass: "btn-outline-light"
+    });
+  }, 100);
+});
+
+/***/ }),
+
+/***/ "./resources/js/gallery-data.js":
+/*!**************************************!*\
+  !*** ./resources/js/gallery-data.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*Gallery Init*/
+
+/***** LightGallery init start*****/
+
+$('.hk-gallery').lightGallery({
+  showThumbByDefault: false,
+  hash: false
+});
+/***** LightGallery init end*****/
+
+/***/ }),
+
+/***/ "./resources/js/init.js":
+/*!******************************!*\
+  !*** ./resources/js/init.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** *************Init JS*********************
+	
+    TABLE OF CONTENTS
+	---------------------------
+	1.Ready function
+	2.Load function
+	3.Full height function
+	4.brunette function
+	5.Chat App function
+	6.Resize function
+ ** ***************************************/
+
+/*****Ready function start*****/
+
+$(document).ready(function () {
+  brunette();
+  emailApp();
+  chatApp();
+  calendarApp();
+  fmApp();
+  /*Disabled*/
+
+  $(document).on("click", "a.disabled,a:disabled", function (e) {
+    return false;
+  });
+});
+/*****Ready function end*****/
+
+/*****Load function start*****/
+
+$(window).on("load", function () {
+  $(".preloader-it").delay(500).fadeOut("slow");
+});
+/*****Load function* end*****/
+
+/*Variables*/
+
+var height,
+    width,
+    $wrapper = $(".hk-wrapper"),
+    $nav = $(".hk-nav"),
+    $vertnaltNav = $(".hk-wrapper.hk-vertical-nav,.hk-wrapper.hk-alt-nav"),
+    $horizontalNav = $(".hk-wrapper.hk-horizontal-nav"),
+    $navbar = $(".hk-navbar");
+/***** brunette function start *****/
+
+var brunette = function brunette() {
+  /*Feather Icon*/
+  var featherIcon = $('.feather-icon');
+
+  if (featherIcon.length > 0) {
+    feather.replace();
+  }
+  /*Counter Animation*/
+
+
+  var counterAnim = $('.counter-anim');
+
+  if (counterAnim.length > 0) {
+    counterAnim.counterUp({
+      delay: 10,
+      time: 1000
+    });
+  }
+  /*Tooltip*/
+
+
+  if ($('[data-toggle="tooltip"]').length > 0) $('[data-toggle="tooltip"]').tooltip();
+  /*Popover*/
+
+  if ($('[data-toggle="popover"]').length > 0) $('[data-toggle="popover"]').popover();
+  /*Navbar Collapse Animation*/
+
+  var navbarNavCollapse = $('.hk-nav .navbar-nav  li');
+  var navbarNavAnchor = '.hk-nav .navbar-nav  li a';
+  $(document).on("click", navbarNavAnchor, function (e) {
+    if ($(this).attr('aria-expanded') === "false") $(this).blur();
+    $(this).parent().siblings().find('.collapse').collapse('hide');
+    $(this).parent().find('.collapse').collapse('hide');
+  });
+  /*Card Remove*/
+
+  $(document).on('click', '.card-close', function (e) {
+    var effect = $(this).data('effect');
+    $(this).closest('.card')[effect]();
+    return false;
+  });
+  /*Accordion js*/
+
+  $(document).on('show.bs.collapse', '.accordion .collapse', function (e) {
+    $(this).siblings('.card-header').addClass('activestate');
+  });
+  $(document).on('hide.bs.collapse', '.accordion .collapse', function (e) {
+    $(this).siblings('.card-header').removeClass('activestate');
+  });
+  /*Navbar Toggle*/
+
+  $(document).on('click', '#navbar_toggle_btn', function (e) {
+    $wrapper.toggleClass('hk-nav-toggle');
+    $(window).trigger("resize");
+    return false;
+  });
+  $(document).on('click', '#hk_nav_backdrop,#hk_nav_close', function (e) {
+    $wrapper.removeClass('hk-nav-toggle');
+    return false;
+  });
+  /*Settings panel Toggle*/
+
+  $(document).on('click', '#settings_toggle_btn', function (e) {
+    $wrapper.toggleClass('hk-settings-toggle');
+    return false;
+  });
+  $(document).on('click', '#settings_panel_close', function (e) {
+    $wrapper.removeClass('hk-settings-toggle');
+    return false;
+  });
+  $(document).on('click', '#nav_light_select', function (e) {
+    $nav.removeClass('hk-nav-dark').addClass('hk-nav-light');
+    return false;
+  });
+  $(document).on('click', '#nav_dark_select', function (e) {
+    $nav.removeClass('hk-nav-light').addClass('hk-nav-dark');
+    return false;
+  });
+  $(document).on('click', '#nav_light_select,#nav_dark_select', function (e) {
+    $('.hk-nav-select').find('.btn').removeClass('btn-outline-primary').addClass('btn-outline-light');
+    $(this).removeClass('btn-outline-light').addClass('btn-outline-primary').blur();
+    return false;
+  });
+  $(document).on('click', '#navtop_light_select,#navtop_dark_select', function (e) {
+    $('.hk-navbar-select').find('.btn').removeClass('btn-outline-primary').addClass('btn-outline-light');
+    $(this).removeClass('btn-outline-light').addClass('btn-outline-primary').blur();
+    return false;
+  });
+  $(document).on('click', '#navtop_light_select', function (e) {
+    $navbar.removeClass('navbar-dark').addClass('navbar-light').find('img.brand-img').attr('src', 'dist/img/logo-light.png');
+    return false;
+  });
+  $(document).on('click', '#navtop_dark_select', function (e) {
+    $navbar.removeClass('navbar-light').addClass('navbar-dark').find('img.brand-img').attr('src', 'dist/img/logo-dark.png');
+    return false;
+  });
+
+  if ($('.scroll-nav-switch').length > 0) {
+    $('.scroll-nav-switch').toggles({
+      drag: true,
+      // allow dragging the toggle between positions
+      click: true,
+      // allow clicking on the toggle
+      text: {
+        on: '',
+        // text for the ON position
+        off: '' // and off
+
+      },
+      on: false,
+      // is the toggle ON on init
+      animate: 250,
+      // animation time (ms)
+      easing: 'swing',
+      // animation transition easing function
+      checkbox: null,
+      // the checkbox to toggle (for use in forms)
+      clicker: null,
+      // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+      type: 'compact' // if this is set to 'select' then the select style toggle will be used
+
+    });
+    $('.scroll-nav-switch.toggle').on('toggle', function (e, active) {
+      if (active) {
+        $wrapper.addClass('scrollable-nav');
+      } else {
+        $wrapper.removeClass('scrollable-nav');
+      }
+    });
+  }
+
+  var navBarChk = $('.hk-navbar').hasClass('navbar-dark'),
+      navChk = $('.hk-nav').hasClass('hk-nav-dark');
+  $(document).on('click', '#reset_settings', function (e) {
+    if (navBarChk) $('#navtop_dark_select').click();else $('#navtop_light_select').click();
+    if (navChk) $('#nav_dark_select').click();else $('#nav_light_select').click();
+    $('.scroll-nav-switch').click();
+    if ($('.scroll-nav-switch').find('.toggle-on').hasClass('active')) $('.scroll-nav-switch').click();
+    return false;
+  });
+  /*Search form Collapse*/
+
+  $(document).on('click', '#navbar_search_btn', function (e) {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 'slow');
+    $(".navbar-search input").focus();
+    $wrapper.addClass('navbar-search-toggle');
+    $(window).trigger("resize");
+  });
+  $(document).on('click', '#navbar_search_close', function (e) {
+    $wrapper.removeClass('navbar-search-toggle');
+    $(window).trigger("resize");
+    return false;
+  });
+  /*Slimscroll*/
+
+  $('.nicescroll-bar').slimscroll({
+    height: '100%',
+    color: '#d6d9da',
+    disableFadeOut: true,
+    borderRadius: 0,
+    size: '6px',
+    enableKeyNavigation: true,
+    opacity: .8
+  });
+  $('.notifications-nicescroll-bar').slimscroll({
+    height: '330px',
+    size: '6px',
+    color: '#d6d9da',
+    disableFadeOut: true,
+    borderRadius: 0,
+    enableKeyNavigation: true,
+    opacity: .8
+  });
+  /*Slimscroll Key Control*/
+
+  $(".slimScrollDiv").hover(function () {
+    $(this).find('[class*="nicescroll-bar"]').focus();
+  }, function () {
+    $(this).find('[class*="nicescroll-bar"]').blur();
+  });
+  /*Refresh Init Js*/
+
+  var refreshMe = '.refresh';
+  $(document).on("click", refreshMe, function (e) {
+    var panelToRefresh = $(this).closest('.card').find('.refresh-container');
+    var dataToRefresh = $(this).closest('.card').find('.panel-wrapper');
+    var loadingAnim = panelToRefresh.find('.la-anim-1');
+    panelToRefresh.show();
+    setTimeout(function () {
+      loadingAnim.addClass('la-animate');
+    }, 100);
+
+    function started() {} //function before timeout
+
+
+    setTimeout(function () {
+      function completed() {} //function after timeout
+
+
+      panelToRefresh.fadeOut(800);
+      setTimeout(function () {
+        loadingAnim.removeClass('la-animate');
+      }, 800);
+    }, 1500);
+    return false;
+  });
+  /*Fullscreen Init Js*/
+
+  $(document).on("click", ".full-screen", function (e) {
+    $(this).parents('.card').toggleClass('fullscreen');
+    $(window).trigger("resize");
+    return false;
+  });
+};
+/***** brunette function end *****/
+
+/***** Full height function start *****/
+
+
+var setHeightWidth = function setHeightWidth() {
+  height = window.innerHeight;
+  width = window.innerWidth;
+  $('.full-height').css('height', height);
+  $('.hk-pg-wrapper').css('min-height', height);
+  /*****App Height for differnt brekpoints with Vertical & Alt menu*****/
+
+  /*ChatApp Height for differnt brekpoints with Vertical & Alt menu*/
+
+  if ($vertnaltNav.hasClass('navbar-search-toggle')) $vertnaltNav.find('.chatapp-users-list,.chat-body').css('height', height - 240);else $vertnaltNav.find('.chatapp-users-list,.chat-body').css('height', height - 190);
+  /*EmailApp Height for differnt brekpoints with Vertical & Alt menu*/
+
+  if ($vertnaltNav.hasClass('navbar-search-toggle')) {
+    $vertnaltNav.find('.emailapp-emails-list').css('height', height - 240);
+    $vertnaltNav.find('.email-body').css('height', height - 179);
+    $vertnaltNav.find('.emailapp-sidebar').css('height', height - 107);
+  } else {
+    $vertnaltNav.find('.emailapp-emails-list').css('height', height - 190);
+    $vertnaltNav.find('.email-body').css('height', height - 129);
+    $vertnaltNav.find('.emailapp-sidebar').css('height', height - 57);
+  }
+  /*FilemanagerApp Height for differnt brekpoints with Vertical & Alt menu*/
+
+
+  if ($vertnaltNav.hasClass('navbar-search-toggle')) {
+    $vertnaltNav.find('.fm-body').css('height', height - 179);
+    $vertnaltNav.find('.fmapp-sidebar').css('height', height - 107);
+  } else {
+    $vertnaltNav.find('.fm-body').css('height', height - 129);
+    $vertnaltNav.find('.fmapp-sidebar').css('height', height - 57);
+  }
+  /*CalendarApp Height for differnt brekpoints with Vertical & Alt menu*/
+
+
+  if ($vertnaltNav.hasClass('navbar-search-toggle')) $vertnaltNav.find('.calendarapp-sidebar,.calendar-wrap').css('height', height - 107);else $vertnaltNav.find('.calendarapp-sidebar,.calendar-wrap').css('height', height - 57);
+  /*GmapApp Height for differnt brekpoints with Vertical & Alt menu*/
+
+  if ($vertnaltNav.hasClass('navbar-search-toggle')) $vertnaltNav.find('.gmap').css('height', height - 107);else $vertnaltNav.find('.gmap').css('height', height - 57);
+  /*****App Height for differnt brekpoints with Horizontal menu*****/
+
+  /*ChatApp Height for differnt brekpoints with Horizontal menu*/
+
+  if (width > 1024) {
+    if ($horizontalNav.hasClass('hk-nav-toggle') && !$horizontalNav.hasClass('navbar-search-toggle')) $horizontalNav.find('.chatapp-users-list,.chat-body').css('height', height - 190);else if (!$horizontalNav.hasClass('hk-nav-toggle') && $horizontalNav.hasClass('navbar-search-toggle')) $horizontalNav.find('.chatapp-users-list,.chat-body').css('height', height - 290);else $horizontalNav.find('.chatapp-users-list,.chat-body').css('height', height - 240);
+  } else {
+    if ($horizontalNav.hasClass('navbar-search-toggle')) $horizontalNav.find('.chatapp-users-list,.chat-body').css('height', height - 240);else $horizontalNav.find('.chatapp-users-list,.chat-body').css('height', height - 190);
+  }
+  /*EmailApp Height for differnt brekpoints with Horizontal menu*/
+
+
+  if (width > 1024) {
+    if ($horizontalNav.hasClass('hk-nav-toggle') && !$horizontalNav.hasClass('navbar-search-toggle')) {
+      $horizontalNav.find('.emailapp-emails-list').css('height', height - 190);
+      $horizontalNav.find('.email-body').css('height', height - 129);
+      $horizontalNav.find('.emailapp-sidebar').css('height', height - 57);
+    } else if (!$horizontalNav.hasClass('hk-nav-toggle') && $horizontalNav.hasClass('navbar-search-toggle')) {
+      $horizontalNav.find('.emailapp-emails-list').css('height', height - 290);
+      $horizontalNav.find('.email-body').css('height', height - 229);
+      $horizontalNav.find('.emailapp-sidebar').css('height', height - 157);
+    } else {
+      $horizontalNav.find('.emailapp-emails-list').css('height', height - 240);
+      $horizontalNav.find('.email-body').css('height', height - 179);
+      $horizontalNav.find('.emailapp-sidebar').css('height', height - 107);
+    }
+  } else {
+    if ($horizontalNav.hasClass('navbar-search-toggle')) {
+      $horizontalNav.find('.emailapp-emails-list').css('height', height - 240);
+      $horizontalNav.find('.email-body').css('height', height - 179);
+      $horizontalNav.find('.emailapp-sidebar').css('height', height - 107);
+    } else {
+      $horizontalNav.find('.emailapp-emails-list').css('height', height - 190);
+      $horizontalNav.find('.email-body').css('height', height - 129);
+      $horizontalNav.find('.emailapp-sidebar').css('height', height - 57);
+    }
+  }
+  /*FilemanagerApp Height for differnt brekpoints with Horizontal menu*/
+
+
+  if (width > 1024) {
+    if ($horizontalNav.hasClass('hk-nav-toggle') && !$horizontalNav.hasClass('navbar-search-toggle')) {
+      $horizontalNav.find('.fm-body').css('height', height - 129);
+      $horizontalNav.find('.fmapp-sidebar').css('height', height - 57);
+    } else if (!$horizontalNav.hasClass('hk-nav-toggle') && $horizontalNav.hasClass('navbar-search-toggle')) {
+      $horizontalNav.find('.fm-body').css('height', height - 229);
+      $horizontalNav.find('.fmapp-sidebar').css('height', height - 157);
+    } else {
+      $horizontalNav.find('.fm-body').css('height', height - 179);
+      $horizontalNav.find('.fmapp-sidebar').css('height', height - 107);
+    }
+  } else {
+    if ($horizontalNav.hasClass('navbar-search-toggle')) {
+      $horizontalNav.find('.fm-body').css('height', height - 179);
+      $horizontalNav.find('.fmapp-sidebar').css('height', height - 107);
+    } else {
+      $horizontalNav.find('.fm-body').css('height', height - 129);
+      $horizontalNav.find('.fmapp-sidebar').css('height', height - 57);
+    }
+  }
+  /*CalendarApp Height for differnt brekpoints with Horizontal menu*/
+
+
+  if (width > 1024) {
+    if ($horizontalNav.hasClass('hk-nav-toggle') && !$horizontalNav.hasClass('navbar-search-toggle')) $horizontalNav.find('.calendarapp-sidebar,.calendar-wrap').css('height', height - 57);else if (!$horizontalNav.hasClass('hk-nav-toggle') && $horizontalNav.hasClass('navbar-search-toggle')) $horizontalNav.find('.calendarapp-sidebar,.calendar-wrap').css('height', height - 157);else $horizontalNav.find('.calendarapp-sidebar,.calendar-wrap').css('height', height - 107);
+  } else {
+    if ($horizontalNav.hasClass('navbar-search-toggle')) $horizontalNav.find('.calendarapp-sidebar,.calendar-wrap').css('height', height - 107);else $horizontalNav.find('.calendarapp-sidebar,.calendar-wrap').css('height', height - 57);
+  }
+  /*GmapApp Height for differnt brekpoints with Horizontal menu*/
+
+
+  if (width > 1024) {
+    if ($horizontalNav.hasClass('hk-nav-toggle') && !$horizontalNav.hasClass('navbar-search-toggle')) $horizontalNav.find('.gmap').css('height', height - 57);else if (!$horizontalNav.hasClass('hk-nav-toggle') && $horizontalNav.hasClass('navbar-search-toggle')) $horizontalNav.find('.gmap').css('height', height - 157);else $horizontalNav.find('.gmap').css('height', height - 107);
+  } else {
+    if ($horizontalNav.hasClass('navbar-search-toggle')) $horizontalNav.find('.gmap').css('height', height - 107);else $horizontalNav.find('.gmap').css('height', height - 57);
+  }
+};
+/***** Full height function end *****/
+
+/***** Chat App function start *****/
+
+
+var chatAppTarget = $('.chatapp-wrap');
+
+var chatApp = function chatApp() {
+  if (width > 1024) chatAppTarget.removeClass('chatapp-slide');
+  $(document).on("click", ".chatapp-wrap .chatapp-users-list a.media", function (e) {
+    if (width <= 1024) {
+      chatAppTarget.addClass('chatapp-slide');
+    }
+
+    return false;
+  });
+  $(document).on("click", "#back_user_list", function (e) {
+    if (width <= 1024) {
+      chatAppTarget.removeClass('chatapp-slide');
+    }
+
+    return false;
+  });
+  $(document).on("keypress", "#input_msg_send_chatapp", function (e) {
+    if (e.which == 13 && !$(this).val().length == 0) {
+      $('<li class="media sent"><div class="media-body"><div class="msg-box"><div><p>' + $(this).val() + '</p><span class="chat-time">8:00 pm</span><div class="arrow-triangle-wrap"><div class="arrow-triangle left"></div></div></div></div></div></li>').insertAfter(".chatapp-right  ul li.media:last-child");
+      $(this).val('');
+    } else if (e.which == 13) {
+      alert('Please type asomthing!');
+    }
+
+    return;
+  });
+};
+/***** Chat App function end *****/
+
+/***** Email App function start *****/
+
+
+var emailAppTarget = $('.emailapp-wrap');
+
+var emailApp = function emailApp() {
+  if (width > 1024) emailAppTarget.removeClass('emailapp-slide');
+  $(document).on("click", ".emailapp-wrap .emailapp-emails-list a.media", function (e) {
+    if (width <= 1024) {
+      emailAppTarget.addClass('emailapp-slide');
+    }
+
+    return;
+  });
+  $(document).on("click", "#back_email_list", function (e) {
+    if (width <= 1024) {
+      emailAppTarget.removeClass('emailapp-slide');
+    }
+
+    return false;
+  });
+  $(document).on("click", "#emailapp_sidebar_move", function (e) {
+    emailAppTarget.toggleClass('emailapp-sidebar-toggle');
+    return false;
+  });
+  $(document).on("click", "#close_emailapp_sidebar", function (e) {
+    if (width <= 1400) {
+      emailAppTarget.removeClass('emailapp-sidebar-toggle');
+    }
+
+    return false;
+  });
+};
+/***** Email App function end *****/
+
+/***** Email App function start *****/
+
+
+var fmAppTarget = $('.fmapp-wrap');
+
+var fmApp = function fmApp() {
+  $(document).on('click', '#fm_view_switcher', function (e) {
+    $(this).closest('.fmapp-main').toggleClass('fmapp-view-switch');
+    return false;
+  });
+  $(document).on("click", "#fmapp_sidebar_move", function (e) {
+    fmAppTarget.toggleClass('fmapp-sidebar-toggle');
+    return false;
+  });
+  $(document).on("click", "#close_fmapp_sidebar", function (e) {
+    if (width <= 1400) {
+      fmAppTarget.removeClass('fmapp-sidebar-toggle');
+    }
+
+    return false;
+  });
+};
+/***** Email App function end *****/
+
+/***** Calendar App function start *****/
+
+
+var calendarAppTarget = $('.calendarapp-wrap');
+
+var calendarApp = function calendarApp() {
+  $(document).on("click", "#calendarapp_sidebar_move", function (e) {
+    calendarAppTarget.toggleClass('calendarapp-sidebar-toggle');
+    return false;
+  });
+  $(document).on("click", "#close_calendarapp_sidebar", function (e) {
+    if (width <= 1024) {
+      calendarAppTarget.removeClass('calendarapp-sidebar-toggle');
+    }
+
+    return false;
+  });
+};
+/***** Calendar App function end *****/
+
+/***** Resize function start *****/
+
+
+$(window).on("resize", function () {
+  setHeightWidth();
+});
+$(window).trigger("resize");
+/***** Resize function end *****/
+
+/***/ }),
+
+/***/ "./resources/js/inputspinner-data.js":
+/*!*******************************************!*\
+  !*** ./resources/js/inputspinner-data.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* Inputspinner Init*/
+
+
+$("input.normal").inputSpinner({
+  buttonsClass: "btn-outline-light"
+});
+$("input.float").inputSpinner({
+  buttonsClass: "btn-light"
+});
+$("input.small").inputSpinner({
+  groupClass: "input-group-sm w-50",
+  buttonsClass: "btn-outline-light"
+});
+$("input.large").inputSpinner({
+  groupClass: "input-group-lg",
+  buttonsClass: "btn-light"
+});
+
+/***/ }),
+
+/***/ "./resources/js/jquery.slimscroll.js":
+/*!*******************************************!*\
+  !*** ./resources/js/jquery.slimscroll.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*! Copyright (c) 2011 Piotr Rochala (http://rocha.la)
+ * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
+ * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+ *
+ * Version: 1.3.7
+ *
+ */
+(function ($) {
+  $.fn.extend({
+    slimScroll: function slimScroll(options) {
+      var defaults = {
+        // width in pixels of the visible scroll area
+        width: 'auto',
+        // height in pixels of the visible scroll area
+        height: '250px',
+        // width in pixels of the scrollbar and rail
+        size: '7px',
+        // scrollbar color, accepts any hex/color value
+        color: '#000',
+        // scrollbar position - left/right
+        position: 'right',
+        // distance in pixels between the side edge and the scrollbar
+        distance: '1px',
+        // default scroll position on load - top / bottom / $('selector')
+        start: 'top',
+        // sets scrollbar opacity
+        opacity: .4,
+        // enables always-on mode for the scrollbar
+        alwaysVisible: false,
+        // check if we should hide the scrollbar when user is hovering over
+        disableFadeOut: false,
+        // sets visibility of the rail
+        railVisible: false,
+        // sets rail color
+        railColor: '#333',
+        // sets rail opacity
+        railOpacity: .2,
+        // whether  we should use jQuery UI Draggable to enable bar dragging
+        railDraggable: true,
+        // defautlt CSS class of the slimscroll rail
+        railClass: 'slimScrollRail',
+        // defautlt CSS class of the slimscroll bar
+        barClass: 'slimScrollBar',
+        // defautlt CSS class of the slimscroll wrapper
+        wrapperClass: 'slimScrollDiv',
+        // check if mousewheel should scroll the window if we reach top/bottom
+        allowPageScroll: false,
+        // scroll amount applied to each mouse wheel step
+        wheelStep: 20,
+        // scroll amount applied when user is using gestures
+        touchScrollStep: 200,
+        // sets border radius
+        borderRadius: '7px',
+        // sets border radius of the rail
+        railBorderRadius: '7px',
+        //enable keydown navigations
+        enableKeyNavigation: false,
+        // multiplier for the scroll amount to consider in case of page up/dowm.
+        pageStep: 10
+      };
+      var o = $.extend(defaults, options); // do it for every element that matches selector
+
+      this.each(function () {
+        var isOverPanel,
+            isOverBar,
+            isDragg,
+            queueHide,
+            touchDif,
+            barHeight,
+            percentScroll,
+            lastScroll,
+            divS = '<div></div>',
+            minBarHeight = 30,
+            releaseScroll = false; // used in event handlers and for better minification
+
+        var me = $(this); // ensure we are not binding it again
+
+        if (me.parent().hasClass(o.wrapperClass)) {
+          // start from last bar position
+          var offset = me.scrollTop(); // find bar and rail
+
+          bar = me.siblings('.' + o.barClass);
+          rail = me.siblings('.' + o.railClass);
+          getBarHeight(); // check if we should scroll existing instance
+
+          if ($.isPlainObject(options)) {
+            // Pass height: auto to an existing slimscroll object to force a resize after contents have changed
+            if ('height' in options && options.height == 'auto') {
+              me.parent().css('height', 'auto');
+              me.css('height', 'auto');
+              var height = me.parent().parent().height();
+              me.parent().css('height', height);
+              me.css('height', height);
+            } else if ('height' in options) {
+              var h = options.height;
+              me.parent().css('height', h);
+              me.css('height', h);
+            }
+
+            if ('scrollTo' in options) {
+              // jump to a static point
+              offset = parseInt(o.scrollTo);
+            } else if ('scrollBy' in options) {
+              // jump by value pixels
+              offset += parseInt(o.scrollBy);
+            } else if ('destroy' in options) {
+              // remove slimscroll elements
+              bar.remove();
+              rail.remove();
+              me.unwrap();
+              $(me).add(bar).off('keydown.slimScroll');
+              return;
+            } // scroll content by the given offset
+
+
+            scrollContent(offset, false, true);
+          }
+
+          return;
+        } else if ($.isPlainObject(options)) {
+          if ('destroy' in options) {
+            return;
+          }
+        } // optionally set height to the parent's height
+
+
+        o.height = o.height == 'auto' ? me.parent().height() : o.height; // wrap content
+
+        var wrapper = $(divS).addClass(o.wrapperClass).css({
+          position: 'relative',
+          overflow: 'hidden',
+          width: o.width,
+          height: o.height
+        }); // update style for the div
+
+        me.css({
+          overflow: 'hidden',
+          width: o.width,
+          height: o.height
+        }); // create scrollbar rail
+
+        var rail = $(divS).addClass(o.railClass).css({
+          width: o.size,
+          height: '100%',
+          position: 'absolute',
+          top: 0,
+          display: o.alwaysVisible && o.railVisible ? 'block' : 'none',
+          'border-radius': o.railBorderRadius,
+          background: o.railColor,
+          opacity: o.railOpacity,
+          zIndex: 90
+        }); // create scrollbar
+
+        var bar = $(divS).addClass(o.barClass).css({
+          background: o.color,
+          width: o.size,
+          position: 'absolute',
+          top: 0,
+          opacity: o.opacity,
+          display: o.alwaysVisible ? 'block' : 'none',
+          'border-radius': o.borderRadius,
+          BorderRadius: o.borderRadius,
+          MozBorderRadius: o.borderRadius,
+          WebkitBorderRadius: o.borderRadius,
+          zIndex: 99
+        }); // set position
+
+        var posCss = o.position == 'right' ? {
+          right: o.distance
+        } : {
+          left: o.distance
+        };
+        rail.css(posCss);
+        bar.css(posCss); // wrap it
+
+        me.wrap(wrapper); // append to parent div
+
+        me.parent().append(bar);
+        me.parent().append(rail); // make it draggable and no longer dependent on the jqueryUI
+
+        if (o.railDraggable) {
+          bar.bind("mousedown", function (e) {
+            var $doc = $(document);
+            isDragg = true;
+            t = parseFloat(bar.css('top'));
+            pageY = e.pageY;
+            $doc.bind("mousemove.slimscroll", function (e) {
+              currTop = t + e.pageY - pageY;
+              bar.css('top', currTop);
+              scrollContent(0, bar.position().top, false); // scroll content
+            });
+            $doc.bind("mouseup.slimscroll", function (e) {
+              isDragg = false;
+              hideBar();
+              $doc.unbind('.slimscroll');
+            });
+            return false;
+          }).bind("selectstart.slimscroll", function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            return false;
+          });
+        } // on rail over
+
+
+        rail.hover(function () {
+          showBar();
+        }, function () {
+          hideBar();
+        }); // on bar over
+
+        bar.hover(function () {
+          isOverBar = true;
+        }, function () {
+          isOverBar = false;
+        }); // show on parent mouseover
+
+        me.hover(function () {
+          isOverPanel = true;
+          showBar();
+          hideBar();
+        }, function () {
+          isOverPanel = false;
+          hideBar();
+        }); // support for mobile
+
+        me.bind('touchstart', function (e, b) {
+          if (e.originalEvent.touches.length) {
+            // record where touch started
+            touchDif = e.originalEvent.touches[0].pageY;
+          }
+        });
+        me.bind('touchmove', function (e) {
+          // prevent scrolling the page if necessary
+          if (!releaseScroll) {
+            e.originalEvent.preventDefault();
+          }
+
+          if (e.originalEvent.touches.length) {
+            // see how far user swiped
+            var diff = (touchDif - e.originalEvent.touches[0].pageY) / o.touchScrollStep; // scroll content
+
+            scrollContent(diff, true);
+            touchDif = e.originalEvent.touches[0].pageY;
+          }
+        }); // set up initial height
+
+        getBarHeight(); // check start position
+
+        if (o.start === 'bottom') {
+          // scroll content to bottom
+          bar.css({
+            top: me.outerHeight() - bar.outerHeight()
+          });
+          scrollContent(0, true);
+        } else if (o.start !== 'top') {
+          // assume jQuery selector
+          scrollContent($(o.start).position().top, null, true); // make sure bar stays hidden
+
+          if (!o.alwaysVisible) {
+            bar.hide();
+          }
+        } // attach scroll events
+
+
+        attachWheel(this); // attach events for keybaord events
+        // if key navigation is enabled.
+
+        if (o.enableKeyNavigation) {
+          attachKeyBoardScroll(this);
+        }
+
+        function _onWheel(e) {
+          // use mouse wheel only when mouse is over
+          if (!isOverPanel) {
+            return;
+          }
+
+          var e = e || window.event;
+          var delta = 0;
+
+          if (e.wheelDelta) {
+            delta = -e.wheelDelta / 120;
+          }
+
+          if (e.detail) {
+            delta = e.detail / 3;
+          }
+
+          var target = e.target || e.srcTarget || e.srcElement;
+
+          if ($(target).closest('.' + o.wrapperClass).is(me.parent())) {
+            // scroll content
+            scrollContent(delta, true);
+          } // stop window scroll
+
+
+          if (e.preventDefault && !releaseScroll) {
+            e.preventDefault();
+          }
+
+          if (!releaseScroll) {
+            e.returnValue = false;
+          }
+        }
+
+        function _onKeyDown(e) {
+          // use mouse wheel only when mouse is over
+          if (!isOverPanel) {
+            return;
+          } //handle only valid keys
+
+
+          var keyCode = e.keyCode;
+          var validKeyCodes = [33, 34, 35, 36, 38, 40];
+
+          if (validKeyCodes.indexOf(keyCode) == -1 || e.meta || e.ctrl || e.alt) {
+            return true;
+          } // scroll content
+
+
+          setBarAndScrollContent(keyCode); //return false so that event is not bubbled up.
+
+          return false;
+        }
+        /**
+         * Scoll the content and set the bar position when user 
+         * scrolls through keyboard events.
+         */
+
+
+        function setBarAndScrollContent(keyCode) {
+          var factor = 0;
+          var delata = 0;
+          var contentDelta = 0;
+          var barTopPos = parseInt(bar.css('top'));
+          var maxTop = me.outerHeight();
+
+          switch (keyCode) {
+            case 40:
+              //down arrow
+              factor = 1;
+              break;
+
+            case 38:
+              //up arrow
+              factor = -1;
+              break;
+
+            case 33:
+              //page up
+              factor = -o.pageStep;
+              break;
+
+            case 34:
+              //page down
+              factor = o.pageStep;
+              break;
+
+            case 36:
+              //home
+              factor = 0;
+              delta = 0;
+              contentDelta = 0;
+              break;
+
+            case 35:
+              //end
+              factor = 0;
+              delta = maxTop - bar.outerHeight();
+              contentDelta = me[0].scrollHeight;
+              break;
+          }
+          /**
+           * Calculate the amount to scroll for bar and the content depending 
+           * on the multiplier.
+           */
+
+
+          if (factor != 0) {
+            delta = parseInt(bar.css('top')) + factor * parseInt(o.wheelStep) / 100 * bar.outerHeight();
+            delta = Math.min(Math.max(delta, 0), maxTop - bar.outerHeight());
+            contentDelta = delta / (me.outerHeight() - bar.outerHeight()) * (me[0].scrollHeight - me.outerHeight());
+          }
+
+          bar.css({
+            top: delta + 'px'
+          });
+          me.scrollTop(contentDelta); // fire scrolling event
+
+          me.trigger('slimscrolling', ~~delta); // ensure bar is visible
+
+          showBar(); // trigger hide when scroll is stopped
+
+          hideBar();
+        }
+
+        function scrollContent(y, isWheel, isJump) {
+          releaseScroll = false;
+          var delta = y;
+          var maxTop = me.outerHeight() - bar.outerHeight();
+
+          if (isWheel) {
+            // move bar with mouse wheel
+            delta = parseInt(bar.css('top')) + y * parseInt(o.wheelStep) / 100 * bar.outerHeight(); // move bar, make sure it doesn't go out
+
+            delta = Math.min(Math.max(delta, 0), maxTop); // if scrolling down, make sure a fractional change to the
+            // scroll position isn't rounded away when the scrollbar's CSS is set
+            // this flooring of delta would happened automatically when
+            // bar.css is set below, but we floor here for clarity
+
+            delta = y > 0 ? Math.ceil(delta) : Math.floor(delta); // scroll the scrollbar
+
+            bar.css({
+              top: delta + 'px'
+            });
+          } // calculate actual scroll amount
+
+
+          percentScroll = parseInt(bar.css('top')) / (me.outerHeight() - bar.outerHeight());
+          delta = percentScroll * (me[0].scrollHeight - me.outerHeight());
+
+          if (isJump) {
+            delta = y;
+            var offsetTop = delta / me[0].scrollHeight * me.outerHeight();
+            offsetTop = Math.min(Math.max(offsetTop, 0), maxTop);
+            bar.css({
+              top: offsetTop + 'px'
+            });
+          } // scroll content
+
+
+          me.scrollTop(delta); // fire scrolling event
+
+          me.trigger('slimscrolling', ~~delta); // ensure bar is visible
+
+          showBar(); // trigger hide when scroll is stopped
+
+          hideBar();
+        }
+
+        function attachWheel(target) {
+          if (window.addEventListener) {
+            target.addEventListener('DOMMouseScroll', _onWheel, false);
+            target.addEventListener('mousewheel', _onWheel, false);
+          } else {
+            document.attachEvent("onmousewheel", _onWheel);
+          }
+        }
+
+        function attachKeyBoardScroll(target) {
+          // we need tabindex, else key events are not trapped,
+          $(me).add(bar).attr('tabindex', '-50').css({
+            outline: 'none'
+          });
+          $(me).add(bar).on('keydown.slimScroll', _onKeyDown);
+        }
+
+        function getBarHeight() {
+          // calculate scrollbar height and make sure it is not too small
+          barHeight = Math.max(me.outerHeight() / me[0].scrollHeight * me.outerHeight(), minBarHeight);
+          bar.css({
+            height: barHeight + 'px'
+          }); //alert(barHeight);
+          // hide scrollbar if content is not long enough
+
+          var display = Math.ceil(barHeight) >= Math.ceil(me.outerHeight() - 1) ? 'none' : 'block';
+          bar.css({
+            display: display
+          });
+        }
+
+        function showBar() {
+          // recalculate bar height
+          getBarHeight();
+          clearTimeout(queueHide); // when bar reached top or bottom
+
+          if (percentScroll == ~~percentScroll) {
+            //release wheel
+            releaseScroll = o.allowPageScroll; // publish approporiate event
+
+            if (lastScroll != percentScroll) {
+              var msg = ~~percentScroll == 0 ? 'top' : 'bottom';
+              me.trigger('slimscroll', msg);
+            }
+          } else {
+            releaseScroll = false;
+          }
+
+          lastScroll = percentScroll; // show only when required
+
+          if (Math.ceil(barHeight) >= Math.ceil(me.outerHeight() - 1)) {
+            //allow window scroll
+            releaseScroll = true;
+            return;
+          }
+
+          bar.stop(true, true).fadeIn('fast');
+
+          if (o.railVisible) {
+            rail.stop(true, true).fadeIn('fast');
+          }
+        }
+
+        function hideBar() {
+          // only hide when options allow it
+          if (!o.alwaysVisible) {
+            queueHide = setTimeout(function () {
+              if (!(o.disableFadeOut && isOverPanel) && !isOverBar && !isDragg) {
+                bar.fadeOut('slow');
+                rail.fadeOut('slow');
+              }
+            }, 1000);
+          }
+        }
+      }); // maintain chainability
+
+      return this;
+    }
+  });
+  $.fn.extend({
+    slimscroll: $.fn.slimScroll
+  });
+})(jQuery);
+
+/***/ }),
+
+/***/ "./resources/js/lightgallery-all.js":
+/*!******************************************!*\
+  !*** ./resources/js/lightgallery-all.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*! lightgallery - v1.2.18 - 2016-04-13
+* http://sachinchoolur.github.io/lightGallery/
+* Copyright (c) 2016 Sachin N; Licensed Apache 2.0 */
+(function ($, window, document, undefined) {
+  'use strict';
+
+  var defaults = {
+    mode: 'lg-slide',
+    // Ex : 'ease'
+    cssEasing: 'ease',
+    //'for jquery animation'
+    easing: 'linear',
+    speed: 600,
+    height: '100%',
+    width: '100%',
+    addClass: '',
+    startClass: 'lg-start-zoom',
+    backdropDuration: 150,
+    hideBarsDelay: 6000,
+    useLeft: false,
+    closable: true,
+    loop: true,
+    escKey: true,
+    keyPress: true,
+    controls: true,
+    slideEndAnimatoin: true,
+    hideControlOnEnd: false,
+    mousewheel: true,
+    getCaptionFromTitleOrAlt: true,
+    // .lg-item || '.lg-sub-html'
+    appendSubHtmlTo: '.lg-sub-html',
+
+    /**
+     * @desc number of preload slides
+     * will exicute only after the current slide is fully loaded.
+     *
+     * @ex you clicked on 4th image and if preload = 1 then 3rd slide and 5th
+     * slide will be loaded in the background after the 4th slide is fully loaded..
+     * if preload is 2 then 2nd 3rd 5th 6th slides will be preloaded.. ... ...
+     *
+     */
+    preload: 1,
+    showAfterLoad: true,
+    selector: '',
+    selectWithin: '',
+    nextHtml: '',
+    prevHtml: '',
+    // 0, 1
+    index: false,
+    iframeMaxWidth: '100%',
+    download: true,
+    counter: true,
+    appendCounterTo: '.lg-toolbar',
+    swipeThreshold: 50,
+    enableSwipe: true,
+    enableDrag: true,
+    dynamic: false,
+    dynamicEl: [],
+    galleryId: 1
+  };
+
+  function Plugin(element, options) {
+    // Current lightGallery element
+    this.el = element; // Current jquery element
+
+    this.$el = $(element); // lightGallery settings
+
+    this.s = $.extend({}, defaults, options); // When using dynamic mode, ensure dynamicEl is an array
+
+    if (this.s.dynamic && this.s.dynamicEl !== 'undefined' && this.s.dynamicEl.constructor === Array && !this.s.dynamicEl.length) {
+      throw 'When using dynamic mode, you must also define dynamicEl as an Array.';
+    } // lightGallery modules
+
+
+    this.modules = {}; // false when lightgallery complete first slide;
+
+    this.lGalleryOn = false;
+    this.lgBusy = false; // Timeout function for hiding controls;
+
+    this.hideBartimeout = false; // To determine browser supports for touch events;
+
+    this.isTouch = 'ontouchstart' in document.documentElement; // Disable hideControlOnEnd if sildeEndAnimation is true
+
+    if (this.s.slideEndAnimatoin) {
+      this.s.hideControlOnEnd = false;
+    } // Gallery items
+
+
+    if (this.s.dynamic) {
+      this.$items = this.s.dynamicEl;
+    } else {
+      if (this.s.selector === 'this') {
+        this.$items = this.$el;
+      } else if (this.s.selector !== '') {
+        if (this.s.selectWithin) {
+          this.$items = $(this.s.selectWithin).find(this.s.selector);
+        } else {
+          this.$items = this.$el.find($(this.s.selector));
+        }
+      } else {
+        this.$items = this.$el.children();
+      }
+    } // .lg-item
+
+
+    this.$slide = ''; // .lg-outer
+
+    this.$outer = '';
+    this.init();
+    return this;
+  }
+
+  Plugin.prototype.init = function () {
+    var _this = this; // s.preload should not be more than $item.length
+
+
+    if (_this.s.preload > _this.$items.length) {
+      _this.s.preload = _this.$items.length;
+    } // if dynamic option is enabled execute immediately
+
+
+    var _hash = window.location.hash;
+
+    if (_hash.indexOf('lg=' + this.s.galleryId) > 0) {
+      _this.index = parseInt(_hash.split('&slide=')[1], 10);
+      $('body').addClass('lg-from-hash');
+
+      if (!$('body').hasClass('lg-on')) {
+        setTimeout(function () {
+          _this.build(_this.index);
+
+          $('body').addClass('lg-on');
+        });
+      }
+    }
+
+    if (_this.s.dynamic) {
+      _this.$el.trigger('onBeforeOpen.lg');
+
+      _this.index = _this.s.index || 0; // prevent accidental double execution
+
+      if (!$('body').hasClass('lg-on')) {
+        setTimeout(function () {
+          _this.build(_this.index);
+
+          $('body').addClass('lg-on');
+        });
+      }
+    } else {
+      // Using different namespace for click because click event should not unbind if selector is same object('this')
+      _this.$items.on('click.lgcustom', function (event) {
+        // For IE8
+        try {
+          event.preventDefault();
+          event.preventDefault();
+        } catch (er) {
+          event.returnValue = false;
+        }
+
+        _this.$el.trigger('onBeforeOpen.lg');
+
+        _this.index = _this.s.index || _this.$items.index(this); // prevent accidental double execution
+
+        if (!$('body').hasClass('lg-on')) {
+          _this.build(_this.index);
+
+          $('body').addClass('lg-on');
+        }
+      });
+    }
+  };
+
+  Plugin.prototype.build = function (index) {
+    var _this = this;
+
+    _this.structure(); // module constructor
+
+
+    $.each($.fn.lightGallery.modules, function (key) {
+      _this.modules[key] = new $.fn.lightGallery.modules[key](_this.el);
+    }); // initiate slide function
+
+    _this.slide(index, false, false);
+
+    if (_this.s.keyPress) {
+      _this.keyPress();
+    }
+
+    if (_this.$items.length > 1) {
+      _this.arrow();
+
+      setTimeout(function () {
+        _this.enableDrag();
+
+        _this.enableSwipe();
+      }, 50);
+
+      if (_this.s.mousewheel) {
+        _this.mousewheel();
+      }
+    }
+
+    _this.counter();
+
+    _this.closeGallery();
+
+    _this.$el.trigger('onAfterOpen.lg'); // Hide controllers if mouse doesn't move for some period
+
+
+    _this.$outer.on('mousemove.lg click.lg touchstart.lg', function () {
+      _this.$outer.removeClass('lg-hide-items');
+
+      clearTimeout(_this.hideBartimeout); // Timeout will be cleared on each slide movement also
+
+      _this.hideBartimeout = setTimeout(function () {
+        _this.$outer.addClass('lg-hide-items');
+      }, _this.s.hideBarsDelay);
+    });
+  };
+
+  Plugin.prototype.structure = function () {
+    var list = '';
+    var controls = '';
+    var i = 0;
+    var subHtmlCont = '';
+    var template;
+
+    var _this = this;
+
+    $('body').append('<div class="lg-backdrop"></div>');
+    $('.lg-backdrop').css('transition-duration', this.s.backdropDuration + 'ms'); // Create gallery items
+
+    for (i = 0; i < this.$items.length; i++) {
+      list += '<div class="lg-item"></div>';
+    } // Create controlls
+
+
+    if (this.s.controls && this.$items.length > 1) {
+      controls = '<div class="lg-actions">' + '<div class="lg-prev lg-icon">' + this.s.prevHtml + '</div>' + '<div class="lg-next lg-icon">' + this.s.nextHtml + '</div>' + '</div>';
+    }
+
+    if (this.s.appendSubHtmlTo === '.lg-sub-html') {
+      subHtmlCont = '<div class="lg-sub-html"></div>';
+    }
+
+    template = '<div class="lg-outer ' + this.s.addClass + ' ' + this.s.startClass + '">' + '<div class="lg" style="width:' + this.s.width + '; height:' + this.s.height + '">' + '<div class="lg-inner">' + list + '</div>' + '<div class="lg-toolbar group">' + '<span class="lg-close lg-icon"></span>' + '</div>' + controls + subHtmlCont + '</div>' + '</div>';
+    $('body').append(template);
+    this.$outer = $('.lg-outer');
+    this.$slide = this.$outer.find('.lg-item');
+
+    if (this.s.useLeft) {
+      this.$outer.addClass('lg-use-left'); // Set mode lg-slide if use left is true;
+
+      this.s.mode = 'lg-slide';
+    } else {
+      this.$outer.addClass('lg-use-css3');
+    } // For fixed height gallery
+
+
+    _this.setTop();
+
+    $(window).on('resize.lg orientationchange.lg', function () {
+      setTimeout(function () {
+        _this.setTop();
+      }, 100);
+    }); // add class lg-current to remove initial transition
+
+    this.$slide.eq(this.index).addClass('lg-current'); // add Class for css support and transition mode
+
+    if (this.doCss()) {
+      this.$outer.addClass('lg-css3');
+    } else {
+      this.$outer.addClass('lg-css'); // Set speed 0 because no animation will happen if browser doesn't support css3
+
+      this.s.speed = 0;
+    }
+
+    this.$outer.addClass(this.s.mode);
+
+    if (this.s.enableDrag && this.$items.length > 1) {
+      this.$outer.addClass('lg-grab');
+    }
+
+    if (this.s.showAfterLoad) {
+      this.$outer.addClass('lg-show-after-load');
+    }
+
+    if (this.doCss()) {
+      var $inner = this.$outer.find('.lg-inner');
+      $inner.css('transition-timing-function', this.s.cssEasing);
+      $inner.css('transition-duration', this.s.speed + 'ms');
+    }
+
+    $('.lg-backdrop').addClass('in');
+    setTimeout(function () {
+      _this.$outer.addClass('lg-visible');
+    }, this.s.backdropDuration);
+
+    if (this.s.download) {
+      this.$outer.find('.lg-toolbar').append('<a id="lg-download" target="_blank" download class="lg-download lg-icon"></a>');
+    } // Store the current scroll top value to scroll back after closing the gallery..
+
+
+    this.prevScrollTop = $(window).scrollTop();
+  }; // For fixed height gallery
+
+
+  Plugin.prototype.setTop = function () {
+    if (this.s.height !== '100%') {
+      var wH = $(window).height();
+      var top = (wH - parseInt(this.s.height, 10)) / 2;
+      var $lGallery = this.$outer.find('.lg');
+
+      if (wH >= parseInt(this.s.height, 10)) {
+        $lGallery.css('top', top + 'px');
+      } else {
+        $lGallery.css('top', '0px');
+      }
+    }
+  }; // Find css3 support
+
+
+  Plugin.prototype.doCss = function () {
+    // check for css animation support
+    var support = function support() {
+      var transition = ['transition', 'MozTransition', 'WebkitTransition', 'OTransition', 'msTransition', 'KhtmlTransition'];
+      var root = document.documentElement;
+      var i = 0;
+
+      for (i = 0; i < transition.length; i++) {
+        if (transition[i] in root.style) {
+          return true;
+        }
+      }
+    };
+
+    if (support()) {
+      return true;
+    }
+
+    return false;
+  };
+  /**
+   *  @desc Check the given src is video
+   *  @param {String} src
+   *  @return {Object} video type
+   *  Ex:{ youtube  :  ["//www.youtube.com/watch?v=c0asJgSyxcY", "c0asJgSyxcY"] }
+   */
+
+
+  Plugin.prototype.isVideo = function (src, index) {
+    var html;
+
+    if (this.s.dynamic) {
+      html = this.s.dynamicEl[index].html;
+    } else {
+      html = this.$items.eq(index).attr('data-html');
+    }
+
+    if (!src && html) {
+      return {
+        html5: true
+      };
+    }
+
+    var youtube = src.match(/\/\/(?:www\.)?youtu(?:\.be|be\.com)\/(?:watch\?v=|embed\/)?([a-z0-9\-\_\%]+)/i);
+    var vimeo = src.match(/\/\/(?:www\.)?vimeo.com\/([0-9a-z\-_]+)/i);
+    var dailymotion = src.match(/\/\/(?:www\.)?dai.ly\/([0-9a-z\-_]+)/i);
+    var vk = src.match(/\/\/(?:www\.)?(?:vk\.com|vkontakte\.ru)\/(?:video_ext\.php\?)(.*)/i);
+
+    if (youtube) {
+      return {
+        youtube: youtube
+      };
+    } else if (vimeo) {
+      return {
+        vimeo: vimeo
+      };
+    } else if (dailymotion) {
+      return {
+        dailymotion: dailymotion
+      };
+    } else if (vk) {
+      return {
+        vk: vk
+      };
+    }
+  };
+  /**
+   *  @desc Create image counter
+   *  Ex: 1/10
+   */
+
+
+  Plugin.prototype.counter = function () {
+    if (this.s.counter) {
+      $(this.s.appendCounterTo).append('<div id="lg-counter"><span id="lg-counter-current">' + (parseInt(this.index, 10) + 1) + '</span> / <span id="lg-counter-all">' + this.$items.length + '</span></div>');
+    }
+  };
+  /**
+   *  @desc add sub-html into the slide
+   *  @param {Number} index - index of the slide
+   */
+
+
+  Plugin.prototype.addHtml = function (index) {
+    var subHtml = null;
+    var subHtmlUrl;
+
+    if (this.s.dynamic) {
+      if (this.s.dynamicEl[index].subHtmlUrl) {
+        subHtmlUrl = this.s.dynamicEl[index].subHtmlUrl;
+      } else {
+        subHtml = this.s.dynamicEl[index].subHtml;
+      }
+    } else {
+      if (this.$items.eq(index).attr('data-sub-html-url')) {
+        subHtmlUrl = this.$items.eq(index).attr('data-sub-html-url');
+      } else {
+        subHtml = this.$items.eq(index).attr('data-sub-html');
+
+        if (this.s.getCaptionFromTitleOrAlt && !subHtml) {
+          subHtml = this.$items.eq(index).attr('title') || this.$items.eq(index).find('img').first().attr('alt');
+        }
+      }
+    }
+
+    if (!subHtmlUrl) {
+      if (typeof subHtml !== 'undefined' && subHtml !== null) {
+        // get first letter of subhtml
+        // if first letter starts with . or # get the html form the jQuery object
+        var fL = subHtml.substring(0, 1);
+
+        if (fL === '.' || fL === '#') {
+          subHtml = $(subHtml).html();
+        }
+      } else {
+        subHtml = '';
+      }
+    }
+
+    if (this.s.appendSubHtmlTo === '.lg-sub-html') {
+      if (subHtmlUrl) {
+        this.$outer.find(this.s.appendSubHtmlTo).load(subHtmlUrl);
+      } else {
+        this.$outer.find(this.s.appendSubHtmlTo).html(subHtml);
+      }
+    } else {
+      if (subHtmlUrl) {
+        this.$slide.eq(index).load(subHtmlUrl);
+      } else {
+        this.$slide.eq(index).append(subHtml);
+      }
+    } // Add lg-empty-html class if title doesn't exist
+
+
+    if (typeof subHtml !== 'undefined' && subHtml !== null) {
+      if (subHtml === '') {
+        this.$outer.find(this.s.appendSubHtmlTo).addClass('lg-empty-html');
+      } else {
+        this.$outer.find(this.s.appendSubHtmlTo).removeClass('lg-empty-html');
+      }
+    }
+
+    this.$el.trigger('onAfterAppendSubHtml.lg', [index]);
+  };
+  /**
+   *  @desc Preload slides
+   *  @param {Number} index - index of the slide
+   */
+
+
+  Plugin.prototype.preload = function (index) {
+    var i = 1;
+    var j = 1;
+
+    for (i = 1; i <= this.s.preload; i++) {
+      if (i >= this.$items.length - index) {
+        break;
+      }
+
+      this.loadContent(index + i, false, 0);
+    }
+
+    for (j = 1; j <= this.s.preload; j++) {
+      if (index - j < 0) {
+        break;
+      }
+
+      this.loadContent(index - j, false, 0);
+    }
+  };
+  /**
+   *  @desc Load slide content into slide.
+   *  @param {Number} index - index of the slide.
+   *  @param {Boolean} rec - if true call loadcontent() function again.
+   *  @param {Boolean} delay - delay for adding complete class. it is 0 except first time.
+   */
+
+
+  Plugin.prototype.loadContent = function (index, rec, delay) {
+    var _this = this;
+
+    var _hasPoster = false;
+
+    var _$img;
+
+    var _src;
+
+    var _poster;
+
+    var _srcset;
+
+    var _sizes;
+
+    var _html;
+
+    var getResponsiveSrc = function getResponsiveSrc(srcItms) {
+      var rsWidth = [];
+      var rsSrc = [];
+
+      for (var i = 0; i < srcItms.length; i++) {
+        var __src = srcItms[i].split(' '); // Manage empty space
+
+
+        if (__src[0] === '') {
+          __src.splice(0, 1);
+        }
+
+        rsSrc.push(__src[0]);
+        rsWidth.push(__src[1]);
+      }
+
+      var wWidth = $(window).width();
+
+      for (var j = 0; j < rsWidth.length; j++) {
+        if (parseInt(rsWidth[j], 10) > wWidth) {
+          _src = rsSrc[j];
+          break;
+        }
+      }
+    };
+
+    if (_this.s.dynamic) {
+      if (_this.s.dynamicEl[index].poster) {
+        _hasPoster = true;
+        _poster = _this.s.dynamicEl[index].poster;
+      }
+
+      _html = _this.s.dynamicEl[index].html;
+      _src = _this.s.dynamicEl[index].src;
+
+      if (_this.s.dynamicEl[index].responsive) {
+        var srcDyItms = _this.s.dynamicEl[index].responsive.split(',');
+
+        getResponsiveSrc(srcDyItms);
+      }
+
+      _srcset = _this.s.dynamicEl[index].srcset;
+      _sizes = _this.s.dynamicEl[index].sizes;
+    } else {
+      if (_this.$items.eq(index).attr('data-poster')) {
+        _hasPoster = true;
+        _poster = _this.$items.eq(index).attr('data-poster');
+      }
+
+      _html = _this.$items.eq(index).attr('data-html');
+      _src = _this.$items.eq(index).attr('href') || _this.$items.eq(index).attr('data-src');
+
+      if (_this.$items.eq(index).attr('data-responsive')) {
+        var srcItms = _this.$items.eq(index).attr('data-responsive').split(',');
+
+        getResponsiveSrc(srcItms);
+      }
+
+      _srcset = _this.$items.eq(index).attr('data-srcset');
+      _sizes = _this.$items.eq(index).attr('data-sizes');
+    } //if (_src || _srcset || _sizes || _poster) {
+
+
+    var iframe = false;
+
+    if (_this.s.dynamic) {
+      if (_this.s.dynamicEl[index].iframe) {
+        iframe = true;
+      }
+    } else {
+      if (_this.$items.eq(index).attr('data-iframe') === 'true') {
+        iframe = true;
+      }
+    }
+
+    var _isVideo = _this.isVideo(_src, index);
+
+    if (!_this.$slide.eq(index).hasClass('lg-loaded')) {
+      if (iframe) {
+        _this.$slide.eq(index).prepend('<div class="lg-video-cont" style="max-width:' + _this.s.iframeMaxWidth + '"><div class="lg-video"><iframe class="lg-object" frameborder="0" src="' + _src + '"  allowfullscreen="true"></iframe></div></div>');
+      } else if (_hasPoster) {
+        var videoClass = '';
+
+        if (_isVideo && _isVideo.youtube) {
+          videoClass = 'lg-has-youtube';
+        } else if (_isVideo && _isVideo.vimeo) {
+          videoClass = 'lg-has-vimeo';
+        } else {
+          videoClass = 'lg-has-html5';
+        }
+
+        _this.$slide.eq(index).prepend('<div class="lg-video-cont ' + videoClass + ' "><div class="lg-video"><span class="lg-video-play"></span><img class="lg-object lg-has-poster" src="' + _poster + '" /></div></div>');
+      } else if (_isVideo) {
+        _this.$slide.eq(index).prepend('<div class="lg-video-cont "><div class="lg-video"></div></div>');
+
+        _this.$el.trigger('hasVideo.lg', [index, _src, _html]);
+      } else {
+        _this.$slide.eq(index).prepend('<div class="lg-img-wrap"><img class="lg-object lg-image" src="' + _src + '" /></div>');
+      }
+
+      _this.$el.trigger('onAferAppendSlide.lg', [index]);
+
+      _$img = _this.$slide.eq(index).find('.lg-object');
+
+      if (_sizes) {
+        _$img.attr('sizes', _sizes);
+      }
+
+      if (_srcset) {
+        _$img.attr('srcset', _srcset);
+
+        try {
+          picturefill({
+            elements: [_$img[0]]
+          });
+        } catch (e) {
+          console.error('Make sure you have included Picturefill version 2');
+        }
+      }
+
+      if (this.s.appendSubHtmlTo !== '.lg-sub-html') {
+        _this.addHtml(index);
+      }
+
+      _this.$slide.eq(index).addClass('lg-loaded');
+    }
+
+    _this.$slide.eq(index).find('.lg-object').on('load.lg error.lg', function () {
+      // For first time add some delay for displaying the start animation.
+      var _speed = 0; // Do not change the delay value because it is required for zoom plugin.
+      // If gallery opened from direct url (hash) speed value should be 0
+
+      if (delay && !$('body').hasClass('lg-from-hash')) {
+        _speed = delay;
+      }
+
+      setTimeout(function () {
+        _this.$slide.eq(index).addClass('lg-complete');
+
+        _this.$el.trigger('onSlideItemLoad.lg', [index, delay || 0]);
+      }, _speed);
+    }); // @todo check load state for html5 videos
+
+
+    if (_isVideo && _isVideo.html5 && !_hasPoster) {
+      _this.$slide.eq(index).addClass('lg-complete');
+    }
+
+    if (rec === true) {
+      if (!_this.$slide.eq(index).hasClass('lg-complete')) {
+        _this.$slide.eq(index).find('.lg-object').on('load.lg error.lg', function () {
+          _this.preload(index);
+        });
+      } else {
+        _this.preload(index);
+      }
+    } //}
+
+  };
+  /**
+  *   @desc slide function for lightgallery
+      ** Slide() gets call on start
+      ** ** Set lg.on true once slide() function gets called.
+      ** Call loadContent() on slide() function inside setTimeout
+      ** ** On first slide we do not want any animation like slide of fade
+      ** ** So on first slide( if lg.on if false that is first slide) loadContent() should start loading immediately
+      ** ** Else loadContent() should wait for the transition to complete.
+      ** ** So set timeout s.speed + 50
+  <=> ** loadContent() will load slide content in to the particular slide
+      ** ** It has recursion (rec) parameter. if rec === true loadContent() will call preload() function.
+      ** ** preload will execute only when the previous slide is fully loaded (images iframe)
+      ** ** avoid simultaneous image load
+  <=> ** Preload() will check for s.preload value and call loadContent() again accoring to preload value
+      ** loadContent()  <====> Preload();
+   *   @param {Number} index - index of the slide
+  *   @param {Boolean} fromTouch - true if slide function called via touch event or mouse drag
+  *   @param {Boolean} fromThumb - true if slide function called via thumbnail click
+  */
+
+
+  Plugin.prototype.slide = function (index, fromTouch, fromThumb) {
+    var _prevIndex = this.$outer.find('.lg-current').index();
+
+    var _this = this; // Prevent if multiple call
+    // Required for hsh plugin
+
+
+    if (_this.lGalleryOn && _prevIndex === index) {
+      return;
+    }
+
+    var _length = this.$slide.length;
+
+    var _time = _this.lGalleryOn ? this.s.speed : 0;
+
+    var _next = false;
+    var _prev = false;
+
+    if (!_this.lgBusy) {
+      if (this.s.download) {
+        var _src;
+
+        if (_this.s.dynamic) {
+          _src = _this.s.dynamicEl[index].downloadUrl !== false && (_this.s.dynamicEl[index].downloadUrl || _this.s.dynamicEl[index].src);
+        } else {
+          _src = _this.$items.eq(index).attr('data-download-url') !== 'false' && (_this.$items.eq(index).attr('data-download-url') || _this.$items.eq(index).attr('href') || _this.$items.eq(index).attr('data-src'));
+        }
+
+        if (_src) {
+          $('#lg-download').attr('href', _src);
+
+          _this.$outer.removeClass('lg-hide-download');
+        } else {
+          _this.$outer.addClass('lg-hide-download');
+        }
+      }
+
+      this.$el.trigger('onBeforeSlide.lg', [_prevIndex, index, fromTouch, fromThumb]);
+      _this.lgBusy = true;
+      clearTimeout(_this.hideBartimeout); // Add title if this.s.appendSubHtmlTo === lg-sub-html
+
+      if (this.s.appendSubHtmlTo === '.lg-sub-html') {
+        // wait for slide animation to complete
+        setTimeout(function () {
+          _this.addHtml(index);
+        }, _time);
+      }
+
+      this.arrowDisable(index);
+
+      if (!fromTouch) {
+        // remove all transitions
+        _this.$outer.addClass('lg-no-trans');
+
+        this.$slide.removeClass('lg-prev-slide lg-next-slide');
+
+        if (index < _prevIndex) {
+          _prev = true;
+
+          if (index === 0 && _prevIndex === _length - 1 && !fromThumb) {
+            _prev = false;
+            _next = true;
+          }
+        } else if (index > _prevIndex) {
+          _next = true;
+
+          if (index === _length - 1 && _prevIndex === 0 && !fromThumb) {
+            _prev = true;
+            _next = false;
+          }
+        }
+
+        if (_prev) {
+          //prevslide
+          this.$slide.eq(index).addClass('lg-prev-slide');
+          this.$slide.eq(_prevIndex).addClass('lg-next-slide');
+        } else if (_next) {
+          // next slide
+          this.$slide.eq(index).addClass('lg-next-slide');
+          this.$slide.eq(_prevIndex).addClass('lg-prev-slide');
+        } // give 50 ms for browser to add/remove class
+
+
+        setTimeout(function () {
+          _this.$slide.removeClass('lg-current'); //_this.$slide.eq(_prevIndex).removeClass('lg-current');
+
+
+          _this.$slide.eq(index).addClass('lg-current'); // reset all transitions
+
+
+          _this.$outer.removeClass('lg-no-trans');
+        }, 50);
+      } else {
+        var touchPrev = index - 1;
+        var touchNext = index + 1;
+
+        if (index === 0 && _prevIndex === _length - 1) {
+          // next slide
+          touchNext = 0;
+          touchPrev = _length - 1;
+        } else if (index === _length - 1 && _prevIndex === 0) {
+          // prev slide
+          touchNext = 0;
+          touchPrev = _length - 1;
+        }
+
+        this.$slide.removeClass('lg-prev-slide lg-current lg-next-slide');
+
+        _this.$slide.eq(touchPrev).addClass('lg-prev-slide');
+
+        _this.$slide.eq(touchNext).addClass('lg-next-slide');
+
+        _this.$slide.eq(index).addClass('lg-current');
+      }
+
+      if (_this.lGalleryOn) {
+        setTimeout(function () {
+          _this.loadContent(index, true, 0);
+        }, this.s.speed + 50);
+        setTimeout(function () {
+          _this.lgBusy = false;
+
+          _this.$el.trigger('onAfterSlide.lg', [_prevIndex, index, fromTouch, fromThumb]);
+        }, this.s.speed);
+      } else {
+        _this.loadContent(index, true, _this.s.backdropDuration);
+
+        _this.lgBusy = false;
+
+        _this.$el.trigger('onAfterSlide.lg', [_prevIndex, index, fromTouch, fromThumb]);
+      }
+
+      _this.lGalleryOn = true;
+
+      if (this.s.counter) {
+        $('#lg-counter-current').text(index + 1);
+      }
+    }
+  };
+  /**
+   *  @desc Go to next slide
+   *  @param {Boolean} fromTouch - true if slide function called via touch event
+   */
+
+
+  Plugin.prototype.goToNextSlide = function (fromTouch) {
+    var _this = this;
+
+    if (!_this.lgBusy) {
+      if (_this.index + 1 < _this.$slide.length) {
+        _this.index++;
+
+        _this.$el.trigger('onBeforeNextSlide.lg', [_this.index]);
+
+        _this.slide(_this.index, fromTouch, false);
+      } else {
+        if (_this.s.loop) {
+          _this.index = 0;
+
+          _this.$el.trigger('onBeforeNextSlide.lg', [_this.index]);
+
+          _this.slide(_this.index, fromTouch, false);
+        } else if (_this.s.slideEndAnimatoin) {
+          _this.$outer.addClass('lg-right-end');
+
+          setTimeout(function () {
+            _this.$outer.removeClass('lg-right-end');
+          }, 400);
+        }
+      }
+    }
+  };
+  /**
+   *  @desc Go to previous slide
+   *  @param {Boolean} fromTouch - true if slide function called via touch event
+   */
+
+
+  Plugin.prototype.goToPrevSlide = function (fromTouch) {
+    var _this = this;
+
+    if (!_this.lgBusy) {
+      if (_this.index > 0) {
+        _this.index--;
+
+        _this.$el.trigger('onBeforePrevSlide.lg', [_this.index, fromTouch]);
+
+        _this.slide(_this.index, fromTouch, false);
+      } else {
+        if (_this.s.loop) {
+          _this.index = _this.$items.length - 1;
+
+          _this.$el.trigger('onBeforePrevSlide.lg', [_this.index, fromTouch]);
+
+          _this.slide(_this.index, fromTouch, false);
+        } else if (_this.s.slideEndAnimatoin) {
+          _this.$outer.addClass('lg-left-end');
+
+          setTimeout(function () {
+            _this.$outer.removeClass('lg-left-end');
+          }, 400);
+        }
+      }
+    }
+  };
+
+  Plugin.prototype.keyPress = function () {
+    var _this = this;
+
+    if (this.$items.length > 1) {
+      $(window).on('keyup.lg', function (e) {
+        if (_this.$items.length > 1) {
+          if (e.keyCode === 37) {
+            e.preventDefault();
+
+            _this.goToPrevSlide();
+          }
+
+          if (e.keyCode === 39) {
+            e.preventDefault();
+
+            _this.goToNextSlide();
+          }
+        }
+      });
+    }
+
+    $(window).on('keydown.lg', function (e) {
+      if (_this.s.escKey === true && e.keyCode === 27) {
+        e.preventDefault();
+
+        if (!_this.$outer.hasClass('lg-thumb-open')) {
+          _this.destroy();
+        } else {
+          _this.$outer.removeClass('lg-thumb-open');
+        }
+      }
+    });
+  };
+
+  Plugin.prototype.arrow = function () {
+    var _this = this;
+
+    this.$outer.find('.lg-prev').on('click.lg', function () {
+      _this.goToPrevSlide();
+    });
+    this.$outer.find('.lg-next').on('click.lg', function () {
+      _this.goToNextSlide();
+    });
+  };
+
+  Plugin.prototype.arrowDisable = function (index) {
+    // Disable arrows if s.hideControlOnEnd is true
+    if (!this.s.loop && this.s.hideControlOnEnd) {
+      if (index + 1 < this.$slide.length) {
+        this.$outer.find('.lg-next').removeAttr('disabled').removeClass('disabled');
+      } else {
+        this.$outer.find('.lg-next').attr('disabled', 'disabled').addClass('disabled');
+      }
+
+      if (index > 0) {
+        this.$outer.find('.lg-prev').removeAttr('disabled').removeClass('disabled');
+      } else {
+        this.$outer.find('.lg-prev').attr('disabled', 'disabled').addClass('disabled');
+      }
+    }
+  };
+
+  Plugin.prototype.setTranslate = function ($el, xValue, yValue) {
+    // jQuery supports Automatic CSS prefixing since jQuery 1.8.0
+    if (this.s.useLeft) {
+      $el.css('left', xValue);
+    } else {
+      $el.css({
+        transform: 'translate3d(' + xValue + 'px, ' + yValue + 'px, 0px)'
+      });
+    }
+  };
+
+  Plugin.prototype.touchMove = function (startCoords, endCoords) {
+    var distance = endCoords - startCoords;
+
+    if (Math.abs(distance) > 15) {
+      // reset opacity and transition duration
+      this.$outer.addClass('lg-dragging'); // move current slide
+
+      this.setTranslate(this.$slide.eq(this.index), distance, 0); // move next and prev slide with current slide
+
+      this.setTranslate($('.lg-prev-slide'), -this.$slide.eq(this.index).width() + distance, 0);
+      this.setTranslate($('.lg-next-slide'), this.$slide.eq(this.index).width() + distance, 0);
+    }
+  };
+
+  Plugin.prototype.touchEnd = function (distance) {
+    var _this = this; // keep slide animation for any mode while dragg/swipe
+
+
+    if (_this.s.mode !== 'lg-slide') {
+      _this.$outer.addClass('lg-slide');
+    }
+
+    this.$slide.not('.lg-current, .lg-prev-slide, .lg-next-slide').css('opacity', '0'); // set transition duration
+
+    setTimeout(function () {
+      _this.$outer.removeClass('lg-dragging');
+
+      if (distance < 0 && Math.abs(distance) > _this.s.swipeThreshold) {
+        _this.goToNextSlide(true);
+      } else if (distance > 0 && Math.abs(distance) > _this.s.swipeThreshold) {
+        _this.goToPrevSlide(true);
+      } else if (Math.abs(distance) < 5) {
+        // Trigger click if distance is less than 5 pix
+        _this.$el.trigger('onSlideClick.lg');
+      }
+
+      _this.$slide.removeAttr('style');
+    }); // remove slide class once drag/swipe is completed if mode is not slide
+
+    setTimeout(function () {
+      if (!_this.$outer.hasClass('lg-dragging') && _this.s.mode !== 'lg-slide') {
+        _this.$outer.removeClass('lg-slide');
+      }
+    }, _this.s.speed + 100);
+  };
+
+  Plugin.prototype.enableSwipe = function () {
+    var _this = this;
+
+    var startCoords = 0;
+    var endCoords = 0;
+    var isMoved = false;
+
+    if (_this.s.enableSwipe && _this.isTouch && _this.doCss()) {
+      _this.$slide.on('touchstart.lg', function (e) {
+        if (!_this.$outer.hasClass('lg-zoomed') && !_this.lgBusy) {
+          e.preventDefault();
+
+          _this.manageSwipeClass();
+
+          startCoords = e.originalEvent.targetTouches[0].pageX;
+        }
+      });
+
+      _this.$slide.on('touchmove.lg', function (e) {
+        if (!_this.$outer.hasClass('lg-zoomed')) {
+          e.preventDefault();
+          endCoords = e.originalEvent.targetTouches[0].pageX;
+
+          _this.touchMove(startCoords, endCoords);
+
+          isMoved = true;
+        }
+      });
+
+      _this.$slide.on('touchend.lg', function () {
+        if (!_this.$outer.hasClass('lg-zoomed')) {
+          if (isMoved) {
+            isMoved = false;
+
+            _this.touchEnd(endCoords - startCoords);
+          } else {
+            _this.$el.trigger('onSlideClick.lg');
+          }
+        }
+      });
+    }
+  };
+
+  Plugin.prototype.enableDrag = function () {
+    var _this = this;
+
+    var startCoords = 0;
+    var endCoords = 0;
+    var isDraging = false;
+    var isMoved = false;
+
+    if (_this.s.enableDrag && !_this.isTouch && _this.doCss()) {
+      _this.$slide.on('mousedown.lg', function (e) {
+        // execute only on .lg-object
+        if (!_this.$outer.hasClass('lg-zoomed')) {
+          if ($(e.target).hasClass('lg-object') || $(e.target).hasClass('lg-video-play')) {
+            e.preventDefault();
+
+            if (!_this.lgBusy) {
+              _this.manageSwipeClass();
+
+              startCoords = e.pageX;
+              isDraging = true; // ** Fix for webkit cursor issue https://code.google.com/p/chromium/issues/detail?id=26723
+
+              _this.$outer.scrollLeft += 1;
+              _this.$outer.scrollLeft -= 1; // *
+
+              _this.$outer.removeClass('lg-grab').addClass('lg-grabbing');
+
+              _this.$el.trigger('onDragstart.lg');
+            }
+          }
+        }
+      });
+
+      $(window).on('mousemove.lg', function (e) {
+        if (isDraging) {
+          isMoved = true;
+          endCoords = e.pageX;
+
+          _this.touchMove(startCoords, endCoords);
+
+          _this.$el.trigger('onDragmove.lg');
+        }
+      });
+      $(window).on('mouseup.lg', function (e) {
+        if (isMoved) {
+          isMoved = false;
+
+          _this.touchEnd(endCoords - startCoords);
+
+          _this.$el.trigger('onDragend.lg');
+        } else if ($(e.target).hasClass('lg-object') || $(e.target).hasClass('lg-video-play')) {
+          _this.$el.trigger('onSlideClick.lg');
+        } // Prevent execution on click
+
+
+        if (isDraging) {
+          isDraging = false;
+
+          _this.$outer.removeClass('lg-grabbing').addClass('lg-grab');
+        }
+      });
+    }
+  };
+
+  Plugin.prototype.manageSwipeClass = function () {
+    var touchNext = this.index + 1;
+    var touchPrev = this.index - 1;
+    var length = this.$slide.length;
+
+    if (this.s.loop) {
+      if (this.index === 0) {
+        touchPrev = length - 1;
+      } else if (this.index === length - 1) {
+        touchNext = 0;
+      }
+    }
+
+    this.$slide.removeClass('lg-next-slide lg-prev-slide');
+
+    if (touchPrev > -1) {
+      this.$slide.eq(touchPrev).addClass('lg-prev-slide');
+    }
+
+    this.$slide.eq(touchNext).addClass('lg-next-slide');
+  };
+
+  Plugin.prototype.mousewheel = function () {
+    var _this = this;
+
+    _this.$outer.on('mousewheel.lg', function (e) {
+      if (!e.deltaY) {
+        return;
+      }
+
+      if (e.deltaY > 0) {
+        _this.goToPrevSlide();
+      } else {
+        _this.goToNextSlide();
+      }
+
+      e.preventDefault();
+    });
+  };
+
+  Plugin.prototype.closeGallery = function () {
+    var _this = this;
+
+    var mousedown = false;
+    this.$outer.find('.lg-close').on('click.lg', function () {
+      _this.destroy();
+    });
+
+    if (_this.s.closable) {
+      // If you drag the slide and release outside gallery gets close on chrome
+      // for preventing this check mousedown and mouseup happened on .lg-item or lg-outer
+      _this.$outer.on('mousedown.lg', function (e) {
+        if ($(e.target).is('.lg-outer') || $(e.target).is('.lg-item ') || $(e.target).is('.lg-img-wrap')) {
+          mousedown = true;
+        } else {
+          mousedown = false;
+        }
+      });
+
+      _this.$outer.on('mouseup.lg', function (e) {
+        if ($(e.target).is('.lg-outer') || $(e.target).is('.lg-item ') || $(e.target).is('.lg-img-wrap') && mousedown) {
+          if (!_this.$outer.hasClass('lg-dragging')) {
+            _this.destroy();
+          }
+        }
+      });
+    }
+  };
+
+  Plugin.prototype.destroy = function (d) {
+    var _this = this;
+
+    if (!d) {
+      _this.$el.trigger('onBeforeClose.lg');
+    }
+
+    $(window).scrollTop(_this.prevScrollTop);
+    /**
+     * if d is false or undefined destroy will only close the gallery
+     * plugins instance remains with the element
+     *
+     * if d is true destroy will completely remove the plugin
+     */
+
+    if (d) {
+      if (!_this.s.dynamic) {
+        // only when not using dynamic mode is $items a jquery collection
+        this.$items.off('click.lg click.lgcustom');
+      }
+
+      $.removeData(_this.el, 'lightGallery');
+    } // Unbind all events added by lightGallery
+
+
+    this.$el.off('.lg.tm'); // Distroy all lightGallery modules
+
+    $.each($.fn.lightGallery.modules, function (key) {
+      if (_this.modules[key]) {
+        _this.modules[key].destroy();
+      }
+    });
+    this.lGalleryOn = false;
+    clearTimeout(_this.hideBartimeout);
+    this.hideBartimeout = false;
+    $(window).off('.lg');
+    $('body').removeClass('lg-on lg-from-hash');
+
+    if (_this.$outer) {
+      _this.$outer.removeClass('lg-visible');
+    }
+
+    $('.lg-backdrop').removeClass('in');
+    setTimeout(function () {
+      if (_this.$outer) {
+        _this.$outer.remove();
+      }
+
+      $('.lg-backdrop').remove();
+
+      if (!d) {
+        _this.$el.trigger('onCloseAfter.lg');
+      }
+    }, _this.s.backdropDuration + 50);
+  };
+
+  $.fn.lightGallery = function (options) {
+    return this.each(function () {
+      if (!$.data(this, 'lightGallery')) {
+        $.data(this, 'lightGallery', new Plugin(this, options));
+      } else {
+        try {
+          $(this).data('lightGallery').init();
+        } catch (err) {
+          console.error('lightGallery has not initiated properly');
+        }
+      }
+    });
+  };
+
+  $.fn.lightGallery.modules = {};
+})(jQuery, window, document);
+/**
+ * Autoplay Plugin
+ * @version 1.2.0
+ * @author Sachin N - @sachinchoolur
+ * @license MIT License (MIT)
+ */
+
+
+(function ($, window, document, undefined) {
+  'use strict';
+
+  var defaults = {
+    autoplay: false,
+    pause: 5000,
+    progressBar: true,
+    fourceAutoplay: false,
+    autoplayControls: true,
+    appendAutoplayControlsTo: '.lg-toolbar'
+  };
+  /**
+   * Creates the autoplay plugin.
+   * @param {object} element - lightGallery element
+   */
+
+  var Autoplay = function Autoplay(element) {
+    this.core = $(element).data('lightGallery');
+    this.$el = $(element); // Execute only if items are above 1
+
+    if (this.core.$items.length < 2) {
+      return false;
+    }
+
+    this.core.s = $.extend({}, defaults, this.core.s);
+    this.interval = false; // Identify if slide happened from autoplay
+
+    this.fromAuto = true; // Identify if autoplay canceled from touch/drag
+
+    this.canceledOnTouch = false; // save fourceautoplay value
+
+    this.fourceAutoplayTemp = this.core.s.fourceAutoplay; // do not allow progress bar if browser does not support css3 transitions
+
+    if (!this.core.doCss()) {
+      this.core.s.progressBar = false;
+    }
+
+    this.init();
+    return this;
+  };
+
+  Autoplay.prototype.init = function () {
+    var _this = this; // append autoplay controls
+
+
+    if (_this.core.s.autoplayControls) {
+      _this.controls();
+    } // Create progress bar
+
+
+    if (_this.core.s.progressBar) {
+      _this.core.$outer.find('.lg').append('<div class="lg-progress-bar"><div class="lg-progress"></div></div>');
+    } // set progress
+
+
+    _this.progress(); // Start autoplay
+
+
+    if (_this.core.s.autoplay) {
+      _this.startlAuto();
+    } // cancel interval on touchstart and dragstart
+
+
+    _this.$el.on('onDragstart.lg.tm touchstart.lg.tm', function () {
+      if (_this.interval) {
+        _this.cancelAuto();
+
+        _this.canceledOnTouch = true;
+      }
+    }); // restore autoplay if autoplay canceled from touchstart / dragstart
+
+
+    _this.$el.on('onDragend.lg.tm touchend.lg.tm onSlideClick.lg.tm', function () {
+      if (!_this.interval && _this.canceledOnTouch) {
+        _this.startlAuto();
+
+        _this.canceledOnTouch = false;
+      }
+    });
+  };
+
+  Autoplay.prototype.progress = function () {
+    var _this = this;
+
+    var _$progressBar;
+
+    var _$progress;
+
+    _this.$el.on('onBeforeSlide.lg.tm', function () {
+      // start progress bar animation
+      if (_this.core.s.progressBar && _this.fromAuto) {
+        _$progressBar = _this.core.$outer.find('.lg-progress-bar');
+        _$progress = _this.core.$outer.find('.lg-progress');
+
+        if (_this.interval) {
+          _$progress.removeAttr('style');
+
+          _$progressBar.removeClass('lg-start');
+
+          setTimeout(function () {
+            _$progress.css('transition', 'width ' + (_this.core.s.speed + _this.core.s.pause) + 'ms ease 0s');
+
+            _$progressBar.addClass('lg-start');
+          }, 20);
+        }
+      } // Remove setinterval if slide is triggered manually and fourceautoplay is false
+
+
+      if (!_this.fromAuto && !_this.core.s.fourceAutoplay) {
+        _this.cancelAuto();
+      }
+
+      _this.fromAuto = false;
+    });
+  }; // Manage autoplay via play/stop buttons
+
+
+  Autoplay.prototype.controls = function () {
+    var _this = this;
+
+    var _html = '<span class="lg-autoplay-button lg-icon"></span>'; // Append autoplay controls
+
+    $(this.core.s.appendAutoplayControlsTo).append(_html);
+
+    _this.core.$outer.find('.lg-autoplay-button').on('click.lg', function () {
+      if ($(_this.core.$outer).hasClass('lg-show-autoplay')) {
+        _this.cancelAuto();
+
+        _this.core.s.fourceAutoplay = false;
+      } else {
+        if (!_this.interval) {
+          _this.startlAuto();
+
+          _this.core.s.fourceAutoplay = _this.fourceAutoplayTemp;
+        }
+      }
+    });
+  }; // Autostart gallery
+
+
+  Autoplay.prototype.startlAuto = function () {
+    var _this = this;
+
+    _this.core.$outer.find('.lg-progress').css('transition', 'width ' + (_this.core.s.speed + _this.core.s.pause) + 'ms ease 0s');
+
+    _this.core.$outer.addClass('lg-show-autoplay');
+
+    _this.core.$outer.find('.lg-progress-bar').addClass('lg-start');
+
+    _this.interval = setInterval(function () {
+      if (_this.core.index + 1 < _this.core.$items.length) {
+        _this.core.index = _this.core.index;
+      } else {
+        _this.core.index = -1;
+      }
+
+      _this.core.index++;
+      _this.fromAuto = true;
+
+      _this.core.slide(_this.core.index, false, false);
+    }, _this.core.s.speed + _this.core.s.pause);
+  }; // cancel Autostart
+
+
+  Autoplay.prototype.cancelAuto = function () {
+    clearInterval(this.interval);
+    this.interval = false;
+    this.core.$outer.find('.lg-progress').removeAttr('style');
+    this.core.$outer.removeClass('lg-show-autoplay');
+    this.core.$outer.find('.lg-progress-bar').removeClass('lg-start');
+  };
+
+  Autoplay.prototype.destroy = function () {
+    this.cancelAuto();
+    this.core.$outer.find('.lg-progress-bar').remove();
+  };
+
+  $.fn.lightGallery.modules.autoplay = Autoplay;
+})(jQuery, window, document);
+
+(function ($, window, document, undefined) {
+  'use strict';
+
+  var defaults = {
+    fullScreen: true
+  };
+
+  var Fullscreen = function Fullscreen(element) {
+    // get lightGallery core plugin data
+    this.core = $(element).data('lightGallery');
+    this.$el = $(element); // extend module defalut settings with lightGallery core settings
+
+    this.core.s = $.extend({}, defaults, this.core.s);
+    this.init();
+    return this;
+  };
+
+  Fullscreen.prototype.init = function () {
+    var fullScreen = '';
+
+    if (this.core.s.fullScreen) {
+      // check for fullscreen browser support
+      if (!document.fullscreenEnabled && !document.webkitFullscreenEnabled && !document.mozFullScreenEnabled && !document.msFullscreenEnabled) {
+        return;
+      } else {
+        fullScreen = '<span class="lg-fullscreen lg-icon"></span>';
+        this.core.$outer.find('.lg-toolbar').append(fullScreen);
+        this.fullScreen();
+      }
+    }
+  };
+
+  Fullscreen.prototype.requestFullscreen = function () {
+    var el = document.documentElement;
+
+    if (el.requestFullscreen) {
+      el.requestFullscreen();
+    } else if (el.msRequestFullscreen) {
+      el.msRequestFullscreen();
+    } else if (el.mozRequestFullScreen) {
+      el.mozRequestFullScreen();
+    } else if (el.webkitRequestFullscreen) {
+      el.webkitRequestFullscreen();
+    }
+  };
+
+  Fullscreen.prototype.exitFullscreen = function () {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+  }; // https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Using_full_screen_mode
+
+
+  Fullscreen.prototype.fullScreen = function () {
+    var _this = this;
+
+    $(document).on('fullscreenchange.lg webkitfullscreenchange.lg mozfullscreenchange.lg MSFullscreenChange.lg', function () {
+      _this.core.$outer.toggleClass('lg-fullscreen-on');
+    });
+    this.core.$outer.find('.lg-fullscreen').on('click.lg', function () {
+      if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+        _this.requestFullscreen();
+      } else {
+        _this.exitFullscreen();
+      }
+    });
+  };
+
+  Fullscreen.prototype.destroy = function () {
+    // exit from fullscreen if activated
+    this.exitFullscreen();
+    $(document).off('fullscreenchange.lg webkitfullscreenchange.lg mozfullscreenchange.lg MSFullscreenChange.lg');
+  };
+
+  $.fn.lightGallery.modules.fullscreen = Fullscreen;
+})(jQuery, window, document);
+
+(function ($, window, document, undefined) {
+  'use strict';
+
+  var defaults = {
+    pager: false
+  };
+
+  var Pager = function Pager(element) {
+    this.core = $(element).data('lightGallery');
+    this.$el = $(element);
+    this.core.s = $.extend({}, defaults, this.core.s);
+
+    if (this.core.s.pager && this.core.$items.length > 1) {
+      this.init();
+    }
+
+    return this;
+  };
+
+  Pager.prototype.init = function () {
+    var _this = this;
+
+    var pagerList = '';
+    var $pagerCont;
+    var $pagerOuter;
+    var timeout;
+
+    _this.core.$outer.find('.lg').append('<div class="lg-pager-outer"></div>');
+
+    if (_this.core.s.dynamic) {
+      for (var i = 0; i < _this.core.s.dynamicEl.length; i++) {
+        pagerList += '<span class="lg-pager-cont"> <span class="lg-pager"></span><div class="lg-pager-thumb-cont"><span class="lg-caret"></span> <img src="' + _this.core.s.dynamicEl[i].thumb + '" /></div></span>';
+      }
+    } else {
+      _this.core.$items.each(function () {
+        if (!_this.core.s.exThumbImage) {
+          pagerList += '<span class="lg-pager-cont"> <span class="lg-pager"></span><div class="lg-pager-thumb-cont"><span class="lg-caret"></span> <img src="' + $(this).find('img').attr('src') + '" /></div></span>';
+        } else {
+          pagerList += '<span class="lg-pager-cont"> <span class="lg-pager"></span><div class="lg-pager-thumb-cont"><span class="lg-caret"></span> <img src="' + $(this).attr(_this.core.s.exThumbImage) + '" /></div></span>';
+        }
+      });
+    }
+
+    $pagerOuter = _this.core.$outer.find('.lg-pager-outer');
+    $pagerOuter.html(pagerList);
+    $pagerCont = _this.core.$outer.find('.lg-pager-cont');
+    $pagerCont.on('click.lg touchend.lg', function () {
+      var _$this = $(this);
+
+      _this.core.index = _$this.index();
+
+      _this.core.slide(_this.core.index, false, false);
+    });
+    $pagerOuter.on('mouseover.lg', function () {
+      clearTimeout(timeout);
+      $pagerOuter.addClass('lg-pager-hover');
+    });
+    $pagerOuter.on('mouseout.lg', function () {
+      timeout = setTimeout(function () {
+        $pagerOuter.removeClass('lg-pager-hover');
+      });
+    });
+
+    _this.core.$el.on('onBeforeSlide.lg.tm', function (e, prevIndex, index) {
+      $pagerCont.removeClass('lg-pager-active');
+      $pagerCont.eq(index).addClass('lg-pager-active');
+    });
+  };
+
+  Pager.prototype.destroy = function () {};
+
+  $.fn.lightGallery.modules.pager = Pager;
+})(jQuery, window, document);
+
+(function ($, window, document, undefined) {
+  'use strict';
+
+  var defaults = {
+    thumbnail: true,
+    animateThumb: true,
+    currentPagerPosition: 'middle',
+    thumbWidth: 100,
+    thumbContHeight: 100,
+    thumbMargin: 5,
+    exThumbImage: false,
+    showThumbByDefault: true,
+    toogleThumb: true,
+    pullCaptionUp: true,
+    enableThumbDrag: true,
+    enableThumbSwipe: true,
+    swipeThreshold: 50,
+    loadYoutubeThumbnail: true,
+    youtubeThumbSize: 1,
+    loadVimeoThumbnail: true,
+    vimeoThumbSize: 'thumbnail_small',
+    loadDailymotionThumbnail: true
+  };
+
+  var Thumbnail = function Thumbnail(element) {
+    // get lightGallery core plugin data
+    this.core = $(element).data('lightGallery'); // extend module default settings with lightGallery core settings
+
+    this.core.s = $.extend({}, defaults, this.core.s);
+    this.$el = $(element);
+    this.$thumbOuter = null;
+    this.thumbOuterWidth = 0;
+    this.thumbTotalWidth = this.core.$items.length * (this.core.s.thumbWidth + this.core.s.thumbMargin);
+    this.thumbIndex = this.core.index; // Thumbnail animation value
+
+    this.left = 0;
+    this.init();
+    return this;
+  };
+
+  Thumbnail.prototype.init = function () {
+    var _this = this;
+
+    if (this.core.s.thumbnail && this.core.$items.length > 1) {
+      if (this.core.s.showThumbByDefault) {
+        setTimeout(function () {
+          _this.core.$outer.addClass('lg-thumb-open');
+        }, 700);
+      }
+
+      if (this.core.s.pullCaptionUp) {
+        this.core.$outer.addClass('lg-pull-caption-up');
+      }
+
+      this.build();
+
+      if (this.core.s.animateThumb) {
+        if (this.core.s.enableThumbDrag && !this.core.isTouch && this.core.doCss()) {
+          this.enableThumbDrag();
+        }
+
+        if (this.core.s.enableThumbSwipe && this.core.isTouch && this.core.doCss()) {
+          this.enableThumbSwipe();
+        }
+
+        this.thumbClickable = false;
+      } else {
+        this.thumbClickable = true;
+      }
+
+      this.toogle();
+      this.thumbkeyPress();
+    }
+  };
+
+  Thumbnail.prototype.build = function () {
+    var _this = this;
+
+    var thumbList = '';
+    var vimeoErrorThumbSize = '';
+    var $thumb;
+    var html = '<div class="lg-thumb-outer">' + '<div class="lg-thumb group">' + '</div>' + '</div>';
+
+    switch (this.core.s.vimeoThumbSize) {
+      case 'thumbnail_large':
+        vimeoErrorThumbSize = '640';
+        break;
+
+      case 'thumbnail_medium':
+        vimeoErrorThumbSize = '200x150';
+        break;
+
+      case 'thumbnail_small':
+        vimeoErrorThumbSize = '100x75';
+    }
+
+    _this.core.$outer.addClass('lg-has-thumb');
+
+    _this.core.$outer.find('.lg').append(html);
+
+    _this.$thumbOuter = _this.core.$outer.find('.lg-thumb-outer');
+    _this.thumbOuterWidth = _this.$thumbOuter.width();
+
+    if (_this.core.s.animateThumb) {
+      _this.core.$outer.find('.lg-thumb').css({
+        width: _this.thumbTotalWidth + 'px',
+        position: 'relative'
+      });
+    }
+
+    if (this.core.s.animateThumb) {
+      _this.$thumbOuter.css('height', _this.core.s.thumbContHeight + 'px');
+    }
+
+    function getThumb(src, thumb, index) {
+      var isVideo = _this.core.isVideo(src, index) || {};
+      var thumbImg;
+      var vimeoId = '';
+
+      if (isVideo.youtube || isVideo.vimeo || isVideo.dailymotion) {
+        if (isVideo.youtube) {
+          if (_this.core.s.loadYoutubeThumbnail) {
+            thumbImg = '//img.youtube.com/vi/' + isVideo.youtube[1] + '/' + _this.core.s.youtubeThumbSize + '.jpg';
+          } else {
+            thumbImg = thumb;
+          }
+        } else if (isVideo.vimeo) {
+          if (_this.core.s.loadVimeoThumbnail) {
+            thumbImg = '//i.vimeocdn.com/video/error_' + vimeoErrorThumbSize + '.jpg';
+            vimeoId = isVideo.vimeo[1];
+          } else {
+            thumbImg = thumb;
+          }
+        } else if (isVideo.dailymotion) {
+          if (_this.core.s.loadDailymotionThumbnail) {
+            thumbImg = '//www.dailymotion.com/thumbnail/video/' + isVideo.dailymotion[1];
+          } else {
+            thumbImg = thumb;
+          }
+        }
+      } else {
+        thumbImg = thumb;
+      }
+
+      thumbList += '<div data-vimeo-id="' + vimeoId + '" class="lg-thumb-item" style="width:' + _this.core.s.thumbWidth + 'px; margin-right: ' + _this.core.s.thumbMargin + 'px"><img src="' + thumbImg + '" /></div>';
+      vimeoId = '';
+    }
+
+    if (_this.core.s.dynamic) {
+      for (var i = 0; i < _this.core.s.dynamicEl.length; i++) {
+        getThumb(_this.core.s.dynamicEl[i].src, _this.core.s.dynamicEl[i].thumb, i);
+      }
+    } else {
+      _this.core.$items.each(function (i) {
+        if (!_this.core.s.exThumbImage) {
+          getThumb($(this).attr('href') || $(this).attr('data-src'), $(this).find('img').attr('src'), i);
+        } else {
+          getThumb($(this).attr('href') || $(this).attr('data-src'), $(this).attr(_this.core.s.exThumbImage), i);
+        }
+      });
+    }
+
+    _this.core.$outer.find('.lg-thumb').html(thumbList);
+
+    $thumb = _this.core.$outer.find('.lg-thumb-item'); // Load vimeo thumbnails
+
+    $thumb.each(function () {
+      var $this = $(this);
+      var vimeoVideoId = $this.attr('data-vimeo-id');
+
+      if (vimeoVideoId) {
+        $.getJSON('//www.vimeo.com/api/v2/video/' + vimeoVideoId + '.json?callback=?', {
+          format: 'json'
+        }, function (data) {
+          $this.find('img').attr('src', data[0][_this.core.s.vimeoThumbSize]);
+        });
+      }
+    }); // manage active class for thumbnail
+
+    $thumb.eq(_this.core.index).addClass('active');
+
+    _this.core.$el.on('onBeforeSlide.lg.tm', function () {
+      $thumb.removeClass('active');
+      $thumb.eq(_this.core.index).addClass('active');
+    });
+
+    $thumb.on('click.lg touchend.lg', function () {
+      var _$this = $(this);
+
+      setTimeout(function () {
+        // In IE9 and bellow touch does not support
+        // Go to slide if browser does not support css transitions
+        if (_this.thumbClickable && !_this.core.lgBusy || !_this.core.doCss()) {
+          _this.core.index = _$this.index();
+
+          _this.core.slide(_this.core.index, false, true);
+        }
+      }, 50);
+    });
+
+    _this.core.$el.on('onBeforeSlide.lg.tm', function () {
+      _this.animateThumb(_this.core.index);
+    });
+
+    $(window).on('resize.lg.thumb orientationchange.lg.thumb', function () {
+      setTimeout(function () {
+        _this.animateThumb(_this.core.index);
+
+        _this.thumbOuterWidth = _this.$thumbOuter.width();
+      }, 200);
+    });
+  };
+
+  Thumbnail.prototype.setTranslate = function (value) {
+    // jQuery supports Automatic CSS prefixing since jQuery 1.8.0
+    this.core.$outer.find('.lg-thumb').css({
+      transform: 'translate3d(-' + value + 'px, 0px, 0px)'
+    });
+  };
+
+  Thumbnail.prototype.animateThumb = function (index) {
+    var $thumb = this.core.$outer.find('.lg-thumb');
+
+    if (this.core.s.animateThumb) {
+      var position;
+
+      switch (this.core.s.currentPagerPosition) {
+        case 'left':
+          position = 0;
+          break;
+
+        case 'middle':
+          position = this.thumbOuterWidth / 2 - this.core.s.thumbWidth / 2;
+          break;
+
+        case 'right':
+          position = this.thumbOuterWidth - this.core.s.thumbWidth;
+      }
+
+      this.left = (this.core.s.thumbWidth + this.core.s.thumbMargin) * index - 1 - position;
+
+      if (this.left > this.thumbTotalWidth - this.thumbOuterWidth) {
+        this.left = this.thumbTotalWidth - this.thumbOuterWidth;
+      }
+
+      if (this.left < 0) {
+        this.left = 0;
+      }
+
+      if (this.core.lGalleryOn) {
+        if (!$thumb.hasClass('on')) {
+          this.core.$outer.find('.lg-thumb').css('transition-duration', this.core.s.speed + 'ms');
+        }
+
+        if (!this.core.doCss()) {
+          $thumb.animate({
+            left: -this.left + 'px'
+          }, this.core.s.speed);
+        }
+      } else {
+        if (!this.core.doCss()) {
+          $thumb.css('left', -this.left + 'px');
+        }
+      }
+
+      this.setTranslate(this.left);
+    }
+  }; // Enable thumbnail dragging and swiping
+
+
+  Thumbnail.prototype.enableThumbDrag = function () {
+    var _this = this;
+
+    var startCoords = 0;
+    var endCoords = 0;
+    var isDraging = false;
+    var isMoved = false;
+    var tempLeft = 0;
+
+    _this.$thumbOuter.addClass('lg-grab');
+
+    _this.core.$outer.find('.lg-thumb').on('mousedown.lg.thumb', function (e) {
+      if (_this.thumbTotalWidth > _this.thumbOuterWidth) {
+        // execute only on .lg-object
+        e.preventDefault();
+        startCoords = e.pageX;
+        isDraging = true; // ** Fix for webkit cursor issue https://code.google.com/p/chromium/issues/detail?id=26723
+
+        _this.core.$outer.scrollLeft += 1;
+        _this.core.$outer.scrollLeft -= 1; // *
+
+        _this.thumbClickable = false;
+
+        _this.$thumbOuter.removeClass('lg-grab').addClass('lg-grabbing');
+      }
+    });
+
+    $(window).on('mousemove.lg.thumb', function (e) {
+      if (isDraging) {
+        tempLeft = _this.left;
+        isMoved = true;
+        endCoords = e.pageX;
+
+        _this.$thumbOuter.addClass('lg-dragging');
+
+        tempLeft = tempLeft - (endCoords - startCoords);
+
+        if (tempLeft > _this.thumbTotalWidth - _this.thumbOuterWidth) {
+          tempLeft = _this.thumbTotalWidth - _this.thumbOuterWidth;
+        }
+
+        if (tempLeft < 0) {
+          tempLeft = 0;
+        } // move current slide
+
+
+        _this.setTranslate(tempLeft);
+      }
+    });
+    $(window).on('mouseup.lg.thumb', function () {
+      if (isMoved) {
+        isMoved = false;
+
+        _this.$thumbOuter.removeClass('lg-dragging');
+
+        _this.left = tempLeft;
+
+        if (Math.abs(endCoords - startCoords) < _this.core.s.swipeThreshold) {
+          _this.thumbClickable = true;
+        }
+      } else {
+        _this.thumbClickable = true;
+      }
+
+      if (isDraging) {
+        isDraging = false;
+
+        _this.$thumbOuter.removeClass('lg-grabbing').addClass('lg-grab');
+      }
+    });
+  };
+
+  Thumbnail.prototype.enableThumbSwipe = function () {
+    var _this = this;
+
+    var startCoords = 0;
+    var endCoords = 0;
+    var isMoved = false;
+    var tempLeft = 0;
+
+    _this.core.$outer.find('.lg-thumb').on('touchstart.lg', function (e) {
+      if (_this.thumbTotalWidth > _this.thumbOuterWidth) {
+        e.preventDefault();
+        startCoords = e.originalEvent.targetTouches[0].pageX;
+        _this.thumbClickable = false;
+      }
+    });
+
+    _this.core.$outer.find('.lg-thumb').on('touchmove.lg', function (e) {
+      if (_this.thumbTotalWidth > _this.thumbOuterWidth) {
+        e.preventDefault();
+        endCoords = e.originalEvent.targetTouches[0].pageX;
+        isMoved = true;
+
+        _this.$thumbOuter.addClass('lg-dragging');
+
+        tempLeft = _this.left;
+        tempLeft = tempLeft - (endCoords - startCoords);
+
+        if (tempLeft > _this.thumbTotalWidth - _this.thumbOuterWidth) {
+          tempLeft = _this.thumbTotalWidth - _this.thumbOuterWidth;
+        }
+
+        if (tempLeft < 0) {
+          tempLeft = 0;
+        } // move current slide
+
+
+        _this.setTranslate(tempLeft);
+      }
+    });
+
+    _this.core.$outer.find('.lg-thumb').on('touchend.lg', function () {
+      if (_this.thumbTotalWidth > _this.thumbOuterWidth) {
+        if (isMoved) {
+          isMoved = false;
+
+          _this.$thumbOuter.removeClass('lg-dragging');
+
+          if (Math.abs(endCoords - startCoords) < _this.core.s.swipeThreshold) {
+            _this.thumbClickable = true;
+          }
+
+          _this.left = tempLeft;
+        } else {
+          _this.thumbClickable = true;
+        }
+      } else {
+        _this.thumbClickable = true;
+      }
+    });
+  };
+
+  Thumbnail.prototype.toogle = function () {
+    var _this = this;
+
+    if (_this.core.s.toogleThumb) {
+      _this.core.$outer.addClass('lg-can-toggle');
+
+      _this.$thumbOuter.append('<span class="lg-toogle-thumb lg-icon"></span>');
+
+      _this.core.$outer.find('.lg-toogle-thumb').on('click.lg', function () {
+        _this.core.$outer.toggleClass('lg-thumb-open');
+      });
+    }
+  };
+
+  Thumbnail.prototype.thumbkeyPress = function () {
+    var _this = this;
+
+    $(window).on('keydown.lg.thumb', function (e) {
+      if (e.keyCode === 38) {
+        e.preventDefault();
+
+        _this.core.$outer.addClass('lg-thumb-open');
+      } else if (e.keyCode === 40) {
+        e.preventDefault();
+
+        _this.core.$outer.removeClass('lg-thumb-open');
+      }
+    });
+  };
+
+  Thumbnail.prototype.destroy = function () {
+    if (this.core.s.thumbnail && this.core.$items.length > 1) {
+      $(window).off('resize.lg.thumb orientationchange.lg.thumb keydown.lg.thumb');
+      this.$thumbOuter.remove();
+      this.core.$outer.removeClass('lg-has-thumb');
+    }
+  };
+
+  $.fn.lightGallery.modules.Thumbnail = Thumbnail;
+})(jQuery, window, document);
+
+(function ($, window, document, undefined) {
+  'use strict';
+
+  var defaults = {
+    videoMaxWidth: '855px',
+    youtubePlayerParams: false,
+    vimeoPlayerParams: false,
+    dailymotionPlayerParams: false,
+    vkPlayerParams: false,
+    videojs: false,
+    videojsOptions: {}
+  };
+
+  var Video = function Video(element) {
+    this.core = $(element).data('lightGallery');
+    this.$el = $(element);
+    this.core.s = $.extend({}, defaults, this.core.s);
+    this.videoLoaded = false;
+    this.init();
+    return this;
+  };
+
+  Video.prototype.init = function () {
+    var _this = this; // Event triggered when video url found without poster
+
+
+    _this.core.$el.on('hasVideo.lg.tm', function (event, index, src, html) {
+      _this.core.$slide.eq(index).find('.lg-video').append(_this.loadVideo(src, 'lg-object', true, index, html));
+
+      if (html) {
+        if (_this.core.s.videojs) {
+          try {
+            videojs(_this.core.$slide.eq(index).find('.lg-html5').get(0), _this.core.s.videojsOptions, function () {
+              if (!_this.videoLoaded) {
+                this.play();
+              }
+            });
+          } catch (e) {
+            console.error('Make sure you have included videojs');
+          }
+        } else {
+          _this.core.$slide.eq(index).find('.lg-html5').get(0).play();
+        }
+      }
+    }); // Set max width for video
+
+
+    _this.core.$el.on('onAferAppendSlide.lg.tm', function (event, index) {
+      _this.core.$slide.eq(index).find('.lg-video-cont').css('max-width', _this.core.s.videoMaxWidth);
+
+      _this.videoLoaded = true;
+    });
+
+    var loadOnClick = function loadOnClick($el) {
+      // check slide has poster
+      if ($el.find('.lg-object').hasClass('lg-has-poster') && $el.find('.lg-object').is(':visible')) {
+        // check already video element present
+        if (!$el.hasClass('lg-has-video')) {
+          $el.addClass('lg-video-playing lg-has-video');
+
+          var _src;
+
+          var _html;
+
+          var _loadVideo = function _loadVideo(_src, _html) {
+            $el.find('.lg-video').append(_this.loadVideo(_src, '', false, _this.core.index, _html));
+
+            if (_html) {
+              if (_this.core.s.videojs) {
+                try {
+                  videojs(_this.core.$slide.eq(_this.core.index).find('.lg-html5').get(0), _this.core.s.videojsOptions, function () {
+                    this.play();
+                  });
+                } catch (e) {
+                  console.error('Make sure you have included videojs');
+                }
+              } else {
+                _this.core.$slide.eq(_this.core.index).find('.lg-html5').get(0).play();
+              }
+            }
+          };
+
+          if (_this.core.s.dynamic) {
+            _src = _this.core.s.dynamicEl[_this.core.index].src;
+            _html = _this.core.s.dynamicEl[_this.core.index].html;
+
+            _loadVideo(_src, _html);
+          } else {
+            _src = _this.core.$items.eq(_this.core.index).attr('href') || _this.core.$items.eq(_this.core.index).attr('data-src');
+            _html = _this.core.$items.eq(_this.core.index).attr('data-html');
+
+            _loadVideo(_src, _html);
+          }
+
+          var $tempImg = $el.find('.lg-object');
+          $el.find('.lg-video').append($tempImg); // @todo loading icon for html5 videos also
+          // for showing the loading indicator while loading video
+
+          if (!$el.find('.lg-video-object').hasClass('lg-html5')) {
+            $el.removeClass('lg-complete');
+            $el.find('.lg-video-object').on('load.lg error.lg', function () {
+              $el.addClass('lg-complete');
+            });
+          }
+        } else {
+          var youtubePlayer = $el.find('.lg-youtube').get(0);
+          var vimeoPlayer = $el.find('.lg-vimeo').get(0);
+          var dailymotionPlayer = $el.find('.lg-dailymotion').get(0);
+          var html5Player = $el.find('.lg-html5').get(0);
+
+          if (youtubePlayer) {
+            youtubePlayer.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+          } else if (vimeoPlayer) {
+            try {
+              $f(vimeoPlayer).api('play');
+            } catch (e) {
+              console.error('Make sure you have included froogaloop2 js');
+            }
+          } else if (dailymotionPlayer) {
+            dailymotionPlayer.contentWindow.postMessage('play', '*');
+          } else if (html5Player) {
+            if (_this.core.s.videojs) {
+              try {
+                videojs(html5Player).play();
+              } catch (e) {
+                console.error('Make sure you have included videojs');
+              }
+            } else {
+              html5Player.play();
+            }
+          }
+
+          $el.addClass('lg-video-playing');
+        }
+      }
+    };
+
+    if (_this.core.doCss() && _this.core.$items.length > 1 && (_this.core.s.enableSwipe && _this.core.isTouch || _this.core.s.enableDrag && !_this.core.isTouch)) {
+      _this.core.$el.on('onSlideClick.lg.tm', function () {
+        var $el = _this.core.$slide.eq(_this.core.index);
+
+        loadOnClick($el);
+      });
+    } else {
+      // For IE 9 and bellow
+      _this.core.$slide.on('click.lg', function () {
+        loadOnClick($(this));
+      });
+    }
+
+    _this.core.$el.on('onBeforeSlide.lg.tm', function (event, prevIndex, index) {
+      var $videoSlide = _this.core.$slide.eq(prevIndex);
+
+      var youtubePlayer = $videoSlide.find('.lg-youtube').get(0);
+      var vimeoPlayer = $videoSlide.find('.lg-vimeo').get(0);
+      var dailymotionPlayer = $videoSlide.find('.lg-dailymotion').get(0);
+      var vkPlayer = $videoSlide.find('.lg-vk').get(0);
+      var html5Player = $videoSlide.find('.lg-html5').get(0);
+
+      if (youtubePlayer) {
+        youtubePlayer.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+      } else if (vimeoPlayer) {
+        try {
+          $f(vimeoPlayer).api('pause');
+        } catch (e) {
+          console.error('Make sure you have included froogaloop2 js');
+        }
+      } else if (dailymotionPlayer) {
+        dailymotionPlayer.contentWindow.postMessage('pause', '*');
+      } else if (html5Player) {
+        if (_this.core.s.videojs) {
+          try {
+            videojs(html5Player).pause();
+          } catch (e) {
+            console.error('Make sure you have included videojs');
+          }
+        } else {
+          html5Player.pause();
+        }
+      }
+
+      if (vkPlayer) {
+        $(vkPlayer).attr('src', $(vkPlayer).attr('src').replace('&autoplay', '&noplay'));
+      }
+
+      var _src;
+
+      if (_this.core.s.dynamic) {
+        _src = _this.core.s.dynamicEl[index].src;
+      } else {
+        _src = _this.core.$items.eq(index).attr('href') || _this.core.$items.eq(index).attr('data-src');
+      }
+
+      var _isVideo = _this.core.isVideo(_src, index) || {};
+
+      if (_isVideo.youtube || _isVideo.vimeo || _isVideo.dailymotion || _isVideo.vk) {
+        _this.core.$outer.addClass('lg-hide-download');
+      } //$videoSlide.addClass('lg-complete');
+
+    });
+
+    _this.core.$el.on('onAfterSlide.lg.tm', function (event, prevIndex) {
+      _this.core.$slide.eq(prevIndex).removeClass('lg-video-playing');
+    });
+  };
+
+  Video.prototype.loadVideo = function (src, addClass, noposter, index, html) {
+    var video = '';
+    var autoplay = 1;
+    var a = '';
+    var isVideo = this.core.isVideo(src, index) || {}; // Enable autoplay for first video if poster doesn't exist
+
+    if (noposter) {
+      if (this.videoLoaded) {
+        autoplay = 0;
+      } else {
+        autoplay = 1;
+      }
+    }
+
+    if (isVideo.youtube) {
+      a = '?wmode=opaque&autoplay=' + autoplay + '&enablejsapi=1';
+
+      if (this.core.s.youtubePlayerParams) {
+        a = a + '&' + $.param(this.core.s.youtubePlayerParams);
+      }
+
+      video = '<iframe class="lg-video-object lg-youtube ' + addClass + '" width="560" height="315" src="//www.youtube.com/embed/' + isVideo.youtube[1] + a + '" frameborder="0" allowfullscreen></iframe>';
+    } else if (isVideo.vimeo) {
+      a = '?autoplay=' + autoplay + '&api=1';
+
+      if (this.core.s.vimeoPlayerParams) {
+        a = a + '&' + $.param(this.core.s.vimeoPlayerParams);
+      }
+
+      video = '<iframe class="lg-video-object lg-vimeo ' + addClass + '" width="560" height="315"  src="//player.vimeo.com/video/' + isVideo.vimeo[1] + a + '" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+    } else if (isVideo.dailymotion) {
+      a = '?wmode=opaque&autoplay=' + autoplay + '&api=postMessage';
+
+      if (this.core.s.dailymotionPlayerParams) {
+        a = a + '&' + $.param(this.core.s.dailymotionPlayerParams);
+      }
+
+      video = '<iframe class="lg-video-object lg-dailymotion ' + addClass + '" width="560" height="315" src="//www.dailymotion.com/embed/video/' + isVideo.dailymotion[1] + a + '" frameborder="0" allowfullscreen></iframe>';
+    } else if (isVideo.html5) {
+      var fL = html.substring(0, 1);
+
+      if (fL === '.' || fL === '#') {
+        html = $(html).html();
+      }
+
+      video = html;
+    } else if (isVideo.vk) {
+      a = '&autoplay=' + autoplay;
+
+      if (this.core.s.vkPlayerParams) {
+        a = a + '&' + $.param(this.core.s.vkPlayerParams);
+      }
+
+      video = '<iframe class="lg-video-object lg-vk ' + addClass + '" width="560" height="315" src="http://vk.com/video_ext.php?' + isVideo.vk[1] + a + '" frameborder="0" allowfullscreen></iframe>';
+    }
+
+    return video;
+  };
+
+  Video.prototype.destroy = function () {
+    this.videoLoaded = false;
+  };
+
+  $.fn.lightGallery.modules.video = Video;
+})(jQuery, window, document);
+
+(function ($, window, document, undefined) {
+  'use strict';
+
+  var defaults = {
+    scale: 1,
+    zoom: true,
+    actualSize: true,
+    enableZoomAfter: 300
+  };
+
+  var Zoom = function Zoom(element) {
+    this.core = $(element).data('lightGallery');
+    this.core.s = $.extend({}, defaults, this.core.s);
+
+    if (this.core.s.zoom && this.core.doCss()) {
+      this.init(); // Store the zoomable timeout value just to clear it while closing
+
+      this.zoomabletimeout = false; // Set the initial value center
+
+      this.pageX = $(window).width() / 2;
+      this.pageY = $(window).height() / 2 + $(window).scrollTop();
+    }
+
+    return this;
+  };
+
+  Zoom.prototype.init = function () {
+    var _this = this;
+
+    var zoomIcons = '<span id="lg-zoom-in" class="lg-icon"></span><span id="lg-zoom-out" class="lg-icon"></span>';
+
+    if (_this.core.s.actualSize) {
+      zoomIcons += '<span id="lg-actual-size" class="lg-icon"></span>';
+    }
+
+    this.core.$outer.find('.lg-toolbar').append(zoomIcons); // Add zoomable class
+
+    _this.core.$el.on('onSlideItemLoad.lg.tm.zoom', function (event, index, delay) {
+      // delay will be 0 except first time
+      var _speed = _this.core.s.enableZoomAfter + delay; // set _speed value 0 if gallery opened from direct url and if it is first slide
+
+
+      if ($('body').hasClass('lg-from-hash') && delay) {
+        // will execute only once
+        _speed = 0;
+      } else {
+        // Remove lg-from-hash to enable starting animation.
+        $('body').removeClass('lg-from-hash');
+      }
+
+      _this.zoomabletimeout = setTimeout(function () {
+        _this.core.$slide.eq(index).addClass('lg-zoomable');
+      }, _speed + 30);
+    });
+
+    var scale = 1;
+    /**
+     * @desc Image zoom
+     * Translate the wrap and scale the image to get better user experience
+     *
+     * @param {String} scaleVal - Zoom decrement/increment value
+     */
+
+    var zoom = function zoom(scaleVal) {
+      var $image = _this.core.$outer.find('.lg-current .lg-image');
+
+      var _x;
+
+      var _y; // Find offset manually to avoid issue after zoom
+
+
+      var offsetX = ($(window).width() - $image.width()) / 2;
+      var offsetY = ($(window).height() - $image.height()) / 2 + $(window).scrollTop();
+      _x = _this.pageX - offsetX;
+      _y = _this.pageY - offsetY;
+      var x = (scaleVal - 1) * _x;
+      var y = (scaleVal - 1) * _y;
+      $image.css('transform', 'scale3d(' + scaleVal + ', ' + scaleVal + ', 1)').attr('data-scale', scaleVal);
+      $image.parent().css('transform', 'translate3d(-' + x + 'px, -' + y + 'px, 0)').attr('data-x', x).attr('data-y', y);
+    };
+
+    var callScale = function callScale() {
+      if (scale > 1) {
+        _this.core.$outer.addClass('lg-zoomed');
+      } else {
+        _this.resetZoom();
+      }
+
+      if (scale < 1) {
+        scale = 1;
+      }
+
+      zoom(scale);
+    };
+
+    var actualSize = function actualSize(event, $image, index, fromIcon) {
+      var w = $image.width();
+      var nw;
+
+      if (_this.core.s.dynamic) {
+        nw = _this.core.s.dynamicEl[index].width || $image[0].naturalWidth || w;
+      } else {
+        nw = _this.core.$items.eq(index).attr('data-width') || $image[0].naturalWidth || w;
+      }
+
+      var _scale;
+
+      if (_this.core.$outer.hasClass('lg-zoomed')) {
+        scale = 1;
+      } else {
+        if (nw > w) {
+          _scale = nw / w;
+          scale = _scale || 2;
+        }
+      }
+
+      if (fromIcon) {
+        _this.pageX = $(window).width() / 2;
+        _this.pageY = $(window).height() / 2 + $(window).scrollTop();
+      } else {
+        _this.pageX = event.pageX || event.originalEvent.targetTouches[0].pageX;
+        _this.pageY = event.pageY || event.originalEvent.targetTouches[0].pageY;
+      }
+
+      callScale();
+      setTimeout(function () {
+        _this.core.$outer.removeClass('lg-grabbing').addClass('lg-grab');
+      }, 10);
+    };
+
+    var tapped = false; // event triggered after appending slide content
+
+    _this.core.$el.on('onAferAppendSlide.lg.tm.zoom', function (event, index) {
+      // Get the current element
+      var $image = _this.core.$slide.eq(index).find('.lg-image');
+
+      $image.on('dblclick', function (event) {
+        actualSize(event, $image, index);
+      });
+      $image.on('touchstart', function (event) {
+        if (!tapped) {
+          tapped = setTimeout(function () {
+            tapped = null;
+          }, 300);
+        } else {
+          clearTimeout(tapped);
+          tapped = null;
+          actualSize(event, $image, index);
+        }
+
+        event.preventDefault();
+      });
+    }); // Update zoom on resize and orientationchange
+
+
+    $(window).on('resize.lg.zoom scroll.lg.zoom orientationchange.lg.zoom', function () {
+      _this.pageX = $(window).width() / 2;
+      _this.pageY = $(window).height() / 2 + $(window).scrollTop();
+      zoom(scale);
+    });
+    $('#lg-zoom-out').on('click.lg', function () {
+      if (_this.core.$outer.find('.lg-current .lg-image').length) {
+        scale -= _this.core.s.scale;
+        callScale();
+      }
+    });
+    $('#lg-zoom-in').on('click.lg', function () {
+      if (_this.core.$outer.find('.lg-current .lg-image').length) {
+        scale += _this.core.s.scale;
+        callScale();
+      }
+    });
+    $('#lg-actual-size').on('click.lg', function (event) {
+      actualSize(event, _this.core.$slide.eq(_this.core.index).find('.lg-image'), _this.core.index, true);
+    }); // Reset zoom on slide change
+
+    _this.core.$el.on('onBeforeSlide.lg.tm', function () {
+      scale = 1;
+
+      _this.resetZoom();
+    }); // Drag option after zoom
+
+
+    if (!_this.core.isTouch) {
+      _this.zoomDrag();
+    }
+
+    if (_this.core.isTouch) {
+      _this.zoomSwipe();
+    }
+  }; // Reset zoom effect
+
+
+  Zoom.prototype.resetZoom = function () {
+    this.core.$outer.removeClass('lg-zoomed');
+    this.core.$slide.find('.lg-img-wrap').removeAttr('style data-x data-y');
+    this.core.$slide.find('.lg-image').removeAttr('style data-scale'); // Reset pagx pagy values to center
+
+    this.pageX = $(window).width() / 2;
+    this.pageY = $(window).height() / 2 + $(window).scrollTop();
+  };
+
+  Zoom.prototype.zoomSwipe = function () {
+    var _this = this;
+
+    var startCoords = {};
+    var endCoords = {};
+    var isMoved = false; // Allow x direction drag
+
+    var allowX = false; // Allow Y direction drag
+
+    var allowY = false;
+
+    _this.core.$slide.on('touchstart.lg', function (e) {
+      if (_this.core.$outer.hasClass('lg-zoomed')) {
+        var $image = _this.core.$slide.eq(_this.core.index).find('.lg-object');
+
+        allowY = $image.outerHeight() * $image.attr('data-scale') > _this.core.$outer.find('.lg').height();
+        allowX = $image.outerWidth() * $image.attr('data-scale') > _this.core.$outer.find('.lg').width();
+
+        if (allowX || allowY) {
+          e.preventDefault();
+          startCoords = {
+            x: e.originalEvent.targetTouches[0].pageX,
+            y: e.originalEvent.targetTouches[0].pageY
+          };
+        }
+      }
+    });
+
+    _this.core.$slide.on('touchmove.lg', function (e) {
+      if (_this.core.$outer.hasClass('lg-zoomed')) {
+        var _$el = _this.core.$slide.eq(_this.core.index).find('.lg-img-wrap');
+
+        var distanceX;
+        var distanceY;
+        e.preventDefault();
+        isMoved = true;
+        endCoords = {
+          x: e.originalEvent.targetTouches[0].pageX,
+          y: e.originalEvent.targetTouches[0].pageY
+        }; // reset opacity and transition duration
+
+        _this.core.$outer.addClass('lg-zoom-dragging');
+
+        if (allowY) {
+          distanceY = -Math.abs(_$el.attr('data-y')) + (endCoords.y - startCoords.y);
+        } else {
+          distanceY = -Math.abs(_$el.attr('data-y'));
+        }
+
+        if (allowX) {
+          distanceX = -Math.abs(_$el.attr('data-x')) + (endCoords.x - startCoords.x);
+        } else {
+          distanceX = -Math.abs(_$el.attr('data-x'));
+        }
+
+        if (Math.abs(endCoords.x - startCoords.x) > 15 || Math.abs(endCoords.y - startCoords.y) > 15) {
+          _$el.css('transform', 'translate3d(' + distanceX + 'px, ' + distanceY + 'px, 0)');
+        }
+      }
+    });
+
+    _this.core.$slide.on('touchend.lg', function () {
+      if (_this.core.$outer.hasClass('lg-zoomed')) {
+        if (isMoved) {
+          isMoved = false;
+
+          _this.core.$outer.removeClass('lg-zoom-dragging');
+
+          _this.touchendZoom(startCoords, endCoords, allowX, allowY);
+        }
+      }
+    });
+  };
+
+  Zoom.prototype.zoomDrag = function () {
+    var _this = this;
+
+    var startCoords = {};
+    var endCoords = {};
+    var isDraging = false;
+    var isMoved = false; // Allow x direction drag
+
+    var allowX = false; // Allow Y direction drag
+
+    var allowY = false;
+
+    _this.core.$slide.on('mousedown.lg.zoom', function (e) {
+      // execute only on .lg-object
+      var $image = _this.core.$slide.eq(_this.core.index).find('.lg-object');
+
+      allowY = $image.outerHeight() * $image.attr('data-scale') > _this.core.$outer.find('.lg').height();
+      allowX = $image.outerWidth() * $image.attr('data-scale') > _this.core.$outer.find('.lg').width();
+
+      if (_this.core.$outer.hasClass('lg-zoomed')) {
+        if ($(e.target).hasClass('lg-object') && (allowX || allowY)) {
+          e.preventDefault();
+          startCoords = {
+            x: e.pageX,
+            y: e.pageY
+          };
+          isDraging = true; // ** Fix for webkit cursor issue https://code.google.com/p/chromium/issues/detail?id=26723
+
+          _this.core.$outer.scrollLeft += 1;
+          _this.core.$outer.scrollLeft -= 1;
+
+          _this.core.$outer.removeClass('lg-grab').addClass('lg-grabbing');
+        }
+      }
+    });
+
+    $(window).on('mousemove.lg.zoom', function (e) {
+      if (isDraging) {
+        var _$el = _this.core.$slide.eq(_this.core.index).find('.lg-img-wrap');
+
+        var distanceX;
+        var distanceY;
+        isMoved = true;
+        endCoords = {
+          x: e.pageX,
+          y: e.pageY
+        }; // reset opacity and transition duration
+
+        _this.core.$outer.addClass('lg-zoom-dragging');
+
+        if (allowY) {
+          distanceY = -Math.abs(_$el.attr('data-y')) + (endCoords.y - startCoords.y);
+        } else {
+          distanceY = -Math.abs(_$el.attr('data-y'));
+        }
+
+        if (allowX) {
+          distanceX = -Math.abs(_$el.attr('data-x')) + (endCoords.x - startCoords.x);
+        } else {
+          distanceX = -Math.abs(_$el.attr('data-x'));
+        }
+
+        _$el.css('transform', 'translate3d(' + distanceX + 'px, ' + distanceY + 'px, 0)');
+      }
+    });
+    $(window).on('mouseup.lg.zoom', function (e) {
+      if (isDraging) {
+        isDraging = false;
+
+        _this.core.$outer.removeClass('lg-zoom-dragging'); // Fix for chrome mouse move on click
+
+
+        if (isMoved && (startCoords.x !== endCoords.x || startCoords.y !== endCoords.y)) {
+          endCoords = {
+            x: e.pageX,
+            y: e.pageY
+          };
+
+          _this.touchendZoom(startCoords, endCoords, allowX, allowY);
+        }
+
+        isMoved = false;
+      }
+
+      _this.core.$outer.removeClass('lg-grabbing').addClass('lg-grab');
+    });
+  };
+
+  Zoom.prototype.touchendZoom = function (startCoords, endCoords, allowX, allowY) {
+    var _this = this;
+
+    var _$el = _this.core.$slide.eq(_this.core.index).find('.lg-img-wrap');
+
+    var $image = _this.core.$slide.eq(_this.core.index).find('.lg-object');
+
+    var distanceX = -Math.abs(_$el.attr('data-x')) + (endCoords.x - startCoords.x);
+    var distanceY = -Math.abs(_$el.attr('data-y')) + (endCoords.y - startCoords.y);
+    var minY = (_this.core.$outer.find('.lg').height() - $image.outerHeight()) / 2;
+    var maxY = Math.abs($image.outerHeight() * Math.abs($image.attr('data-scale')) - _this.core.$outer.find('.lg').height() + minY);
+    var minX = (_this.core.$outer.find('.lg').width() - $image.outerWidth()) / 2;
+    var maxX = Math.abs($image.outerWidth() * Math.abs($image.attr('data-scale')) - _this.core.$outer.find('.lg').width() + minX);
+
+    if (Math.abs(endCoords.x - startCoords.x) > 15 || Math.abs(endCoords.y - startCoords.y) > 15) {
+      if (allowY) {
+        if (distanceY <= -maxY) {
+          distanceY = -maxY;
+        } else if (distanceY >= -minY) {
+          distanceY = -minY;
+        }
+      }
+
+      if (allowX) {
+        if (distanceX <= -maxX) {
+          distanceX = -maxX;
+        } else if (distanceX >= -minX) {
+          distanceX = -minX;
+        }
+      }
+
+      if (allowY) {
+        _$el.attr('data-y', Math.abs(distanceY));
+      } else {
+        distanceY = -Math.abs(_$el.attr('data-y'));
+      }
+
+      if (allowX) {
+        _$el.attr('data-x', Math.abs(distanceX));
+      } else {
+        distanceX = -Math.abs(_$el.attr('data-x'));
+      }
+
+      _$el.css('transform', 'translate3d(' + distanceX + 'px, ' + distanceY + 'px, 0)');
+    }
+  };
+
+  Zoom.prototype.destroy = function () {
+    var _this = this; // Unbind all events added by lightGallery zoom plugin
+
+
+    _this.core.$el.off('.lg.zoom');
+
+    $(window).off('.lg.zoom');
+
+    _this.core.$slide.off('.lg.zoom');
+
+    _this.core.$el.off('.lg.tm.zoom');
+
+    _this.resetZoom();
+
+    clearTimeout(_this.zoomabletimeout);
+    _this.zoomabletimeout = false;
+  };
+
+  $.fn.lightGallery.modules.zoom = Zoom;
+})(jQuery, window, document);
+
+(function ($, window, document, undefined) {
+  'use strict';
+
+  var defaults = {
+    hash: true
+  };
+
+  var Hash = function Hash(element) {
+    this.core = $(element).data('lightGallery');
+    this.core.s = $.extend({}, defaults, this.core.s);
+
+    if (this.core.s.hash) {
+      this.oldHash = window.location.hash;
+      this.init();
+    }
+
+    return this;
+  };
+
+  Hash.prototype.init = function () {
+    var _this = this;
+
+    var _hash; // Change hash value on after each slide transition
+
+
+    _this.core.$el.on('onAfterSlide.lg.tm', function (event, prevIndex, index) {
+      window.location.hash = 'lg=' + _this.core.s.galleryId + '&slide=' + index;
+    }); // Listen hash change and change the slide according to slide value
+
+
+    $(window).on('hashchange.lg.hash', function () {
+      _hash = window.location.hash;
+
+      var _idx = parseInt(_hash.split('&slide=')[1], 10); // it galleryId doesn't exist in the url close the gallery
+
+
+      if (_hash.indexOf('lg=' + _this.core.s.galleryId) > -1) {
+        _this.core.slide(_idx, false, false);
+      } else if (_this.core.lGalleryOn) {
+        _this.core.destroy();
+      }
+    });
+  };
+
+  Hash.prototype.destroy = function () {
+    if (!this.core.s.hash) {
+      return;
+    } // Reset to old hash value
+
+
+    if (this.oldHash && this.oldHash.indexOf('lg=' + this.core.s.galleryId) < 0) {
+      window.location.hash = this.oldHash;
+    } else {
+      if (history.pushState) {
+        history.pushState('', document.title, window.location.pathname + window.location.search);
+      } else {
+        window.location.hash = '';
+      }
+    }
+
+    this.core.$el.off('.lg.hash');
+  };
+
+  $.fn.lightGallery.modules.hash = Hash;
+})(jQuery, window, document);
+
+/***/ }),
+
+/***/ "./resources/js/login-data.js":
+/*!************************************!*\
+  !*** ./resources/js/login-data.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*Login Init*/
+
+
+$('#owl_demo_1').owlCarousel({
+  items: 1,
+  animateOut: 'fadeOut',
+  loop: true,
+  margin: 10,
+  autoplay: true,
+  mouseDrag: false
+});
+
+/***/ }),
+
+/***/ "./resources/js/modal-data.js":
+/*!************************************!*\
+  !*** ./resources/js/modal-data.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*Modal Init*/
+$(document).ready(function () {
+  "use strict";
+
+  if ($('#exampleModal').length > 0) {
+    $('#exampleModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget); // Button that triggered the modal
+
+      var recipient = button.data('whatever'); // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+
+      var modal = $(this);
+      modal.find('.modal-title').text('New message to ' + recipient);
+      modal.find('.modal-body input').val(recipient);
+    });
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/owl-data.js":
+/*!**********************************!*\
+  !*** ./resources/js/owl-data.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*Owl Init*/
+jQuery(document).ready(function ($) {
+  "use strict";
+  /*owl carousel*/
+
+  $("#owl_demo_1").owlCarousel({
+    items: 1
+  });
+  $('#owl_demo_2').owlCarousel({
+    margin: 20,
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      800: {
+        items: 4
+      }
+    }
+  });
+  $('#owl_demo_3').owlCarousel({
+    items: 1,
+    merge: true,
+    loop: true,
+    margin: 10,
+    stagePadding: 50,
+    video: true,
+    videoWidth: 267,
+    videoHeight: 150,
+    autoWidth: true,
+    lazyLoad: false,
+    center: true,
+    responsive: {
+      480: {
+        items: 2
+      },
+      600: {
+        items: 4
+      }
+    }
+  });
+  $('#owl_demo_4').owlCarousel({
+    center: true,
+    loop: true,
+    margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      800: {
+        items: 3
+      }
+    }
+  });
+  $('#owl_demo_5').owlCarousel({
+    center: true,
+    loop: false,
+    margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      800: {
+        items: 3
+      }
+    }
+  });
+  $('#owl_demo_6').owlCarousel({
+    loop: true,
+    margin: 0,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      }
+    }
+  });
+});
+$(window).on('load', function () {
+  setTimeout(function () {
+    $('#tweets_fetch').owlCarousel({
+      loop: true,
+      margin: 0,
+      autoplay: true,
+      responsiveClass: true,
+      autoHeight: true,
+      autoplayTimeout: 4000,
+      responsive: {
+        0: {
+          items: 1
+        }
+      }
+    });
+  }, 2000);
+});
+
+/***/ }),
+
 /***/ "./resources/js/scrolling-nav.js":
 /*!***************************************!*\
   !*** ./resources/js/scrolling-nav.js ***!
@@ -37090,6 +44041,276 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/select2-data.js":
+/*!**************************************!*\
+  !*** ./resources/js/select2-data.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* Select2 Init*/
+
+
+$(".select2").select2();
+$("#input_tags").select2({
+  tags: true,
+  tokenSeparators: [',', ' ']
+});
+
+/***/ }),
+
+/***/ "./resources/js/toggle-data.js":
+/*!*************************************!*\
+  !*** ./resources/js/toggle-data.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*Toggle Init*/
+
+
+$('.toggle1').toggles({
+  drag: true,
+  // allow dragging the toggle between positions
+  click: true,
+  // allow clicking on the toggle
+  text: {
+    on: '',
+    // text for the ON position
+    off: '' // and off
+
+  },
+  on: true,
+  // is the toggle ON on init
+  animate: 250,
+  // animation time (ms)
+  easing: 'swing',
+  // animation transition easing function
+  checkbox: null,
+  // the checkbox to toggle (for use in forms)
+  clicker: null,
+  // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+  type: 'compact' // if this is set to 'select' then the select style toggle will be used
+
+});
+$('.toggle2').toggles({
+  drag: true,
+  // allow dragging the toggle between positions
+  click: true,
+  // allow clicking on the toggle
+  text: {
+    on: 'ON',
+    // text for the ON position
+    off: 'OFF' // and off
+
+  },
+  on: true,
+  // is the toggle ON on init
+  animate: 250,
+  // animation time (ms)
+  easing: 'swing',
+  // animation transition easing function
+  checkbox: null,
+  // the checkbox to toggle (for use in forms)
+  clicker: null,
+  // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+  type: 'compact' // if this is set to 'select' then the select style toggle will be used
+
+});
+$('.toggle3').toggles({
+  drag: true,
+  // allow dragging the toggle between positions
+  click: true,
+  // allow clicking on the toggle
+  text: {
+    on: 'ON',
+    // text for the ON position
+    off: 'OFF' // and off
+
+  },
+  on: true,
+  // is the toggle ON on init
+  animate: 250,
+  // animation time (ms)
+  easing: 'swing',
+  // animation transition easing function
+  checkbox: null,
+  // the checkbox to toggle (for use in forms)
+  clicker: null,
+  // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+  type: 'select' // if this is set to 'select' then the select style toggle will be used
+
+});
+$('.toggle4').toggles({
+  drag: true,
+  // allow dragging the toggle between positions
+  click: true,
+  // allow clicking on the toggle
+  text: {
+    on: 'ON',
+    // text for the ON position
+    off: 'OFF' // and off
+
+  },
+  on: true,
+  // is the toggle ON on init
+  animate: 250,
+  // animation time (ms)
+  easing: 'swing',
+  // animation transition easing function
+  checkbox: null,
+  // the checkbox to toggle (for use in forms)
+  clicker: null,
+  // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+  type: 'compact' // if this is set to 'select' then the select style toggle will be used
+
+});
+/*
+$('#toggle_1').toggles({
+	drag: true, // allow dragging the toggle between positions
+	click: true, // allow clicking on the toggle
+	text: {
+	on: 'ON', // text for the ON position
+	off: 'OFF' // and off
+	},
+	on: true, // is the toggle ON on init
+	animate: 250, // animation time (ms)
+	easing: 'swing', // animation transition easing function
+	checkbox: null, // the checkbox to toggle (for use in forms)
+	clicker: null, // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+	
+	type: 'compact' // if this is set to 'select' then the select style toggle will be used
+});
+$('#toggle_2').toggles({
+	drag: true, // allow dragging the toggle between positions
+	click: true, // allow clicking on the toggle
+	text: {
+	on: '', // text for the ON position
+	off: '' // and off
+	},
+	on: true, // is the toggle ON on init
+	animate: 250, // animation time (ms)
+	easing: 'swing', // animation transition easing function
+	checkbox: null, // the checkbox to toggle (for use in forms)
+	clicker: null, // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+	
+	type: 'compact' // if this is set to 'select' then the select style toggle will be used
+});
+$('#toggle_3').toggles({
+	drag: true, // allow dragging the toggle between positions
+	click: true, // allow clicking on the toggle
+	text: {
+	on: '', // text for the ON position
+	off: '' // and off
+	},
+	on: true, // is the toggle ON on init
+	animate: 250, // animation time (ms)
+	easing: 'swing', // animation transition easing function
+	checkbox: null, // the checkbox to toggle (for use in forms)
+	clicker: null, // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+	
+	type: 'compact' // if this is set to 'select' then the select style toggle will be used
+});
+$('#toggle_4').toggles({
+	drag: true, // allow dragging the toggle between positions
+	click: true, // allow clicking on the toggle
+	text: {
+	on: '', // text for the ON position
+	off: '' // and off
+	},
+	on: true, // is the toggle ON on init
+	animate: 250, // animation time (ms)
+	easing: 'swing', // animation transition easing function
+	checkbox: null, // the checkbox to toggle (for use in forms)
+	clicker: null, // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+	
+	type: 'compact' // if this is set to 'select' then the select style toggle will be used
+});
+$('#toggle_5').toggles({
+	drag: true, // allow dragging the toggle between positions
+	click: true, // allow clicking on the toggle
+	text: {
+	on: 'YES', // text for the ON position
+	off: 'NO' // and off
+	},
+	on: true, // is the toggle ON on init
+	animate: 250, // animation time (ms)
+	easing: 'swing', // animation transition easing function
+	checkbox: null, // the checkbox to toggle (for use in forms)
+	clicker: null, // element that can be clicked on to toggle. removes binding from the toggle itself (use nesting)
+	
+	type: 'select' // if this is set to 'select' then the select style toggle will be used
+});*/
+
+/***/ }),
+
+/***/ "./resources/js/validation-data.js":
+/*!*****************************************!*\
+  !*** ./resources/js/validation-data.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*Validation Init*/
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict';
+
+  window.addEventListener('load', function () {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation'); // Loop over them and prevent submission
+
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+/***/ }),
+
+/***/ "./resources/js/widgets-data.js":
+/*!**************************************!*\
+  !*** ./resources/js/widgets-data.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*Widgets Init*/
+
+/*****Ready function start*****/
+
+$(document).ready(function () {
+  if ($('#tweets_fetch').length > 0) {
+    var configList = {
+      "profile": {
+        "screenName": 'templatemonster'
+      },
+      "domId": 'tweets_fetch',
+      "maxTweets": 2,
+      "enableLinks": true,
+      "showUser": false,
+      "showTime": true,
+      "showImages": false,
+      "showInteraction": false,
+      "lang": 'en'
+    };
+    twitterFetcher.fetch(configList);
+  }
+});
+/*****Ready function end*****/
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -37102,14 +44323,35 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!*********************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/js/scrolling-nav.js ./resources/sass/app.scss ***!
-  \*********************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/js/scrolling-nav.js ./resources/js/dataTables-data.js ./resources/js/db.js ./resources/js/dropdown-bootstrap-extended.js ./resources/js/editable-table-data.js ./resources/js/feather.min.js ./resources/js/flot-data.js ./resources/js/form-file-upload-data.js ./resources/js/form-picker-data.js ./resources/js/form-wizard-data.js ./resources/js/gallery-data.js ./resources/js/init.js ./resources/js/inputspinner-data.js ./resources/js/jquery.slimscroll.js ./resources/js/lightgallery-all.js ./resources/js/login-data.js ./resources/js/modal-data.js ./resources/js/owl-data.js ./resources/js/select2-data.js ./resources/js/toggle-data.js ./resources/js/validation-data.js ./resources/js/widgets-data.js ./resources/sass/app.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/scrolling-nav.js */"./resources/js/scrolling-nav.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/dataTables-data.js */"./resources/js/dataTables-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/db.js */"./resources/js/db.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/dropdown-bootstrap-extended.js */"./resources/js/dropdown-bootstrap-extended.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/editable-table-data.js */"./resources/js/editable-table-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/feather.min.js */"./resources/js/feather.min.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/flot-data.js */"./resources/js/flot-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/form-file-upload-data.js */"./resources/js/form-file-upload-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/form-picker-data.js */"./resources/js/form-picker-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/form-wizard-data.js */"./resources/js/form-wizard-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/gallery-data.js */"./resources/js/gallery-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/init.js */"./resources/js/init.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/inputspinner-data.js */"./resources/js/inputspinner-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/jquery.slimscroll.js */"./resources/js/jquery.slimscroll.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/lightgallery-all.js */"./resources/js/lightgallery-all.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/login-data.js */"./resources/js/login-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/modal-data.js */"./resources/js/modal-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/owl-data.js */"./resources/js/owl-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/select2-data.js */"./resources/js/select2-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/toggle-data.js */"./resources/js/toggle-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/validation-data.js */"./resources/js/validation-data.js");
+__webpack_require__(/*! /home/tapha/www/docs_tapha/resources/js/widgets-data.js */"./resources/js/widgets-data.js");
 module.exports = __webpack_require__(/*! /home/tapha/www/docs_tapha/resources/sass/app.scss */"./resources/sass/app.scss");
 
 

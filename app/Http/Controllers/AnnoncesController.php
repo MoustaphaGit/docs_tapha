@@ -21,6 +21,10 @@ class AnnoncesController extends Controller
         $bien = \App\Annonce_bien::orderBy('created_at')->get();
         return view('annonces.index', compact('bien'));
     }
+    public function display_acheter(){
+        $bien = \App\Annonce_bien::orderBy('created_at')->get();
+        return view('menu.acheter', compact('bien'));
+    }
     public function edit($ann){
         $bien=\App\Annonce_bien::find($ann);
         $type_b=\App\Type_bien::pluck('nom','id');
