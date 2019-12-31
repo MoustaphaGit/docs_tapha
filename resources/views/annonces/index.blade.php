@@ -8,7 +8,6 @@
                     @if(session('success'))
                         <div class="alert alert-success">{{session('success')}}</div>
                     @endif
-
                     @foreach($bien as $biens)
                         <li class="list-group-item row">
                             <div class="col-12"><img src="{{$biens->images ? asset($biens->images) : asset('uploads/images/default.png')}}" alt="{{$biens->title}}" width="200">
@@ -31,7 +30,6 @@
                                         </form>
                                     </div>
                                 </div>
-
                             </div>
                         </li>
                     @endforeach

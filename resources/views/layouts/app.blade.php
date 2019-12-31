@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{asset('css/docs.css')}}"/>
 </head>
 
-<body  class="bg-white" style="font-family:sans-serif;font-size:small" id="page-top">
+<body class="bg-white" style="font-family:sans-serif;font-size:small" id="page-top">
 <!-- Navigation  contenant des boutons -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="mainNav">
@@ -20,7 +20,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar nav-tabs ml-auto py-2">
                 <li class="nav-item active">
                     <a class="nav-link text-white " href="">ACCUEIL</a>
@@ -44,11 +44,8 @@
         </div>
     </div>
 </nav>
-<div class="hk-wrapper">
+
     @yield("content")
-</div>
-
-
 
 
 <!-- Footer -->
