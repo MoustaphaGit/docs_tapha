@@ -1,40 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>create</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{{asset('css/docs.css')}}"/>
-</head>
-<body>
-    <main>
-        <div class="container ">
+@extends('layouts.app')
+    @section('content')
+        <section class="container ">
             <hr>
             <div class="col-12"><center><h1>informations sur votre annonces</h1></center></div>
             <hr>
+            <br>
             @if($errors->any())
-            @foreach($errors->all() as $error)
-            <div class="alert alert-danger">{{$error}}</div>
-            @endforeach
+                @foreach($errors->all() as $error)
+                    <div class="alert alert-danger">{{$error}}</div>
+                @endforeach
             @endif
-            <form action="{{route('ajout_annonce')}}" method="post" class="form-control" enctype="multipart/form-data"  >
+            <form action="{{route('ajout_annonce')}}" method="post"  enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-6">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="type_annonce">Type d'annonce</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <label>Type d'annonce</label>
                                 <select class="form-control" name="type_annonce" id="type_annonce">
                                     @foreach($type_a as $key=>$value)
                                         <option value="{{$key}}">{{$value}}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="col-6">
                                 <label for="type_bien">Type de biens</label>
                                 <select class="form-control" name="type_bien" id="type_bien">
                                     @foreach($type_b as $key=>$value)
@@ -43,7 +32,7 @@
                                 </select>
                             </div>
                         </div>
-                        {{-- LOCALISATION --}}
+{{--                         LOCALISATION--}}
                         <div class="form-group row" >
                             <div class = "col-12">
                                 <hr>
@@ -60,12 +49,12 @@
                             </div>
                             <div class="col-6">
                                 <label for="quartier">Dans quel quartier ?</label>
-                               <input type="text" name="quartier" class="form-control" placeholder="Preciser le quartier">
+                                <input type="text" name="quartier" class="form-control" placeholder="Preciser le quartier">
                             </div>
                         </div>
-                        {{--End_localisation--}}
+                      {{--  End_localisation--}}
 
-                        {{--  les caracteristiques --}}
+                          {{--les caracteristiques--}}
                         <div class="form-row">
                             <div class = "col-12">
                                 <hr>
@@ -74,24 +63,11 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="piece">Nombre de pièces</label>
-                                <select id="nbr_piece" class="form-control" name="nbr_piece">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>5</option>
-                                </select>
+                                <input type="number" class="form-control" name="nbr_piece" >
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="chambre">Nombre de Chambre</label>
-                                <select id="nbr_chambre" class="form-control" name="nbr_chambre">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
+                                <input type="number" name="nbr_chambre" class="form-control" id="nbr_chambre">
                             </div>
                             <div class="form-group col-md-3">
                                 <label for="surface">Surface : </label>
@@ -100,7 +76,7 @@
                             <div class="col-md-1"><label for="..."></label><br><br><p><strong>m²</strong></p></div>
                         </div>
                         {{-- End_caracteristique--}}
-                        {{--le prix--}}
+                       {{-- le prix--}}
                         <div class="row">
                             <div class="col-md-7">
                                 <label for="price">Le Prix :</label>
@@ -130,18 +106,12 @@
                             <div class="col-12">
                                 <label for="descrip">Descriptions : </label>
                                 <textarea name="description" id="description"cols="20" rows="8" class="form-control"
-                                          placeholder="une petite description de votres bien"></textarea>
+                                          placeholder="une petite description de votre bien"></textarea>
                             </div>
                             <div class="col-12"><br><button type="submit" class=" btn btn-primary">Enregistrer</button></div>
                         </div>
                     </div>
                 </div>
-             </form>
-        </div>
-        <script>
-            let ville = document.getElementById("");
-            let quartier = document.getElementById("")
-        </script>
-    </main>
-</body>
-</html>
+            </form>
+        </section>
+    @endsection

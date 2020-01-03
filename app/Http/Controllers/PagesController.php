@@ -13,6 +13,10 @@ class PagesController extends Controller
     {
         return view('menu.acheter');
     }
+    public function show()
+    {
+        return view('menu.acheter');
+    }
 
 }
     /*public function display(){

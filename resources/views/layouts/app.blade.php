@@ -11,52 +11,42 @@
     <link rel="stylesheet" href="{{asset('css/docs.css')}}"/>
 </head>
 
-<body id="page-top">
+<body class="bg-white" style="font-family:sans-serif;font-size:small" id="page-top">
 <!-- Navigation  contenant des boutons -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Keugui_IMMO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav nav-tabs ml-auto  py-3">
-                <li class="nav-item">
-                    <a class="nav-link  " href="">ACCUEIL</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar nav-tabs ml-auto py-2">
+                <li class="nav-item active">
+                    <a class="nav-link text-white " href="">ACCUEIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="">ACHETER</a>
+                    <a class="nav-link text-white " href="">ACHETER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="">LOUER</a>
+                    <a class="nav-link text-white" href="">LOUER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="">FAIRE GERER</a>
+                    <a class="nav-link text-white " href="">FAIRE GERER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="">Consulter un expert</a>
+                    <a class="nav-link text-white" href="">Consulter un expert</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="">SE CONNECTER</a>
+                    <a class="nav-link text-white " href="">SE CONNECTER</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-@yield("content")
 
+    @yield("content")
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>Contact us</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
 <!-- Footer -->
     <footer class="py-4 bg-dark">
