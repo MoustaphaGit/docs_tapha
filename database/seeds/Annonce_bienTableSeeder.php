@@ -12,7 +12,7 @@ class Annonce_bienTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('annonce_biens')->delete();
         factory(\App\Annonce_bien::class, 20)->create();
+
     }
 }

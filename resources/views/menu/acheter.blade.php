@@ -1,4 +1,4 @@
-@extends('layouts.app')
+    @extends('layouts.app')
 @section('content')
     <section class="container hk-wrapper">
 
@@ -26,6 +26,7 @@
                 @endforeach
             <!--filtre de recherche pour un achat de logement -->
             <div class="col-4 row">
+            ici
                 <div class="col-lg-3 col-sm-4 col-xs-12 ">
                     <div class="card w-260p w-sm-290p">
                         <div class="card-body">

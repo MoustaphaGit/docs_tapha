@@ -11,7 +11,7 @@ class PagesController extends Controller
 {
     public function index()
     {
-        return view('menu.acheter');
+        return view('acceuil');
     }
     public function show()
     {
