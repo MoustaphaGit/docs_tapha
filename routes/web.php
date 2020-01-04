@@ -26,3 +26,7 @@ Route::patch("/annonces/{ann}/edit", "AnnoncesController@update")->name("update_
 Route::delete('biens/{id}', 'AnnoncesController@destroy');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

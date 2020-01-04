@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document </title>
+    <title>keugui_Immo - Accueil</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
     <!-- Custom styles for this template -->
@@ -23,10 +23,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar nav-tabs ml-auto py-2">
                 <li class="nav-item active">
-                    <a class="nav-link text-white " href="">ACCUEIL</a>
+                    <a class="nav-link text-white " href="http://127.0.0.1:8000/">ACCUEIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="">ACHETER</a>
+                    <a class="nav-link text-white " href="/menu/acheter">ACHETER</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="">LOUER</a>
@@ -57,5 +57,14 @@
     </footer>
         <script src="{{asset('js/app.js')}}"></script>
         <script src="{{asset('js/scrolling-nav.js')}}"></script>
+    <script src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
+    <script>
+        tinymce.init({
+            selector:'textarea.description',
+            width: 900,
+            height: 300
+        });
+    </script>
+
     </body>
 </html>
