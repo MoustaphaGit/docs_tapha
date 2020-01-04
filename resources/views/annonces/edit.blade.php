@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Editer une annonces</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{{asset('css/docs.css')}}"/>
-</head>
-<body>
-    <main>
-        <div class="container row ">
-            <div class="col-12"><h1>Modifier votre annonce </h1></div>
-            <hr>
+@extends('layouts.app')
+@section('content')
+        <div class="container ">
+            <div class="col-12">
+                <center><h1>Modifier votre annonce </h1></center>
+                <br>
+                <br>
+            </div>
+
             @if($errors->any())
                 @foreach($errors->all() as $error)
                     <div class="alert alert-danger">{{$error}}</div>
                 @endforeach
             @endif
-            <form action="{{route('update_annonce',['ann'=>$bien->id])}}" method="post" class="form-control" enctype="multipart/form-data">
+            <form action="{{route('update_annonce',['ann'=>$bien->id])}}" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('patch')
                 <div class="row">
@@ -74,24 +66,11 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="piece">Nombre de pièces</label>
-                                <select id="nbr_piece" class="form-control" value="{{$bien->nombre_piece}}" name="nbr_piece">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                </select>
+                                    <input type="number" value="{{$bien->nombre_piece}}" class="form-control" name="nbr_piece" >
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="chambre">Nombre de Chambre</label>
-                                <select id="nbr_chambre" class="form-control" value="{{$bien->nombre_chambre}}" name="nbr_chambre">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
+                                    <input type="number" name="nbr_chambre"  value="{{$bien->nombre_chambre}}" class="form-control" id="nbr_chambre">
                             </div>
                             <div class="form-group col-md-3">
                                 <label for="surface">Surface : </label>
@@ -127,14 +106,14 @@
                                 <img src="{{asset($bien->images)}}" alt="{{$bien->type_annonce->name}}" width="70%">
                             </div>
                             <div class="col-6">
-                                <h3>Chargez une autre image pour remplacer celle-ci :</h3>
+                                <h6>Chargez une autre image pour remplacer celle-ci :</h6>
                             </div>
                             <div class="col-6">
                                 <input type="file" name="annonce_image" class="form-control-file">
                             </div>
                             <div class="col-12">
                                 <label for="descrip">Descriptions : </label>
-                                <textarea name="description" id="description"cols="20" rows="8" class="form-control"
+                                <textarea name="description" id="description"cols="20" rows="8" class="description"
                                         value="{{$bien->description}}"  placeholder="une petite description de votres bien"></textarea>
                             </div>
                             <div class="col-12"><br><button type="submit" class=" btn btn-primary">Mettre à jour </button></div>
@@ -143,6 +122,4 @@
                 </div>
             </form>
         </div>
-    </main>
-</body>
-</html>
+    @endsection

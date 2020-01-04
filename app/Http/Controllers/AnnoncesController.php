@@ -99,8 +99,8 @@ class AnnoncesController extends Controller
                 'mettre_2'=>$request->input('surface'),
                 'description'=>$request->input('description'),
                 'type_bien_id'=>$request->input('type_bien'),
-                'type_annonce_id'=> $request->input('type_annonce'),
-                'region_id'=> $request->input('type_annonce'),
+                'type_annonce_id'=>$request->input('type_annonce'),
+                'region_id'=> $request->input('region'),
             ]);
         }
         return redirect('/annonces/index')->with(['success'=>"Annonce bien mis à jour"]);

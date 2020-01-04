@@ -32,7 +32,7 @@
                                 </select>
                             </div>
                         </div>
-{{--                         LOCALISATION--}}
+                       {{--LOCALISATION--}}
                         <div class="form-group row" >
                             <div class = "col-12">
                                 <hr>
@@ -101,11 +101,11 @@
                             </div>
                             <div class="col-12">
                                 <label for="">Ajouter des images : </label>
-                                <input type="file" name="annonce_image" class="form-control-file">
+                                <input type="file" name="annonce_image" class="form-control-file    ">
                             </div>
                             <div class="col-12">
                                 <label for="descrip">Descriptions : </label>
-                                <textarea name="description" id="description"cols="20" rows="8" class="form-control"
+                                <textarea name="description" id="description"cols="20" rows="8" class="description"
                                           placeholder="une petite description de votre bien"></textarea>
                             </div>
                             <div class="col-12"><br><button type="submit" class=" btn btn-primary">Enregistrer</button></div>

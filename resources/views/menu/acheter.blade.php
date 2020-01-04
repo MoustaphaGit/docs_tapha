@@ -16,43 +16,14 @@
                         <img src="{{$biens->images ? asset($biens->images) : asset('uploads/images/default.png')}}"  alt=" " style="width: 100%" class="card-img-top">
                     </div>
                     <div class="card body">
-                       <h5 class="card-title" style="color:#f6993f "><center>{{$biens->type_annonce->name}} {{$biens->type_bien->nom}} </center></h5>
+                       <h5 class="card-title" style="color:#f6993f "><center>{{$biens->type_annonce->name}}: {{$biens->type_bien->nom}} </center></h5>
                        <div class="list-group-item">
-                           <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, molestiae. Lor</p>
+                           <p class="card-text"> localite :{{$biens->quartier}} </p>
                        </div>
-                       <div class="list-group-item"></div>
+                       <div class="list-group-item" style="color: #f6993f"> <p class="card-text">{{$biens->prix}} FCFA</p></div>
                     </div>
                 </div>
                 @endforeach
-{{--                <div class="col-4 col-lg-4 col-md-6 col-sm-12">--}}
-{{--                    <div class="card mb-5">--}}
-{{--                        <img src="" alt="" class="card-img-top">--}}
-{{--                    </div>--}}
-{{--                    <div class="card body">--}}
-{{--                       <h5 class="card-title" style="color:#f6993f "><center>titre</center></h5>--}}
-{{--                       <div class="list-group-item">--}}
-{{--                           <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, molestiae. Lor</p>--}}
-{{--                       </div>--}}
-{{--                       <div class="list-group-item">--}}
-
-{{--                       </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="col-4 col-lg-4 col-md-6 col-sm-12">--}}
-{{--                    <div class="card mb-5">--}}
-{{--                        <img src="" class="card-img-top">--}}
-{{--                    </div>--}}
-{{--                    <div class="card body">--}}
-{{--                       <h5 class="card-title"><center>titre</center></h5>--}}
-{{--                       <div class="list-group-item">--}}
-{{--                           <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, molestiae. Lor</p>--}}
-{{--                       </div>--}}
-{{--                       <div class="list-group-item">--}}
-
-{{--                       </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-            </div>
             <!--filtre de recherche pour un achat de logement -->
             <div class="col-4 row">
                 <div class="col-lg-3 col-sm-4 col-xs-12 ">
@@ -117,7 +88,6 @@
 
             </div>
             <!--FIN filtre de recherche pour un achat de logement -->
-
 
         </div>
     </section>
