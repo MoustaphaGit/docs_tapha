@@ -10,9 +10,9 @@
                 <p class="text-white"> Désormais Se loger devient plus facile</p>
             </div>
             <br>
+             <!-- le filtre de recherche -->
             <div class="container-fluid bg-color-transparent text-sm-center" >
-                <!-- le filtre de recherche -->
-                <form action="{{route('search_annonce')}}" method="post" name="filtre">
+                <form action="" method="post" name="filtre">
                     @csrf
                     <div class="row my-5 mx-1 ">
                         <div class="col-8 row  pr-0">

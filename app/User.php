@@ -37,6 +37,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+
+    public function annonceur(){
+        return $this->hasOne(Annonceur::class);
+    }
+
      /**
      * Cette méthode va determiner si le user connecté a un role admin
      */
@@ -51,7 +56,7 @@ class User extends Authenticatable
         return (strtolower(@$this->roles) === 'moderator' || strtolower(@$this->roles) === 'admin')? true : false;
     }
     /**
-     * Cette méthode va determiner si le user connecté a un role commercant
+     * Cette méthode va determiner si le user connecté a un role Annonceur
      */
     public function isAnnonceur(){
         return (strtolower(@$this->roles) === 'seller' || strtolower(@$this->roles) === 'admin')? true : false;

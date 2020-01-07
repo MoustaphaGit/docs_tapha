@@ -17,7 +17,7 @@
 //Route::get("/", "biensController@index");
 /* les page avec le controlleur PageController */
 Route::get("/","PagesController@index");
-Route::get("/menu/acheter","PagesController@show");
+Route::get("/menu/acheter","PagesController@show_acheter");
 Route::get("/menu/louer","PagesController@show_louer");
 /* les page avec le controlleur AnnonceController */
 Route::get("/annonces/create", "AnnoncesController@show");

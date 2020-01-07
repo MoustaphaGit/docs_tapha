@@ -13,7 +13,7 @@ class PagesController extends Controller
     {
         return view('acceuil');
     }
-    public function show()
+    public function show_acheter()
     {
         return view('menu.acheter');
     }

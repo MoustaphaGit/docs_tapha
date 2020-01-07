@@ -19,5 +19,8 @@ class Annonce_bien extends Model
     public function region(){
         return $this-> belongsTo('App\Region');
     }
+    public function annonceur(){
+        return $this->belongsTo(\App\Annonceur::class);
+    }
 
 }

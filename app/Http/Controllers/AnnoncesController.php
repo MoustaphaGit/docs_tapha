@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 
 class AnnoncesController extends Controller
 {
+    /* methode pour la page  create */
     public function show(){
         $type_b=\App\Type_bien::pluck('nom','id');
         $type_a=\App\Type_annonce::pluck('name','id');
@@ -17,10 +18,12 @@ class AnnoncesController extends Controller
         $region=\App\Region::pluck('nom','id');
         return view('annonces.create',compact('type_b','type_a','region'));
     }
+    /* methode pour afficher toutes les annonces  */
     public function display(){
         $bien = \App\Annonce_bien::orderBy('created_at')->get();
         return view('annonces.index', compact('bien'));
     }
+    /* methode pour afficher les annonce de vente */
     public function display_acheter(){
         $bien = \App\Annonce_bien::where('type_annonce_id', 5)->take(6)->get();
         $type_b=\App\Type_bien::pluck('nom','id');
@@ -28,6 +31,7 @@ class AnnoncesController extends Controller
         $region=\App\Region::pluck('nom','id');
         return view('menu.acheter', compact('bien','type_b','type_a','region'));
     }
+    /* Editer un annonces  */
     public function edit($ann){
         $bien=\App\Annonce_bien::find($ann);
         $type_b=\App\Type_bien::pluck('nom','id');
@@ -35,6 +39,7 @@ class AnnoncesController extends Controller
         $region=\App\Region::pluck('nom','id');
         return view('annonces.edit', compact('bien','type_b','type_a','region'));
     }
+   /* End <editer des produits */
 
     public function uploadImage(UploadedFile $uploadedFile, $folder = null, $disk = 'public', $filename = null){
         $name = !is_null($filename) ? $filename : str_random('25');
@@ -48,8 +53,7 @@ class AnnoncesController extends Controller
             $annonce->delete();
         return redirect('/annonces/index');
     }
-
-
+/* methode de traitrement d'une annonce */
     public function depot(Request $request){
         $data= $request->validate([
             'price'=>'numeric',
