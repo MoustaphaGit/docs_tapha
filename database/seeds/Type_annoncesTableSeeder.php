@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
-class Annonce_bienTableSeeder extends Seeder
+class Type_annoncesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,7 +11,6 @@ class Annonce_bienTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Annonce_bien::class, 30)->create();
-
+        factory(\App\Type_annonce::class, 10)->create();
     }
 }

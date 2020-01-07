@@ -1,54 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document </title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{{asset('css/docs.css')}}"/>
-</head>
-
-<body class=" bg-white" style="font-family:sans-serif;font-size:small" id="page-top">
-
-<!-- Navigation  contenant des boutons -->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Keugui_IMMO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar nav-tabs ml-auto py-2">
-                <li class="nav-item active">
-                    <a class="nav-link text-white " href="http://127.0.0.1:8000/">ACCUEIL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white " href="/menu/acheter">ACHETER</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="">LOUER</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white " href="">FAIRE GERER</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="">Consulter un expert</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white " href="">SE CONNECTER</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+@extends('layouts.app')
+@section('content')
 <section>
 
-    <header class="bg-primary text-white ">
-        <br><br>
+    <header class="bg-primary text-white px-5 ">
+        <br><br><br><br><br><br>
         <div class="container text-center">
             <div class="bg-color-transparent text-lg-center pt-5">
                 <h1> <span class="text-white">GROUPE KEURGUI_IMMOBILIER</span> </h1>
@@ -57,12 +12,13 @@
             <br>
             <div class="container-fluid bg-color-transparent text-sm-center" >
                 <!-- le filtre de recherche -->
-                <form action="#" method="" name="filtre">
+                <form action="{{route('search_annonce')}}" method="post" name="filtre">
+                    @csrf
                     <div class="row my-5 mx-1 ">
                         <div class="col-8 row  pr-0">
                             <div class="col-12 row largeur my-2">
                                 <div class="col-4 p-0 ">
-                                    <select name="" class="custom-select">
+                                    <select name="type_annonce" class="custom-select">                                   
                                         <option selected>je veux</option>
                                         <option value="1">Louer</option>
                                         <option value="2">Acheter</option>
@@ -70,12 +26,12 @@
                                     </select>
                                 </div>
                                 <div class="col-8 pr-0">
-                                    <input class="form-control" type="text" placeholder="Où désirez-vous habiter ?">
+                                    <input class="form-control" name="lieu" type="text" placeholder="Où désirez-vous habiter ?">
                                 </div>
                             </div>
                             <div class="col-12 row largeur my-2">
                                 <div class="col-6 p-0">
-                                    <select class="custom-select">
+                                    <select class="custom-select" name="type_bien">
                                         <option selected>type de biens</option>
                                         <option value="1">Maison</option>
                                         <option value="2">Chambre</option>
@@ -88,7 +44,7 @@
                                 {{--              <div class="col-2 p-0"> <input class="form-control" type="text" placeholder="Surface min"></div>--}}
                                 {{--              <div class="col-2 p-0"> <input class="form-control" type="text" placeholder="Prix-max"></div>--}}
                                 <div class="col-4 p-0 ml-3">
-                                    <select class="custom-select">
+                                    <select class="custom-select" name >
                                         <option selected> Nombre de Pièces</option>
                                         <option value="1">Studio</option>
                                         <option value="2">2 pièces</option>
@@ -189,14 +145,4 @@
 
   </div>
 </section>
-
-<!-- Footer -->
-<footer class="py-4 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-  </div>
-  <!-- /.container -->
-</footer>
-<script src="{{asset('js/app.js')}}"></script>
-</body>
-</html>
+@endsection

@@ -15,15 +15,18 @@ class AnnoncesController extends Controller
         $type_a=\App\Type_annonce::pluck('name','id');
         /*$localite=\App\Localite::pluck('localite','id');*/
         $region=\App\Region::pluck('nom','id');
-        return view('annonces.create',compact('type_b','type_a','localite','region'));
+        return view('annonces.create',compact('type_b','type_a','region'));
     }
     public function display(){
         $bien = \App\Annonce_bien::orderBy('created_at')->get();
         return view('annonces.index', compact('bien'));
     }
     public function display_acheter(){
-        $bien = \App\Annonce_bien::orderBy('created_at')->get();
-        return view('menu.acheter', compact('bien'));
+        $bien = \App\Annonce_bien::where('type_annonce_id', 5)->take(6)->get();
+        $type_b=\App\Type_bien::pluck('nom','id');
+        $type_a=\App\Type_annonce::pluck('name','id');
+        $region=\App\Region::pluck('nom','id');
+        return view('menu.acheter', compact('bien','type_b','type_a','region'));
     }
     public function edit($ann){
         $bien=\App\Annonce_bien::find($ann);

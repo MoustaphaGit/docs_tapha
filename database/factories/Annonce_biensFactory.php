@@ -18,9 +18,9 @@ $factory->define(Annonce_bien::class, function (Faker $faker) {
     $region= App\Region::all()->random(1)->first();
 
     return [
-            'nombre_piece'     =>$faker->numberBetween(3,10),
-            'mettre_2'         =>$faker->numberBetween(100,600),
-            'nombre_chambre'   =>$faker->numberBetween(1,5),
+            'nombre_piece'      =>$faker->numberBetween(3,10),
+            'mettre_2'          =>$faker->numberBetween(100,600),
+            'nombre_chambre'    =>$faker->numberBetween(1,5),
             'description'       =>$faker->paragraphs(2,true),
             'prix'              =>$prix[array_rand($prix)],
             'quartier'          =>$quartier[array_rand($quartier)],

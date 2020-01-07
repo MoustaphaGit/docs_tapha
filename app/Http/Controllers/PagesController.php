@@ -17,6 +17,11 @@ class PagesController extends Controller
     {
         return view('menu.acheter');
     }
+    public function show_louer()
+    {
+        return view('menu.louer');
+    }
+
 
 }
     /*public function display(){

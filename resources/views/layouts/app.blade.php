@@ -29,16 +29,15 @@
                     <a class="nav-link text-white " href="/menu/acheter">ACHETER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="">LOUER</a>
+                    <a class="nav-link text-white" href="/menu/louer">LOUER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="">FAIRE GERER</a>
+                    <a class="nav-link text-white" href="{{ route('login') }}">
+                         <button class="btn btn-secondary">Deposer une Annonce</button> 
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="">Consulter un expert</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white " href="">SE CONNECTER</a>
+                    <a class="nav-link text-white " href="{{ route('login') }}">SE CONNECTER</a>
                 </li>
             </ul>
         </div>
