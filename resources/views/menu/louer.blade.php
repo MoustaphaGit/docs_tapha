@@ -1,26 +1,28 @@
-@extends('layouts.app')
-@section('content')
+@extends('layouts.navbar')
+@section('nav')
 <div class="container">
     <div class="row">
         <div class="col-sm-12 pt-5">
+            <h5>Location de Biens </h5> <p class="text-left" style="color:#f6993f">TRIER PAR DATE</p>
             <hr>
-            <h5>Location de Biens </h5><br> <p class="text-left" style="color:#f6993f">TRIER PAR DATE</p>
-            <hr>
-            <!-- les annonces de locations avec un col-7 -->
-            <div class="col-sm-8">
-
-            </div>
+        </div>
+        <!-- les annonces de locations avec un col-7 -->
+        <div class="col-sm-8 row">
+            <div class= "col-12">
+                 <h1>ici</h1>
+            </div>       
+        </div>
             <!-- le card de recherche avec des collapse -->
-            <div class="col-sm-4 row">
-                <div class="col-6"> <h6><strong>Affiner votre Recherche</strong></h6> </div>
-                <div class="col-6"></div>
-                <!-- le collape avec les input dedans -->
-                <form action="" method="post" name="louer_page_filter">
-                    <div class="col-sm-12 py-5">
-                        <div class="accordion" id="accordion_1">
-                                <div class="card">
+        <div class="col-sm-4 row">
+            <div class="col-6"> <h6><strong>Affiner votre Recherche</strong></h6> </div>
+            <div class="col-6"></div>
+                <!-- le collape avec les input dedans -->              
+            <div class="col-12 py-5">
+                <form  action="" method="post" name="louer_page_filter">
+                    <div class="accordion" id="accordion_1">
+                            <div class="card">
                                     <div class="card-header d-flex justify-content-between activestate">
-                                        <a role="button" data-toggle="collapse" href="#collapse_1" aria-expanded="true">Type de Recherche</a>
+                                        <a role="button" data-toggle="collapse" href="#collapse_1" aria-expanded="true">Type de Recherche </a>
                                     </div>
                                     <div id="collapse_1" class="collapse show" data-parent="#accordion_1" role="tabpanel">
                                         <div class="card-body row">
@@ -64,7 +66,7 @@
                                         <h5 class="card-title" style="color:#f6993f"> LOCALISATION </h5>
                                         <div class="row" style="padding-bottom: 4px">
                                             <div class="col-12">
-                                                <select class="form-control" name="region" id="region" >
+                                                 <select class="form-control" name="region" id="region" >
                                         
                                                 <option value=""></option>
                                             
@@ -130,10 +132,9 @@
                                     </div>
                                 </div>
                             </div>                        
-                        </div>   
-                    </div>
-                </form>
-            </div>
+                        </div>
+                </form>   
+            </div>  
         </div>
     </div>
 </div>    

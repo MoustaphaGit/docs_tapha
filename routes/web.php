@@ -31,7 +31,7 @@ Route::get("/annonces/{ann}/edit", "AnnoncesController@edit")->name("editer_anno
 Route::patch("/annonces/{ann}/edit", "AnnoncesController@update")->name("update_annonce");
 Route::delete('biens/{id}', 'AnnoncesController@destroy');
 /* ???? */
-Route::get("/home", "HomeController@index");
+/* Route::get("/home", "HomeController@index"); */
 
         
 

@@ -1,5 +1,5 @@
-    @extends('layouts.app')
-@section('content')
+    @extends('layouts.navbar')
+@section('nav')
     <section class="container hk-wrapper">
 
         <div class="row">
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                     </div>
-                </div> <!--FIN filtre de recherche pour un achat de logement -->
+            ssssss</div> <!--FIN filtre de recherche pour un achat de logement -->
         </div>
     </section>
 @endsection

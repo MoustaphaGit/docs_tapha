@@ -15,6 +15,10 @@ class CreateAnnonceursTable extends Migration
     {
         Schema::create('annonceurs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('user_id');
+            $table->string('register_number')->nullable(true);
+            $table->mediumText('business_address')->nullable(true);
+            $table->mediumText('business_phone_number')->nullable(true);
             $table->timestamps();
         });
     }
