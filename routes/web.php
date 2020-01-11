@@ -23,6 +23,7 @@ Route::get("/menu/louer","PagesController@show_louer");
 Route::get("/annonces/create", "AnnoncesController@show");
 Route::post("/annonces/create", "AnnoncesController@depot")->name("ajout_annonce");/* formulaire de creation d'annonce */
 /* affichage de toute les annonces avec AnnoncesControlleur  */
+Route::get("/annonce/{slug}/one", 'AnnoncesController@show_ann');
 Route::get("/annonces/index", "AnnoncesController@display")->name("");
 /* affichant les annonces de vente avec AnnonceControlleur */
 Route::get("/menu/acheter", "AnnoncesController@display_acheter")->name("");

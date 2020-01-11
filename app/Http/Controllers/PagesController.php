@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Annonce_bien;
+use App\Type_bien;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
@@ -9,9 +10,11 @@ use Illuminate\Support\Str;
 
 class PagesController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return view('menu.acceuil');
+        $sliderAnnonce = Annonce_bien::orderBy('created_at', 'DESC')->select('quartier','description','prix','type_bien_id','type_annonce_id')->take(3)->get();
+        $annonces = Annonce_bien::all()->take(6); 
+        return view('menu.home', compact('sliderAnnonce','annonces'));
     }
     public function show_acheter()
     {

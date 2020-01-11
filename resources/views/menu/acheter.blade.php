@@ -10,14 +10,14 @@
                     @foreach($bien as $biens )
                     <div class="col-4 col-lg-4 col-md-6 col-sm-12">
                         <div class="card mb-5">
-                            <img src="{{$biens->images ? asset($biens->images) : asset('uploads/images/default.png')}}"  alt=" " style="width: 100%" class="card-img-top">
+                         <a href="/annonce/{{$biens->id}}/one"><img src="{{$biens->images ? asset($biens->images) : asset('uploads/images/default.png')}}"  alt=" " height="250" width="250" class="card-img-top"></a>
                         </div>
                         <div class="card body">
-                            <h5 class="card-title" style="color:#f6993f "><center>{{$biens->type_annonce->name}}: {{$biens->type_bien->nom}} </center></h5>
+                            <h5 class="card-title" style="color:#f6993f "><center><a href=""> {{$biens->type_annonce->name}}: {{$biens->type_bien->nom}} </a> </center></h5>
                             <div class="list-group-item"><p class="card-text"><i class="">lieu</i>  :{{$biens->quartier}} </p></div>
                             <div class="list-group-item" style="color: #f6993f"> <p class="card-text">{{$biens->prix}} FCFA</p></div>
                         </div>
-                    </div>   
+                    </div>
                     @endforeach
                 </div>
                 <!--filtre de recherche pour un achat de logement -->
@@ -31,7 +31,7 @@
                                         <select  class="form-control" name="type_bien" id="type_bien" >
                                         @foreach($type_b as $key=>$value)
                                             <option value="{{$key}}">{{$value}}</option>
-                                        @endforeach   
+                                        @endforeach
                                         </select>
                                     </li>
                                     <li class="list-group-item">
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                     </div>
-            ssssss</div> <!--FIN filtre de recherche pour un achat de logement -->
+            </div> <!--FIN filtre de recherche pour un achat de logement -->
         </div>
     </section>
 @endsection

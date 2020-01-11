@@ -1,16 +1,19 @@
 @extends('layouts.navbar')
 @section('nav')
-    <section>
-        <div class="bg-primary text-white px-5 " style="background-image: url(./../photos/img2.jpg);">
-            <br><br><br><br><br><br>
+<section>
+        <header class="bg-primary text-white px-5  " style="background-image: url(./../photos/img2.jpg);
+         background-size: cover;background-attachment: fixed;background-position: top left ;">
+            <br><br><br><br><br>
+            <br>
             <div class="container text-center">
-                <div class=" text-lg-center pt-5">
-                    <h1> <span class="text-white">GROU KEURGUI_IMMOBILIER</span> </h1>
+                <div class=" text-lg-center bg-color-transparent pt-5" style="background-color:rgba(76, 76, 74, 0.408);">
+                    <h1> <span class="text-white">GROUPE KEURGUI_IMMOBILIER</span> </h1>
                     <p class="text-white"> Désormais Se loger devient plus facile</p>
                 </div>
                 <br>
+                <br><br>
                 <!-- le filtre de recherche -->
-                <div class="container-fluid bg-color-transparent text-sm-center" >
+                <div class="container-fluid bg-color-transparent text-sm-center" style="background-color:rgba(75, 75, 73, 0.408);" >
                     <form action="" method="post" name="filtre">
                         @csrf
                         <div class="row my-5 mx-1 ">
@@ -64,7 +67,7 @@
                 <!-- fin filtre de recherche -->
             </div>
             <br> <br><br> <br><br> <br>
-        </div>
+        </header>
     </section>
 
     <section class=" py-1"><!-- la section des annonces  -->

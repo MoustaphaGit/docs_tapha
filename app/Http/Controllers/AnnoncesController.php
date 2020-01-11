@@ -10,6 +10,15 @@ use Illuminate\Support\Str;
 
 class AnnoncesController extends Controller
 {
+    /* pour afficher la page d'une annonce  */
+    public function show_ann($slug)
+    {
+        $ann = Annonce_bien::where('id',$slug)->first();
+        if($ann)
+            return view("menu.one_annonce", compact('ann'));
+        else
+            return redirect('/acceuil');
+    }
     /* methode pour la page  create */
     public function show(){
         $type_b=\App\Type_bien::pluck('nom','id');
