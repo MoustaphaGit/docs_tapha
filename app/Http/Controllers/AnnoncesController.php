@@ -24,6 +24,7 @@ class AnnoncesController extends Controller
     public function annonceur(){
         $user_id = Auth::user()->id;
         $annonces = Annonce_bien:: where('annonceur_id','$user_id')->get();
+        return view('annonceur.index' , compact(''));
     }
     public function show(){
         $type_b=\App\Type_bien::pluck('nom','id');
