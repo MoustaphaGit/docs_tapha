@@ -20,7 +20,7 @@
                             <div class="col-8 row  pr-0">
                                 <div class="col-12 row largeur my-2">
                                     <div class="col-4 p-0 ">
-                                        <select name="type_annonce" class="custom-select">                                   
+                                        <select name="type_annonce" class="custom-select">
                                             <option selected>je veux</option>
                                             <option value="1">Louer</option>
                                             <option value="2">Acheter</option>
@@ -74,9 +74,9 @@
     <div class="row">
         <div class="col-12 py-0">
             <!-- le div du slide pour faire defiller quelques annonces -->
-            <h4 lass="hk-sec-title"> Quelques offres en exclusivite</h4>
+            <h4 lass="hk-sec-title"> Nos dernières annonces immobilières</h4>
             <div class="row px-5 py-3">
-                    
+
             </div>
         </div>
         <!-- le div des 3 derniers annonce  -->
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                 </a>
-            </div>    
+            </div>
         </div>
     </section>
 

@@ -9,14 +9,27 @@
         <!-- les annonces de locations avec un col-7 -->
         <div class="col-sm-8 row">
             <div class= "col-12">
-                 <h1>ici</h1>
-            </div>       
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="..." class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
             <!-- le card de recherche avec des collapse -->
         <div class="col-sm-4 row">
             <div class="col-6"> <h6><strong>Affiner votre Recherche</strong></h6> </div>
             <div class="col-6"></div>
-                <!-- le collape avec les input dedans -->              
+                <!-- le collape avec les input dedans -->
             <div class="col-12 py-5">
                 <form  action="" method="post" name="louer_page_filter">
                     <div class="accordion" id="accordion_1">
@@ -29,16 +42,16 @@
                                             <div class="col-12 py-0">
                                             <!-- <h5 class="card-title" style="color:#f6993f "> Transaction</h5> -->
                                             <span class="text-center" style="padding:5px;color:#f6993f"">Transaction</span>
-                                            </div>                                        
+                                            </div>
                                             <div class="col-12 custom-control custom-radio py-10" style="padding-left:50px">
                                                 <div>
                                                     <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required="">
-                                                    <label class="custom-control-label" for="customControlValidation2"><h5><strong>Location</strong></h5></label> 
+                                                    <label class="custom-control-label" for="customControlValidation2"><h5><strong>Location</strong></h5></label>
                                                 </div>
                                                 <div class="pt-10">
                                                     <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required="">
                                                     <label class="custom-control-label" for="customControlValidation3"><h5><strong>Vente</strong></h5></label>
-                                                </div>    
+                                                </div>
                                             </div>
                                             <div class="col-12 py-0">
                                             <!-- <h5 class="card-title" style="color:#f6993f "> Type de Biens</h5> -->
@@ -53,7 +66,7 @@
                                             </div>
                                             <div class ="col-sm-12 py-10" style="padding-left:30px">
                                                 <button type="submit"  class="btn btn-danger btn-rounded"  style="width:100%">RECHERCHER</button>
-                                            </div>      
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -67,9 +80,9 @@
                                         <div class="row" style="padding-bottom: 4px">
                                             <div class="col-12">
                                                  <select class="form-control" name="region" id="region" >
-                                        
+
                                                 <option value=""></option>
-                                            
+
                                                 </select>
                                             </div>
                                             <div class="col-12 pt-2">
@@ -78,7 +91,7 @@
                                             <div class=" col-sm-12 py-10" style="padding-left:30px">
                                                 <button type="submit"  class="btn btn-danger btn-rounded"  style="width:100%">RECHERCHER</button>
                                             </div>
-                                        </div>  
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +100,7 @@
                                         <a class="collapsed" role="button" data-toggle="collapse" href="#collapse_3" aria-expanded="false">SURFACE/BUDGET</a>
                                     </div>
                                     <div id="collapse_3" class="collapse" data-parent="#accordion_1">
-                                        <div class="card-body pa-15"> 
+                                        <div class="card-body pa-15">
                                             <li class="list-group-item">
                                                 <div class="row" style="padding-bottom: 4px">
                                                     <div class="col-12 pb-2"><h6> Quel budget?</h6> </div>
@@ -105,11 +118,11 @@
                                             <li class="list-group-item">
                                                 <div class=" col-sm-12 py-10" style="padding-left:30px">
                                                     <button type="submit"  class="btn btn-danger btn-rounded"  style="width:100%">RECHERCHER</button>
-                                                </div>                        
-                                            </li>                                  
+                                                </div>
+                                            </li>
                                         </div>
                                     </div>
-                                </div>                        
+                                </div>
                             <div class="card">
                                 <div class="card-header d-flex justify-content-between">
                                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapse_4" aria-expanded="false"> Pièce(s)/Chambre</a>
@@ -128,14 +141,14 @@
                                             <div class=" col-sm-12 py-10" style="padding-left:30px">
                                                 <button type="submit"  class="btn btn-danger btn-rounded"  style="width:100%">RECHERCHER</button>
                                             </div>
-                                        </li> 
+                                        </li>
                                     </div>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
-                </form>   
-            </div>  
+                </form>
+            </div>
         </div>
     </div>
-</div>    
+</div>
 @endsection

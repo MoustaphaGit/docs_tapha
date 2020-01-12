@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Annonce_bien;
+use Illuminate\Auth\Access\Gate;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
@@ -24,7 +26,7 @@ class AnnoncesController extends Controller
     public function annonceur(){
         $user_id = Auth::user()->id;
         $annonces = Annonce_bien:: where('annonceur_id','$user_id')->get();
-        return view('annonceur.index' , compact(''));
+        return view('annonceur.index' , compact('user_id','annonces'));
     }
     public function show(){
         $type_b=\App\Type_bien::pluck('nom','id');
@@ -69,12 +71,14 @@ class AnnoncesController extends Controller
     }
 /* methode de traitrement d'une annonce */
     public function depot(Request $request){
+
         $data= $request->validate([
             'price'=>'numeric',
             'description'=>'nullable | min:3 | max:100000',
             'annonce_image'=>'nullable| image| max:2048'
         ]);
         $annonce = new \App\Annonce_bien();
+        $user_id = Auth::user()->id;
         if($request->has('annonce_image')){
             $img= $request->file('annonce_image');
             $img_name=Str::slug($request->input('type_bien')).'_'.time();
@@ -91,6 +95,7 @@ class AnnoncesController extends Controller
         $annonce->mettre_2 = $request->input('surface');
         $annonce->prix = $request->input('price');
         $annonce->description = $request->input('description');
+        $annonce->annonceur_id =$user_id;
         $annonce->save();
             return redirect('/annonces/index')->with(['success'=>"Annonce bien enregistré"]);
     }

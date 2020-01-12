@@ -59,7 +59,7 @@
                                             <a class="dropdown-item" href="#"><i class="fas fa-shield-alt"></i> Back Office</a>
                                         @endcan
                                         @can('seller')
-                                            <a class="dropdown-item" href="#"><i class="fas fa-shield-alt"></i>Mon compte</a>
+                                            <a class="dropdown-item" href="/seller"><i class="fas fa-shield-alt"></i>Mon compte</a>
                                         @endcan
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
