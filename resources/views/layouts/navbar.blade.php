@@ -8,7 +8,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{{asset('css/docs.css')}}"/> 
+    <link rel="stylesheet" href="{{asset('css/docs.css')}}"/>
    <!--  <link rel="stylesheet" href="{{asset('css/all.css')}}"/> -->
 </head>
 
@@ -34,13 +34,13 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="{{ route('login') }}">
-                                <button class="btn btn-secondary">Deposer une Annonce </button> 
+                                <button class="btn btn-secondary">Deposer une Annonce </button>
                             </a>
                         </li>
                     </ul>
 
                     <ul class="navbar-nav ml-auto">
-                        @guest    
+                        @guest
                             <li class="nav-item">
                                 <a class="nav-link text-white " href="{{ route('login') }}">SE CONNECTER</a>
                             </li>
@@ -58,7 +58,7 @@
                                         @can('admin')
                                             <a class="dropdown-item" href="#"><i class="fas fa-shield-alt"></i> Back Office</a>
                                         @endcan
-                                        @can('annonceu')
+                                        @can('seller')
                                             <a class="dropdown-item" href="#"><i class="fas fa-shield-alt"></i>Mon compte</a>
                                         @endcan
                                         <a class="dropdown-item" href="{{ route('logout') }}"
@@ -67,11 +67,11 @@
                                             {{ __('Logout') }}
                                         </a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf   
+                                        @csrf
                                         </form>
                                     </div>
                                 </li>
-                        @endguest   
+                        @endguest
                     </ul>
                 </div>
             </div>

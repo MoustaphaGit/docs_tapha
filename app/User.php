@@ -58,7 +58,7 @@ class User extends Authenticatable
     /**
      * Cette méthode va determiner si le user connecté a un role Annonceur
      */
-    public function isAnnonceur(){
-        return (strtolower(@$this->roles) === 'seller' || strtolower(@$this->roles) === 'admin')? true : false;
+    public function isSeller(){
+        return (strtolower(@$this->roles) === 'annonceur' || strtolower(@$this->roles) === 'admin')? true : false;
     }
 }

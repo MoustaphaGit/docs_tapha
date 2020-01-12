@@ -19,11 +19,8 @@ class AppServiceProvider extends ServiceProvider
         Gate::define('admin',function(User $user){
             return $user->isAdmin();
         });
-        Gate::define('moderator', function(User $user){
-            return $user->isModerator();
-        });
-        Gate::define('annonceur', function(User $user){
-            return $user->isAnnonceur();
+        Gate::define('seller', function(User $user){
+            return $user->isSeller();
         });
     }
 
@@ -36,7 +33,6 @@ class AppServiceProvider extends ServiceProvider
     {
         if(config('app.env')==='production'){
             \URL::forceSchema('https');
-
          }
     }
 }

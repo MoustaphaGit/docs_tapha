@@ -1,5 +1,5 @@
-@extends('layouts.app')
-    @section('content')
+@extends('layouts.navbar')
+    @section('nav')
         <section class="container ">
             <hr>
             <div class="col-12"><center><h1>informations sur votre annonces</h1></center></div>

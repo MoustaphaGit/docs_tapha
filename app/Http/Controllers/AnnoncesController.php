@@ -19,11 +19,15 @@ class AnnoncesController extends Controller
         else
             return redirect('/acceuil');
     }
-    /* methode pour la page  create */
+    /* methode pour la page create */
+
+    public function annonceur(){
+        $user_id = Auth::user()->id;
+        $annonces = Annonce_bien:: where('annonceur_id','$user_id')->get();
+    }
     public function show(){
         $type_b=\App\Type_bien::pluck('nom','id');
         $type_a=\App\Type_annonce::pluck('name','id');
-        /*$localite=\App\Localite::pluck('localite','id');*/
         $region=\App\Region::pluck('nom','id');
         return view('annonces.create',compact('type_b','type_a','region'));
     }
@@ -48,7 +52,7 @@ class AnnoncesController extends Controller
         $region=\App\Region::pluck('nom','id');
         return view('annonces.edit', compact('bien','type_b','type_a','region'));
     }
-   /* End <editer des produits */
+   /* End editer des produits */
 
     public function uploadImage(UploadedFile $uploadedFile, $folder = null, $disk = 'public', $filename = null){
         $name = !is_null($filename) ? $filename : str_random('25');
@@ -80,7 +84,6 @@ class AnnoncesController extends Controller
         $annonce->type_annonce_id = $request->input('type_annonce');
         $annonce->type_bien_id = $request->input('type_bien');
         $annonce->region_id = $request->input('region');
-        /*$annonce->localite_id = $request->input('quartier');*/
         $annonce->quartier = $request->input('quartier');
         $annonce->nombre_piece = $request->input('nbr_piece');
         $annonce->nombre_chambre = $request->input('nbr_chambre');
