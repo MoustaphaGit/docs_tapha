@@ -89,7 +89,7 @@
                             <div class="row pb-5">
                                 <div class="col-7 ">
                                     <label for="price">Le Prix :</label>
-                                    <input type="text" name="price"  placeholder="le prix ?" > FCFA
+                                    <input type="text" name="price" placeholder="le prix ?" > FCFA
                                 </div>
                             </div>
                             {{-- End le prix--}}
