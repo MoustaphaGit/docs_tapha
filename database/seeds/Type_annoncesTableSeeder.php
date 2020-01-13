@@ -11,7 +11,7 @@ class Type_annoncesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('type_biens')->insert(
+        DB::table('type_annonces')->insert(
             [
                 [
                     'name' => 'Cession-bail',
