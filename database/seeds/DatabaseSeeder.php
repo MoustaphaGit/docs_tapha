@@ -13,9 +13,9 @@ class DatabaseSeeder extends Seeder
     {
          /* $this->call(UserTableSeeder::class);*/
           /*$this->call(AnnonceurTableSeeder::class);*/
-         /* $this->call(Type_biensTableSeeder::class);*/
-          $this->call(Type_annoncesTableSeeder::class);
-          $this->call(RegionsTableSeeder::class);
+          $this->call(Type_biensTableSeeder::class);
+          /*$this->call(Type_annoncesTableSeeder::class);*/
+         /* $this->call(RegionsTableSeeder::class);*/
         /* $this->call(Annonce_bienTableSeeder::class); */
     }
 }
