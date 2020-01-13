@@ -47,6 +47,14 @@ class AnnoncesController extends Controller
         $region=\App\Region::pluck('nom','id');
         return view('menu.acheter', compact('bien','type_b','type_a','region'));
     }
+    /* methode pour afficher les annonce de location */
+    public function display_louer(){
+        $bien = \App\Annonce_bien::where('type_annonce_id', 2)->take(6)->get();
+        $type_b=\App\Type_bien::pluck('nom','id');
+        $type_a=\App\Type_annonce::pluck('name','id');
+        $region=\App\Region::pluck('nom','id');
+        return view('menu.louer', compact('bien','type_b','type_a','region'));
+    }
     /* Editer un annonces  */
     public function edit($ann){
         $bien=\App\Annonce_bien::find($ann);

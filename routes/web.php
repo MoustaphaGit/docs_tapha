@@ -25,6 +25,7 @@ Route::get("/annonce/{slug}/one", 'AnnoncesController@show_ann');
 Route::get("/annonces/index", "AnnoncesController@display")->name("");
 /* affichant les annonces de vente avec AnnonceControlleur */
 Route::get("/menu/acheter", "AnnoncesController@display_acheter")->name("");
+Route::get("/menu/louer", "AnnoncesController@display_louer")->name("");
 /*  edition,mis a jour et suppression de d'annonce */
 
 

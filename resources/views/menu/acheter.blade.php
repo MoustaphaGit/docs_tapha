@@ -1,14 +1,16 @@
     @extends('layouts.navbar')
 @section('nav')
     <section class="container hk-wrapper">
-
         <div class="row">
-            <div class="col-12 pt-1"><h5>RECHERCHER ET ACHETER VOTRE LOGEMENT </h5> <hr></div>
+            <div class="col-sm-12 pt-5">
+                <h5>Des villas à vendre,</h5> <p class="text-left" style="color:#f6993f">TRIER PAR DATE</p>
+                <hr>
+            </div>
+            <h6 class="col-12">RECHERCHER ET ACHETER VOTRE LOGEMENT<span style="color: #f6993f"> Trier par date</span></h6>
                 <div class="col-8 row">
-                    <h6 class="col-12">DES VILLAS A VENDRE, <span style="color: #f6993f"> Trier par date</span></h6>
                     <!--Des titres , du contenue et quelque annonce de type vente trier par date-->
                     @foreach($bien as $biens )
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 pt-2">
                         <div class="card mb-5">
                          <a href="/annonce/{{$biens->id}}/one"><img src="{{$biens->images ? asset($biens->images) : asset('uploads/images/default.png')}}"  alt=" " height="250" width="250" class="card-img-top"></a>
                         </div>
@@ -54,28 +56,27 @@
                                             <div class="col-12"><input class="form-control " type="number" name="" style="width:100%"></div>
                                         </div>
                                     </li>
-                                    <li class="list-group-item"></li>
+                                    <li class="list-group-item">
+                                        <h5 class="card-title" style="color:#f6993f "> LOCALISATION </h5>
+                                        <div class="row" style="padding-bottom: 4px">
+                                            <div class="col-12">
+                                                <select class="form-control" name="region" id="region" >
+                                                    @foreach($region as $key=>$value)
+                                                        <option value="{{$key}}">{{$value}}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                            <div class="col-12 pt-2">
+                                                <input class="form-control" type="text" name="" placeholder="Préciser le quartier" style="width:100%">
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title" style="color:#f6993f "> LOCALISATION </h5>
-                                <div class="row" style="padding-bottom: 4px">
-                                    <div class="col-12">
-                                        <select class="form-control" name="region" id="region" >
-                                        @foreach($region as $key=>$value)
-                                            <option value="{{$key}}">{{$value}}</option>
-                                        @endforeach
-                                        </select>
-                                    </div>
-                                    <div class="col-12 pt-2">
-                                        <input class="form-control" type="text" name="" placeholder="Préciser le quartier" style="width:100%">
-                                    </div>
-                                </div>
                             </div>
                             <div class="card-body">
                                 <center><button type="submit" class="btn btn-rounded btn-dark text-white">Appliquer</button></center>
                                 <br>
-                                <center><button type="submit" class="btn btn-rounded btn-danger text-white">Réinicialiser</button></center></center>
+                                <center><button type="submit" class="btn btn-rounded btn-danger text-white">Réinit`ialiser</button></center></center>
                             </div>
                         </div>
                     </div>

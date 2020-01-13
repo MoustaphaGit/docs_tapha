@@ -8,31 +8,38 @@
         </div>
         <!-- les annonces de locations avec un col-7 -->
         <div class="col-sm-8 row">
+            @foreach($bien as $biens)
             <div class= "col-12">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="..." class="card-img" alt="...">
-                        </div>
                         <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <img src="{{$biens->images ? asset($biens->images) : asset('uploads/images/default.png')}}" style=" height:355px"; class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body row">
+                                <div class="col-12"><center><h5 class="card-title" style="color: #f6993f">{{$biens->type_annonce->name}}-{{$biens->type_bien->nom}}</h5></center></div>
+                                <div class="col-12 pb-0">
+                                    <center><span class="" style="font-size:1.30em;"><strong>{{$biens->mettre_2}} m ,{{$biens->nombre_piece}}piece</strong></span><hr></center>
+                                </div>
+                                <div class="col-12  pb-2"><center><span class="" style="font-size: 1.52em;color:#f6993f"> {{$biens-> prix}}FCFA</span></center></div>
+                                <div class="col-12 pb-3 "><center><span class="">{{$biens ->quartier}}</span></center></div>
+                                {{$biens->description}}.
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
             <!-- le card de recherche avec des collapse -->
         <div class="col-sm-4 row">
-            <div class="col-6"> <h6><strong>Affiner votre Recherche</strong></h6> </div>
+            <div class="col-6"> <h6><strong>Affiner votre Recherche </strong></h6> </div>
             <div class="col-6"></div>
                 <!-- le collape avec les input dedans -->
             <div class="col-12 py-5">
                 <form  action="" method="post" name="louer_page_filter">
-                    <div class="accordion" id="accordion_1">
+                    <div class="" id="accordion_1">
                             <div class="card">
                                     <div class="card-header d-flex justify-content-between activestate">
                                         <a role="button" data-toggle="collapse" href="#collapse_1" aria-expanded="true">Type de Recherche </a>
