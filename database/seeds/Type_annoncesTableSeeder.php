@@ -11,6 +11,25 @@ class Type_annoncesTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Type_annonce::class, 10)->create();
+        DB::table('type_biens')->insert(
+            [
+                [
+                    'name' => 'Cession-bail',
+                ],
+                [
+                    'name' => 'Location',
+                ],
+                [
+                    'name' => 'Offre-Speciale',
+                ],
+                [
+                    'name' => 'Vente-Prestige',
+                ],
+                [
+                    'name' => 'Vente',
+                ]
+            ]
+        );
+       /* factory(\App\Type_annonce::class, 10)->create();*/
     }
 }

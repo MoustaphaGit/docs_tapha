@@ -11,7 +11,39 @@ class Type_biensTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Type_bien::class, 15)->create();
+        DB::table('type_biens')->insert(
+            [
+                [
+                    'nom'   => 'Appartement',
+
+                ],
+                [
+                    'nom'   => 'Bureau',
+
+                ],
+                [
+                    'nom'   => 'Villa',
+
+                ],
+                [
+                    'nom'   => 'Chambre',
+
+                ],
+                [
+                    'nom'   => 'Maison de vacance',
+
+                ],
+                [
+                    'nom'   => 'Hotel',
+
+                ],
+                [
+                    'nom'   => 'Magazin',
+
+                ]
+            ]
+        );
+        /*factory(\App\Type_bien::class, 15)->create();*/
 
     }
 }
