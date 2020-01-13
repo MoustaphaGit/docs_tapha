@@ -105,7 +105,7 @@ class AnnoncesController extends Controller
         $annonce->description = $request->input('description');
         $annonce->annonceur_id =$user_id;
         $annonce->save();
-            return redirect('/annonces/index')->with(['success'=>"Annonce bien enregistré"]);
+            return redirect('/annonceur/index')->with(['success'=>"Annonce bien enregistré"]);
     }
     public function update(Request $request,$ann){
         $request->validate([
@@ -136,7 +136,7 @@ class AnnoncesController extends Controller
                 'region_id'=> $request->input('region'),
             ]);
         }
-        return redirect('/annonces/index')->with(['success'=>"Annonce bien mis à jour"]);
+        return redirect('/annonceur/index')->with(['success'=>"Annonce bien mis à jour"]);
     }
 }
 
