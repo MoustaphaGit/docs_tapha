@@ -13,7 +13,7 @@ class PagesController extends Controller
     public function index(Request $request)
     {
         $sliderAnnonce = Annonce_bien::orderBy('created_at', 'DESC')->select('quartier','description','prix','type_bien_id','type_annonce_id')->take(3)->get();
-        $annonces = Annonce_bien::all()->take(4);
+        $annonces = Annonce_bien::all()->take(3);
         return view('menu.home', compact('sliderAnnonce','annonces'));
     }
     public function show_acheter()

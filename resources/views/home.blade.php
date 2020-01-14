@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                        <div class="container bg-blue-dark-1 text-white">
+                            <a href="/seller/annonces/create" > <h4 class="text-white">Poster une annonce / Acceder au formulaire</h4>  </a>
+                        </div>
                 </div>
             </div>
         </div>

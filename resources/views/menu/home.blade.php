@@ -81,17 +81,19 @@
         </div>
         <!-- le div des 3 derniers annonce  -->
         <div class=" row col-12 mx-1 ">
+            @foreach($annonces as $annonce)
             <div class="card col-lg-4 col-md-6 col-sm-12 rounded">
-                <a href="#">
-                    <div class="card-img card-img-bg text-white" style="background-image: url(./photos/img1.jpg); background-size:cover;">
+                <a href="/annonce/{{$annonce->id}}/one">
+                    <div class="card-img card-img-bg text-white" style="background-image: url({{$annonce->images}}); background-size:cover;">
                         <div class="card-img-overlay text-white bg-trans-dark-60">
-                            <h5 class="card-title text-white">Card title</h5>
-                            <p class="card-text">is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                            <h5 class="card-title text-white">{{$annonce->type_annonce->name}} {{$annonce->type_bien->nom}}</h5>
+                            <p class="card-text">{{$annonce->description}}.</p>
+                            <p class="card-text">{{ $annonce->nombre_piece }} Pièces ,{{ $annonce->mettre_2}} m²</p>
                         </div>
                     </div>
                 </a>
             </div>
+             @endforeach
         </div>
     </section>
 

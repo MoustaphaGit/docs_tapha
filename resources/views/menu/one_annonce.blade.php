@@ -4,7 +4,7 @@
     <h1 class='col-sm-12 pt-3 pb-0'></h1>
     <hr>
     <div class="col-12 "><center><span class="" style="color:#f6993f;font-size: 1.98em; font-family:'Ubuntu Light';" >{{$ann->prix}} FCFA</span></center></div>
-    <div class="col-12"><h3 class="">{{$ann->type_annonce->name}} {{$ann->type_bien->nom}}</h3></div>
+    <div class="col-12"><h2 class="">{{$ann->type_annonce->name}} {{$ann->type_bien->nom}}</h2></div>
     <div class="col-12 card card-sm container row">
         <div class="col-12 row">
             <div class='col-7'>
@@ -19,7 +19,11 @@
                <div class="col-4 pb-1" ><span class="" style="color:#f6993f;font-size: 1.98em; font-family:'Ubuntu Light';">{{ $ann->nombre_piece }} Pièces</span> </div>
                <div class="col-5 px-2" ><span style="color:#f6993f;font-size: 1.98em; font-family:'Ubuntu Light';" >  {{ $ann->nombre_chambre }} Chambre</span> </div>
                 <div class="col-3 px-1"> <span style="color:#f6993f;font-size: 1.98em; font-family:'Ubuntu Light';">{{ $ann->mettre_2}} m²</span></div>
+                <div class="col-12 px-1">
+                    <h4 >CONTACTER NOUS</h4> <span style="color:#f6993f;font-size: 1.98em; font-family:'Ubuntu Light';"> +221 -77-729-89-95 </span>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- end .container row -->

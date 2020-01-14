@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('content')
+@extends('layouts.navbar')
+@section('nav')
     <section class="container">
         <div class="container row">
             <div class="col-12"><h1>Nos annonces</h1></div>
